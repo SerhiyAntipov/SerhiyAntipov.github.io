@@ -3,3 +3,21 @@
 	border: 1px solid #000;
 	text-align: center;
 }
+
+#header{
+	height: 50px;
+}
+
+li{
+	float: left;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+li a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
