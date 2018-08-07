@@ -46,6 +46,9 @@
 	float: left;
 	background-color: #454545;
 	min-width: 130px;
+	padding-bottom: 3000px;
+    margin-bottom: -3000px;
+    overflow: hidden;
 }
 
 #sidebar img{
@@ -53,8 +56,21 @@
 	height: auto;
 }
 
+#sidebar:hover{
+	width: 290px;
+	
+}
+
+#sidebar li:hover{
+	width: 290px;
+	background-color: #1e1e1e;
+	height: 100%;
+	
+}
+
+
 li{
-	margin-left: 20px;
+	padding-left: 20px;
 	text-decoration: none;
 }
 
@@ -63,6 +79,7 @@ li a{
 }
 
 ul{
+	padding-top: 20px;
 	list-style: none;
 }
 
@@ -118,4 +135,6 @@ ul{
 	text-align: center;
 }
 
-
+.clear{
+	clear: both;
+}

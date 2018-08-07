@@ -4,7 +4,7 @@
   padding:5px;
 }
 
-/*#carousel {
+#carousel {
   width:960px;
   margin: 60px auto;
   height:300px;
@@ -12,15 +12,8 @@
   clear:both;
   overflow:hidden;
   display: inline;
+  top: -70px;
 }
-*/
-
-
-#carousel{
-  height: 300px;
-  display: block;
-}
-
 
 #carousel img {
   width: 300px;
