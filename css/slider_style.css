@@ -17,8 +17,8 @@
 
 
 #carousel{
-  top: -190px;
-  
+  height: 300px;
+  display: block;
 }
 
 
@@ -49,9 +49,8 @@ textarea#newoptions {
 .nav {
     height: 30px;
     font: 24px Calibri, sans-serif;
-    position: absolute;
-    top: 375px;
-    right: 400px;
+    text-align: center;
+
 }
 
 .nav a{
