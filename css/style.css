@@ -1,8 +1,6 @@
 @import url(reset.css);
 @import url(slider_style.css);
 
-
-
 #wrapper{
 	max-width: 1020px;
 	margin: 0 auto;
@@ -10,6 +8,7 @@
 }
 #header{
 	background-color: #e6e6e6;
+	overflow: hidden;
 }
 
 
@@ -31,13 +30,14 @@
 	color: #1e1e1e;
 	font: 60px Calibri, sans-serif;
 	background-color: #e6e6e6;
-	display: inline-block;
-	text-align: center;
 	height: 110px;
+	float: right;
+	width: calc(100% - 290px);
+	text-align: center;
 }
 
 #name p{
-	margin: 10px 0 0 50px;
+	margin: 10px 30px 0 0;
 }
 
 
@@ -85,16 +85,12 @@ ul{
 }
 
 
-#footer, #social, #foot_content{
-	height: 120px;
-	background-color: #454545;
-	color: #e6e6e6;
-	font: 16px bold Calibri, sans-serif;
-}
 
 #social{
 	float: left;
 	background-color: #1e1e1e;
+	height: 120px;
+	min-width: 290px;
 }
 
 #social img{
@@ -107,12 +103,19 @@ ul{
 	height: 40px;
 }
 
+#footer{
+	background-color: #454545;
+	min-height: 120px;
+}
+
 #foot_content{
-	display: inline-block;
+	height: 120px;
+    background-color: #454545;
+    color: #e6e6e6;
+    font: 16px bold Calibri, sans-serif;
+    float: right;
+    width: calc(100% - 290px);
 	text-align: center;
 }
 
-#foot_content p{
-	margin: 20px;
 
-}
