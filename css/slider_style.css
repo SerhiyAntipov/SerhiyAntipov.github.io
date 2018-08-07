@@ -1,0 +1,62 @@
+ 
+.example-desc {
+  margin:3px 0;
+  padding:5px;
+}
+
+/*#carousel {
+  width:960px;
+  margin: 60px auto;
+  height:300px;
+  position:relative;
+  clear:both;
+  overflow:hidden;
+  display: inline;
+}
+*/
+
+
+#carousel{
+  position: absolute;
+  top: -80px;
+  left: 85px;
+}
+
+
+#carousel img {
+  width: 300px;
+  height: auto;
+  visibility:hidden; /* hide images until carousel can handle them */
+  cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+}
+
+.split-left {
+  width:450px;
+  float:left;
+}
+.split-right {
+  width:400px;
+  float:left;
+  margin-left:10px;
+}
+#callback-output {
+  height:250px;
+  overflow:scroll;
+}
+textarea#newoptions {
+  width:430px;
+}
+
+.nav {
+    height: 30px;
+    font: 24px Calibri, sans-serif;
+    position: absolute;
+    top: 375px;
+    right: 400px;
+}
+
+.nav a{
+text-decoration: none;
+color: #1e1e1e;
+font: 24px Calibri, sans-serif;
+}
