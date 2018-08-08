@@ -1,18 +1,33 @@
 @import url(reset.css);
 @import url(slider_style.css);
+@import url(link_style.css);
+
 
 #wrapper{
 	max-width: 1020px;
 	margin: 0 auto;
 	background-color: #d2d0d0;
+	overflow: hidden;
+	border: 1px solid #aaaaaa;
 }
+
+#left_column{
+	width: 30px;
+    background-color: #fafafa;
+    min-height: 200px;
+    float: left;
+    padding-bottom: 3000px;
+    margin-bottom: -3000px; 
+}
+
+
 #header{
 	background-color: #e6e6e6;
 	overflow: hidden;
+	text-align: center;
 }
 
-
-#profession p{
+#profession p, #footer p{
 	margin-top: 20px;
 }
 
@@ -21,9 +36,8 @@
 	font: 26px Calibri, sans-serif;
 	background-color: #1e1e1e;
 	float: left;
-	min-width: 290px;
+	min-width: 200px;
 	height: 110px;
-	text-align: center;
 }
 
 #name{
@@ -32,50 +46,34 @@
 	background-color: #e6e6e6;
 	height: 110px;
 	float: right;
-	width: calc(100% - 290px);
-	text-align: center;
+	width: calc(100% - 200px);
 }
 
 #name p{
-	margin: 10px 30px 0 0;
+	margin-top: 10px;
 }
-
-
 
 #sidebar{
 	float: left;
 	background-color: #454545;
-	min-width: 130px;
+	transition: all 0.2s ease-in 0s;
+	width: 105px;
 	padding-bottom: 3000px;
-    margin-bottom: -3000px;
-    overflow: hidden;
+    margin-bottom: -3000px; 
+    /*height:  100vh;*/
 }
 
 #sidebar img{
 	width: 75px;
 	height: auto;
 }
-
+ 
 #sidebar:hover{
-	width: 290px;
-	
-}
-
-#sidebar li:hover{
-	width: 290px;
-	background-color: #1e1e1e;
-	height: 100%;
-	
-}
-
-
-li{
-	padding-left: 20px;
-	text-decoration: none;
-}
-
-li a{
-	text-decoration: none;
+	width: 200px;
+	transition: all 0.3s ease-in 0s;
+	-webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
 }
 
 ul{
@@ -83,15 +81,25 @@ ul{
 	list-style: none;
 }
 
+
+li{
+	padding-left:15px;
+	text-decoration: none;
+}
+
+li:hover{
+	background-color: #1e1e1e;
+}
+
 #slider{
 	min-height: 300px;
 	background-color: #aaaaaa;
 }
 
-
 #portfolio{
 	text-align: center;
 	background-color: #e6e6e6;
+	min-height: 400px; 
 }
 
 #portfolio a, #portfolio img{
@@ -101,40 +109,35 @@ ul{
 	margin: 20px;
 }
 
-
+#footer{
+	text-align: center;
+	background-color: #454545;
+	min-height: 125px;
+}
 
 #social{
-	float: left;
 	background-color: #1e1e1e;
-	height: 120px;
-	min-width: 290px;
+	min-height: 85px;
+	width: 105px;
+	position: absolute;
+	left: 288px;
 }
 
-#social img{
+#social img, #social a{
 	width: 40px;
 	height: auto;
-}
-
-#social a{
-	width: 40px;
-	height: 40px;
-}
-
-#footer{
-	background-color: #454545;
-	min-height: 120px;
+	margin: 10px 0; 
 }
 
 #foot_content{
-	height: 120px;
-    background-color: #454545;
+	background-color: #454545;
     color: #e6e6e6;
     font: 16px bold Calibri, sans-serif;
     float: right;
-    width: calc(100% - 290px);
-	text-align: center;
+    width: calc(100% - 105px);
 }
 
-.clear{
+#clear{
 	clear: both;
 }
+
