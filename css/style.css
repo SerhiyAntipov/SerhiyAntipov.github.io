@@ -4,6 +4,7 @@
 
 #wrapper{
 	max-width: 1020px;
+	min-width: 320px;
 	margin: 0 auto;
 	overflow: hidden;
 	border: 1px solid #aaaaaa;
@@ -41,13 +42,12 @@
 
 #left_column{
 	width: 20px;
-	height: 100%;
 	float: left;
 	display: inline-flex;
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
 	color: #8c8c8c;
-	padding: 0 5px;
+	padding: 20px 5px;
 	font-size: 16px;
 }
 
@@ -117,7 +117,6 @@ li:hover{
 
 #footer{
 	background-color: #454545;
-	width: 100%;
 	overflow: hidden;
 	max-height: 150px;
 }
@@ -151,3 +150,16 @@ li:hover{
     text-align: center;
 }
 
+@media only screen and (max-width: 768px){
+	#name{
+		font-size: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 567px){
+	#name{
+			font-size: 30px;
+		}
+
+}
