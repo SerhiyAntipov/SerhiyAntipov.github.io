@@ -2,24 +2,62 @@
 @import url(slider_style.css);
 @import url(link_style.css);
 
+body{
+	height: 100%;
+}
 
 #wrapper{
 	max-width: 1020px;
 	margin: 0 auto;
-	background-color: #d2d0d0;
 	overflow: hidden;
 	border: 1px solid #aaaaaa;
+	position: relative;
 }
 
 #left_column{
 	width: 30px;
     background-color: #fafafa;
-    min-height: 200px;
+    display: inline-block;
     float: left;
-    padding-bottom: 3000px;
-    margin-bottom: -3000px; 
+    min-height: 200px;
 }
 
+
+#lc_01{
+	height: 110px;
+	background-color: #e6e6e6;
+}
+
+
+#lc_02{
+	position: absolute;
+	bottom: 150px;
+	left: 0;
+	width: 30px;
+	background-color: #fafafa;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg)
+ }
+
+#lc_02 p{
+	color: #8c8c8c;
+	padding: 0 5px;
+	font: 16px Calibri, sans-serif;
+}
+
+#lc_03{
+	height: 127px;
+    background-color: #454545;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 30px;
+}
+
+#basic_array{
+	display: inline-block;
+	width: calc(100% - 30px)
+}
 
 #header{
 	background-color: #e6e6e6;
@@ -113,14 +151,15 @@ li:hover{
 	text-align: center;
 	background-color: #454545;
 	min-height: 125px;
+	float: right;
+    width: 100%;
 }
 
 #social{
 	background-color: #1e1e1e;
 	min-height: 85px;
 	width: 105px;
-	position: absolute;
-	left: 288px;
+	display: inline-block;
 }
 
 #social img, #social a{
