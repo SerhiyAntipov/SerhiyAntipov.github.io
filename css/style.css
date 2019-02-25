@@ -2,14 +2,60 @@
 @import url(slider_style.css);
 @import url(link_style.css);
 
+body{
+	height: 100%;
+}
+
 #wrapper{
 	max-width: 1020px;
-	min-width: 320px;
 	margin: 0 auto;
 	overflow: hidden;
 	border: 1px solid #aaaaaa;
 	position: relative;
-	font-family: Calibri, sans-serif;
+}
+
+#left_column{
+	width: 30px;
+    display: inline-block;
+    float: left;
+    min-height: 200px;
+}
+
+
+#lc_01{
+	height: 110px;
+	background-color: #e6e6e6;
+}
+
+
+#lc_02{
+	position: absolute;
+	bottom: 150px;
+	left: 0;
+	width: 29px;
+	background-color: #fff;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg)
+ }
+
+#lc_02 p{
+	color: #8c8c8c;
+	padding: 0 5px;
+	font: 16px Calibri, sans-serif;
+}
+
+#lc_03{
+	height: 85px;
+    background-color: #454545;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 30px;
+}
+
+#basic_array{
+	display: inline-block;
+	width: calc(100% - 30px)
 }
 
 #header{
@@ -18,47 +64,40 @@
 	text-align: center;
 }
 
+#profession p, #footer p{
+	margin-top: 20px;
+}
+
 #profession{
-	height: 60px;
-	min-width: 200px;
 	color: #fafafa;
-	font-size: 26px;
+	font: 26px Calibri, sans-serif;
 	background-color: #1e1e1e;
 	float: left;
-	margin-left: 30px;
-	padding: 10px 0;
+	min-width: 200px;
+	height: 110px;
 }
 
 #name{
-	width: calc(100% - 230px);
-	float: right;
 	color: #1e1e1e;
-	font-size: 60px;
+	font: 60px Calibri, sans-serif;
+	background-color: #e6e6e6;
+	height: 110px;
+	float: right;
+	width: calc(100% - 200px);
 }
 
 #name p{
-	margin-top: 5px;
-}
-
-#left_column{
-	width: 20px;
-	float: left;
-	display: inline-flex;
-	writing-mode: vertical-rl;
-	transform: rotate(180deg);
-	color: #8c8c8c;
-	padding: 20px 5px;
-	font-size: 16px;
+	margin-top: 10px;
 }
 
 #sidebar{
-	width: 105px;
-	min-height: 568px;
 	float: left;
 	background-color: #454545;
 	transition: all 0.2s ease-in 0s;
-	padding-bottom: 1000px;
-    margin-bottom: -1000px; 
+	width: 105px;
+	padding-bottom: 3000px;
+    margin-bottom: -3000px; 
+   
 }
 
 #sidebar img{
@@ -75,22 +114,18 @@
 }
 
 ul{
-	padding-top: 10px;
+	padding-top: 20px;
 	list-style: none;
 }
 
+
 li{
+	padding-left:15px;
 	text-decoration: none;
-	padding: 5px 0 5px 15px; 
 }
 
 li:hover{
 	background-color: #1e1e1e;
-}
-
-
-#main_content{
-	overflow: hidden;
 }
 
 #slider{
@@ -104,31 +139,28 @@ li:hover{
 	min-height: 400px; 
 }
 
-#portfolio img{
+#portfolio a, #portfolio img{
 	display: inline-block;
 	width: 320px;
 	height: auto;
-	margin: 20px;
 }
 
 #portfolio a{
-	display: inline-block;
+	margin: 25px;
 }
 
 #footer{
+	text-align: center;
 	background-color: #454545;
-	overflow: hidden;
-	max-height: 150px;
+	float: right;
+    width: 100%;
 }
 
 #social{
+	background-color: #1e1e1e;
+	min-height: 85px;
 	width: 200px;
 	display: inline-block;
-	background-color: #1e1e1e;
-	margin-left: 30px;
-	text-align: center;
-	padding-bottom: 100px;
-	margin-bottom: -100px;
 }
 
 #social img {
@@ -138,28 +170,18 @@ li:hover{
 
 #social a{
 	display: inline-block;
-	padding: 15px 0;
+	padding-top: 20px;
 }
 
 #foot_content{
-	color: #e6e6e6;
-    font-size: 16px;
+	background-color: #454545;
+    color: #e6e6e6;
+    font: 16px bold Calibri, sans-serif;
     float: right;
-    width: calc(100% - 230px);
-    padding: 10px 0;
-    text-align: center;
+    width: calc(100% - 200px);
 }
 
-@media only screen and (max-width: 768px){
-	#name{
-		font-size: 50px;
-	}
-
+#clear{
+	clear: both;
 }
 
-@media only screen and (max-width: 567px){
-	#name{
-			font-size: 30px;
-		}
-
-}

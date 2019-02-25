@@ -1,37 +1,58 @@
-$(document).ready(function () {
-        var carousel = $("#carousel").waterwheelCarousel({
-          flankingItems: 3,
-          movingToCenter: function ($item) {
-            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
-          },
-          movedToCenter: function ($item) {
-            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
-          },
-          movingFromCenter: function ($item) {
-            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
-          },
-          movedFromCenter: function ($item) {
-            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
-          },
-          clickedCenter: function ($item) {
-            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
-          }
-        });
 
-        $('#prev').bind('click', function () {
-          carousel.prev();
-          return false
-        });
+let sliderPage = document.getElementsByClassName('sliderPage');
+let slider = document.querySelector('.slider');
+let centerSlider = Math.floor(sliderPage.length/2);
+let numClick = centerSlider;
+let arrSlider = Array.from(sliderPage);//створюємо масив з псевдомасива sliderPage
 
-        $('#next').bind('click', function () {
-          carousel.next();
-          return false;
-        });
+for(let i = 0; i< arrSlider.length; i++){
+		arrSlider[i].setAttribute('position', i);
+	}
 
-        $('#reload').bind('click', function () {
-          newOptions = eval("(" + $('#newoptions').val() + ")");
-          carousel.reload(newOptions);
-          return false;
-        });
-});
+slider.onclick = function fSlider(event){	
+	if (event.target.className == "sliderPage"){  //перевіряємо чи клік по картинці
+		event.target.setAttribute('slide','click'); //присвоюємо атрибут для відслідковування 
+		for(let i = 0; i< sliderPage.length; i++){ //шукаємо в масиві порядковий номер з атрибутом 'position','1'
+			if(sliderPage[i].getAttribute('slide') ==  'click'){
+				numClick = i;
+				sliderPage[i].removeAttribute('slide');
+			}
+		}
+	}
+	render()
+}
 
+function render(){
+	if(numClick < centerSlider ){
+			for(let i = 0; i< (centerSlider - numClick); i++ ){
+				arrSlider.unshift(arrSlider.pop());
+			}
+		}
+		else if(numClick > centerSlider){
+			for(let i = 0; i< (numClick - centerSlider); i++ ){
+				arrSlider.push(arrSlider.shift());
+			}
+		}
+		centerSlider = numClick;
+		
+	for(let i = 0; i< arrSlider.length; i++){
+		arrSlider[i].setAttribute('position', i);
+	}
+	unHideLinks()
+}
+
+autoSlide ()
+
+function autoSlide (){
+	render();
+	numClick == numClick++;
+	if(numClick > arrSlider.length -1) numClick = 0;
+ 	setTimeout(autoSlide, 2000);
+}
+
+function unHideLinks(){
+	for(let i = 0; i< arrSlider.length; i++ ){
+	sliderPage[i].children[0].style.display = 'none';
+	}
+	sliderPage[numClick].children[0].style.display = 'inline-block';
+}

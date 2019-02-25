@@ -1,53 +1,138 @@
- 
-.example-desc {
-  margin:3px 0;
-  padding:5px;
+#sliderwrap{
+	text-align: center;
 }
 
-#carousel {
-  width:960px;
-  margin: 60px auto;
-  height:300px;
-  position:relative;
-  clear:both;
-  overflow:hidden;
-  display: inline;
-  top: -70px;
+.slider{
+	height: 175px;
+	width: 700px;
+	padding: 20px;
+	position: relative;
+	display: inline-block;
 }
 
-#carousel img {
-  width: 300px;
-  height: auto;
-  visibility:hidden; /* hide images until carousel can handle them */
-  cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+.sliderPage{
+	width: 100px;
+	height: 60px;
+	display: inline-block;
+	position: absolute;
+	vertical-align: middle;
+	border-radius: 5px;
 }
 
-.split-left {
-  width:450px;
-  float:left;
-}
-.split-right {
-  width:400px;
-  float:left;
-  margin-left:10px;
-}
-#callback-output {
-  height:250px;
-  overflow:scroll;
-}
-textarea#newoptions {
-  width:430px;
+.sliderPage a{
+  	display: none;
+	width: 100%;
+	height: 100%;
 }
 
-.nav {
-    height: 30px;
-    font: 24px Calibri, sans-serif;
-    text-align: center;
-
+[position = '0']{
+	height: 40%;
+    width: 20%;
+    left: 40%;
+    top: 5%;
+    z-index: 0;
 }
 
-.nav a{
-text-decoration: none;
-color: #1e1e1e;
-font: 24px Calibri, sans-serif;
+[position = '1']{
+	height: 50%;
+    width: 25%;
+    left: 17%;
+    top: 10%;
+    z-index: 4;
 }
+
+[position = '2']{
+	height: 40%;
+    width: 20%;
+    left: 0;
+    top: 15%;
+    z-index: 6;
+}
+
+[position = '3']{
+	height: 50%;
+    width: 25%;
+    left: 13%;
+    top: 19%;
+    z-index: 8;
+}
+
+[position = '4']{
+	height: 60%;
+    width: 30%;
+    left: 35%;
+    top: 30%;
+    z-index: 10;
+}
+
+[position = '5']{
+	height: 50%;
+    width: 25%;
+    right: 13%;
+    top: 19%;
+    z-index: 8;
+}
+
+[position = '6']{
+	height: 40%;
+    width: 20%;
+    right: 0;
+    top: 15%;
+    z-index: 6;
+}
+
+[position = '7']{
+	height: 50%;
+    width: 25%;
+    right: 17%;
+    top: 10%;
+    z-index: 2;
+}
+
+.sliderPage{
+	border: 1px solid #808080;
+	box-shadow: 0 10px 10px 5px;
+	color: #404040;
+	transition: all ease 0.5s;
+}
+
+#sl00{
+	background: url(../img/0.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
+#sl01{
+	background: url(../img/1.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
+#sl02{
+	background: url(../img/2.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
+#sl03{
+	background: url(../img/3.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
+#sl04{
+	background: url(../img/4.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
+#sl05{
+	background: url(../img/5.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
+#sl06{
+	background: url(../img/6.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
+#sl07{
+	background: url(../img/7.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
