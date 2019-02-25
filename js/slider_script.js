@@ -3,7 +3,27 @@ let sliderPage = document.getElementsByClassName('sliderPage');
 let slider = document.querySelector('.slider');
 let centerSlider = Math.floor(sliderPage.length/2);
 let numClick = centerSlider;
-let arrSlider = Array.from(sliderPage);//створюємо масив з псевдомасива sliderPage
+let arrSlider = Array.from(sliderPage);//створюємо масив з псевдомасива 
+
+resizeSlider();
+
+function resizeSlider(){
+        let slider_wrapp = document.querySelector('#slider_wrapp');
+        let sliderSize = document.getElementsByClassName('slider');
+        let height = slider_wrapp.offsetWidth/3;
+        console.log(height)
+        sliderSize[0].style.height = slider_wrapp.offsetWidth/3 + "px";
+    }
+
+window.onresize = function (){
+    let slider_wrapp = document.querySelector('#slider_wrapp');
+    let sliderSize = document.getElementsByClassName('slider');
+    let height = slider_wrapp.offsetWidth/3;
+    console.log(height)
+    sliderSize[0].style.height = slider_wrapp.offsetWidth/3 + "px";
+};
+
+
 
 for(let i = 0; i< arrSlider.length; i++){
 		arrSlider[i].setAttribute('position', i);
