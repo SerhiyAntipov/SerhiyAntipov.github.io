@@ -23,63 +23,90 @@ body{
 	height: 110px;
     min-height: 110px;
     text-align: center;
+    background: linear-gradient( 90deg, #111318 0%, #57627d 50%, #111318 100%);
+}
+
+#header p{
+    font-size: 60px;
+    font-family: "Calibri";
+    color: rgb(230, 230, 230);
+/*    text-transform: uppercase;*/
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+
+#header span{
+    font-size: 16px;
+    font-family: "Calibri";
+    color: rgb(235, 219, 170);
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#nav{
+    height: 40px;
+/*    background:  linear-gradient( 0deg, #8d929b, #cfd1d6);*/
+    background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #2d3842;
     
 }
 
-.left_column{
-    width: 30px;
-    float: left;
+
+#nav ul{
+    width: 180px;
+    height: 32px;
+    border-radius: 23px;
+    background:  linear-gradient( 180deg, #7b7f88, #c0c0c7);
+    display: inline-block;
+    margin-top: 3px;
+    text-align: center;
+    margin-left: 10px;
 }
 
-#lc_01{
-	height: 100%;
+#nav li{
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background:  linear-gradient( 0deg, #1e1e20, #808792);
+    border-radius: 18px;
+    border-top: 1px solid #b1b3c0;
+    margin: 3px;
+    box-shadow: 0px 0px 1px 2px #0000007d;
 }
 
-#profession{
-    background-color: #1e1e1e;
-    font-size: 26px;
-    max-width: 200px;
-    height: 100%;
-    float: left;
-    padding: 20px;
-    box-sizing: border-box;
+#nav li:hover{
+    background:  linear-gradient( 0deg, #808792, #1e1e20);
+    border-top: 1px solid #1e1e20;
+    box-shadow: none;
 }
 
-#name{
-	color: #1e1e1e;
-    font: 60px Calibri, sans-serif;
+#nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 4px 0;
+    text-shadow: 0px 1px 1px #000;
 }
 
-#name p{
-	display: inline-block;
-    vertical-align: sub;
+#nav a:hover{
+    text-shadow: none;
 }
 
 #main{
     text-align: center;
-    background-color: #e6e6e6;
-}
-
-
-#lc_02{
-	writing-mode: tb;
-    transform: rotate(180deg);
-    vertical-align: bottom;
- }
-
-#lc_02 p{
-	color: #8c8c8c;
-	padding: 0 5px 25px 0;
-	font: 16px Calibri, sans-serif;
+    background: linear-gradient( 0deg, #808590 0%, #b5bac3 50%, #808590 100%);
 }
 
 #sidebar{
-	background-color: #454545;
+	background: linear-gradient( 90deg, #111318, #57627d );
     transition: all 0.2s ease-in 0s;
-    width: 105px;
+    width: 110px;
     padding-bottom: 3000px;
     margin-bottom: -3000px;
     float: left;
+    box-shadow: 2px 0px 2px 0px #000000a8;
+    
 }
 
 #sidebar img{
@@ -101,18 +128,23 @@ body{
 
 
 
-ul{
-	padding-top: 20px;
+#sidebar ul{
+	padding-left: 13px;
 	list-style: none;
 }
 
-li{
-	padding-left:15px;
-	text-decoration: none;
+#sidebar li{
+    text-decoration: none;
+    margin-top: 13px;
+   padding: 5px 7px;
+    border-radius: 20px;
 }
 
-li:hover{
-	background-color: #1e1e1e;
+#sidebar li:hover{
+	 background:  linear-gradient( 0deg, #8d929b, #cfd1d6);
+    box-shadow: 0px 0px 0px 2px #89898985;
+    width: 160px;
+    
 }
 
 #main_content{
@@ -120,16 +152,14 @@ li:hover{
     width: calc(100% - 240px)
 }
 
-
-
-#lc_03{
-    min-height: 85px;
-    height: 100%;
+#slider_wrapp{
+    margin-top: 20px;
 }
+
 
 #portfolio{
 	text-align: center;
-	min-height: 460px; 
+	min-height: 560px; 
 }
 
 #portfolio a{
@@ -143,7 +173,6 @@ li:hover{
     width: 100%;
     height: auto;
 }
-
 
 #footer{
 	text-align: center;
@@ -175,14 +204,8 @@ li:hover{
 }
 
 #foot_content{
-	color: #e6e6e6;
+	color: #c7c7c7;
     font: 16px bold Calibri, sans-serif;
     display: inline-block;
     max-width: 50%;
-   
 }
-
-#clear{
-	clear: both;
-}
-

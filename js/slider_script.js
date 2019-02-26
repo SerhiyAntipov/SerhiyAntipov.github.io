@@ -6,24 +6,15 @@ let numClick = centerSlider;
 let arrSlider = Array.from(sliderPage);//створюємо масив з псевдомасива 
 
 resizeSlider();
+window.onresize = resizeSlider;
 
 function resizeSlider(){
-        let slider_wrapp = document.querySelector('#slider_wrapp');
-        let sliderSize = document.getElementsByClassName('slider');
-        let height = slider_wrapp.offsetWidth/3;
-        console.log(height)
-        sliderSize[0].style.height = slider_wrapp.offsetWidth/3 + "px";
-    }
-
-window.onresize = function (){
     let slider_wrapp = document.querySelector('#slider_wrapp');
-    let sliderSize = document.getElementsByClassName('slider');
-    let height = slider_wrapp.offsetWidth/3;
-    console.log(height)
-    sliderSize[0].style.height = slider_wrapp.offsetWidth/3 + "px";
-};
-
-
+    slider_wrapp.style.height = slider_wrapp.offsetWidth/3 + "px";
+//    
+//    let sliderSize = document.getElementsByClassName('slider');
+//    sliderSize[0].style.height = slider_wrapp.offsetWidth/3 + "px";
+}
 
 for(let i = 0; i< arrSlider.length; i++){
 		arrSlider[i].setAttribute('position', i);

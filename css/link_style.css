@@ -1,11 +1,11 @@
 
-li a{
+#sidebar li a{
 	text-decoration: none;
 	display: block;
 	height: 95px;
 }
 
-li a:hover{
+#sidebar li a:hover{
 	width: 185px;
 }
 
