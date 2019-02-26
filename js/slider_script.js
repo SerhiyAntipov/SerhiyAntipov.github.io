@@ -11,9 +11,6 @@ window.onresize = resizeSlider;
 function resizeSlider(){
     let slider_wrapp = document.querySelector('#slider_wrapp');
     slider_wrapp.style.height = slider_wrapp.offsetWidth/3 + "px";
-//    
-//    let sliderSize = document.getElementsByClassName('slider');
-//    sliderSize[0].style.height = slider_wrapp.offsetWidth/3 + "px";
 }
 
 for(let i = 0; i< arrSlider.length; i++){
@@ -58,7 +55,7 @@ function autoSlide (){
 	render();
 	numClick == numClick++;
 	if(numClick > arrSlider.length -1) numClick = 0;
- 	setTimeout(autoSlide, 2000);
+ 	setTimeout(autoSlide, 3000);
 }
 
 function unHideLinks(){

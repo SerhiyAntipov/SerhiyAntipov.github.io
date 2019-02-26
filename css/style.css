@@ -142,7 +142,7 @@ body{
 
 #sidebar li:hover{
 	background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-    box-shadow: 0px 0px 5px 1px #00000085;
+    box-shadow: inset 0px 0px 2px 2px #000000;
     width: 160px;
     
 }
