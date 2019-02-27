@@ -8,7 +8,7 @@ body{
 
 #wrapper{
 	max-width: 960px;
-    min-width: 620px;
+    min-width: 320px;
     box-sizing: border-box;
 	margin: 0 auto;
 	overflow: hidden;

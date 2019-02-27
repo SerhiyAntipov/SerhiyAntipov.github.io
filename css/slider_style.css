@@ -101,41 +101,49 @@
 
 #sl00{
 	background: url(../img/0.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+    background-position: top center;
 }
 
 #sl01{
 	background: url(../img/1.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+    background-position: top center;
 }
 
 #sl02{
 	background: url(../img/2.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+    background-position: top center;
 }
 
 #sl03{
 	background: url(../img/3.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+    background-position: top center;
 }
 
 #sl04{
 	background: url(../img/4.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+    background-position: top center;
 }
 
 #sl05{
 	background: url(../img/5.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+    background-position: top center;
 }
 
 #sl06{
 	background: url(../img/6.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+    background-position: top center;
 }
 
 #sl07{
 	background: url(../img/7.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+    background-position: top center;
 }
 

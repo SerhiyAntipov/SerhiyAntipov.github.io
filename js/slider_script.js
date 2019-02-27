@@ -1,17 +1,21 @@
-
 let sliderPage = document.getElementsByClassName('sliderPage');
 let slider = document.querySelector('.slider');
 let centerSlider = Math.floor(sliderPage.length/2);
 let numClick = centerSlider;
 let arrSlider = Array.from(sliderPage);//створюємо масив з псевдомасива 
 
-resizeSlider();
+
+let slider_wrapp = document.querySelector('#slider_wrapp');
+
 window.onresize = resizeSlider;
 
+resizeSlider();
 function resizeSlider(){
     let slider_wrapp = document.querySelector('#slider_wrapp');
+    slider_width = slider_wrapp.offsetWidth;
     slider_wrapp.style.height = slider_wrapp.offsetWidth/3 + "px";
 }
+
 
 for(let i = 0; i< arrSlider.length; i++){
 		arrSlider[i].setAttribute('position', i);
