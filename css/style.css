@@ -30,7 +30,6 @@ body{
     font-size: 60px;
     font-family: "Calibri";
     color: rgb(230, 230, 230);
-/*    text-transform: uppercase;*/
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
 
@@ -44,7 +43,6 @@ body{
 
 #nav{
     height: 40px;
-/*    background:  linear-gradient( 0deg, #8d929b, #cfd1d6);*/
     background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #2d3842;
@@ -60,7 +58,7 @@ body{
     display: inline-block;
     margin-top: 3px;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 13px;
 }
 
 #nav li{
@@ -105,12 +103,6 @@ body{
     display: table-cell;
 }
 
-/*
-#sidebar:hover{
-	width: 200px;
-}
-*/
-
 #sidebar img{
 	width: 75px;
 	height: auto;
@@ -121,6 +113,18 @@ body{
 	list-style: none;
 }
 
+#sidebar ul:hover{
+    width: 180px;
+}
+
+#sidebar ul:hover li{
+    background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    box-shadow: inset 0px 0px 2px 2px #000000;
+    width: 166px;
+    transition: 0.2s;
+}
+
+
 #sidebar li{
     text-decoration: none;
     margin-top: 13px;
@@ -130,17 +134,8 @@ body{
     width: 75px;
 }
 
-#sidebar li:hover{
-	background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-    box-shadow: inset 0px 0px 2px 2px #000000;
-    width: 160px;
-      transition: 0.2s;
-    
-}
-
 #main_content{
     display: table-cell;
-    width: calc(100% - 240px);
     vertical-align: bottom;
 }
 
@@ -169,20 +164,23 @@ body{
 #footer{
 	text-align: center;
     background-color: #454545;
-    min-height: 85px;
-    height: 100%;
+    background: linear-gradient( 90deg, #111318 0%, #57627d 50%, #111318 100%);
 }
 
 #footer p{
     margin-top: 10px;
     display: inline-block;
+    max-width: 80%;
+    vertical-align: -webkit-baseline-middle;
 }
 
 #social{
-	background-color: #1e1e1e;
-	min-height: 85px;
-	width: 200px;
-	float: left;
+    display: table-cell;
+    width: 115px;
+/*	width: 207px;*/
+     background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    padding: 13px;
+    box-sizing: border-box;
 }
 
 #social img {
@@ -192,12 +190,10 @@ body{
 
 #social a{
 	display: inline-block;
-	padding-top: 20px;
 }
 
 #foot_content{
-	color: #c7c7c7;
     font: 16px bold Calibri, sans-serif;
-    display: inline-block;
-    max-width: 50%;
+    display: table-cell;
+    vertical-align: middle;
 }
