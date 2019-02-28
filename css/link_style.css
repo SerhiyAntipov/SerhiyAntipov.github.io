@@ -5,11 +5,6 @@
     display: table-cell;
     }
 
-#sidebar img{
-	width: 75px;
-	height: auto;
-}
-
 #sidebar ul{
 	padding: 0 13px;
 	list-style: none;
@@ -42,132 +37,70 @@
 
 #sidebar li a:hover{
 	width: 177px;
+    background-position: bottom left;
+}
+
+#sidebar_ul li{
+   background-position: top left;
 }
 
 #link_html{
     background: url(../img/link_html_01.png) no-repeat;
-	background-position: top left;
-}
-
-#link_html:hover{
-   background-position: bottom left;
 }
 
 #link_css{
     background: url(../img/link_css_01.png) no-repeat;
-	background-position: top left;
-}
-
-#link_css:hover{
-   background-position: bottom left;
 }
 
 #link_js{
     background: url(../img/link_js_01.png) no-repeat;
-	background-position: top left;
-}
-
-#link_js:hover{
-   background-position: bottom left;
 }
 
 #link_git{
     background: url(../img/link_git_01.png) no-repeat;
-	background-position: top left;
-}
-
-#link_git:hover{
-   background-position: bottom left;
 }
 
 #link_ps{
     background: url(../img/link_ps_01.png) no-repeat;
-	background-position: top left;
-}
-
-#link_ps:hover{
-   background-position: bottom left;
 }
 
 #link_wp{
     background: url(../img/link_wp_01.png) no-repeat;
-	background-position: top left;
 }
 
-#link_wp:hover{
-   background-position: bottom left;
- }
-
 @media screen  and (max-width: 640px){
-    #link_html{
+    #sidebar li a{
         transition: all 0.2s ease-in 0s;
-        background: url(../img/link_html_02.png) no-repeat;
-        background-position: top left;
+        background-size: 100% auto;
+        background-position: top center;
     }
-
-    #link_html:hover{
-        background-position: top right;
+    
+    #sidebar_ul li:hover{
+        height: 100px;
+    }
+    
+    #link_html{
+        background: url(../img/link_html_02.png) no-repeat;
     }
 
     #link_css{
-        transition: all 0.2s ease-in 0s;
         background: url(../img/link_css_02.png) no-repeat;
-        background-position: top left;
     }
 
-    #link_css:hover{
-        background-position: top right;
-    } 
-    
     #link_js{
-        transition: all 0.2s ease-in 0s;
-        background: url(../img/link_js_02.png) no-repeat;
-        background-position: top left;
+       background: url(../img/link_js_02.png) no-repeat;
     }
 
-    #link_js:hover{
-        background-position: top right;
-    }
-    
     #link_git{
-        transition: all 0.2s ease-in 0s;
         background: url(../img/link_git_02.png) no-repeat;
-        background-position: top left;
     }
 
-    #link_git:hover{
-        background-position: top right;
-    }
     
     #link_ps{
-        transition: all 0.2s ease-in 0s;
         background: url(../img/link_ps_02.png) no-repeat;
-        background-position: top left;
     }
 
-    #link_ps:hover{
-        background-position: top right;
-    }
-    
     #link_wp{
-        transition: all 0.2s ease-in 0s;
-        background: url(../img/link_wp_02.png) no-repeat;
-        background-position: top left;
-    }
-
-    #link_wp:hover{
-        background-position: top right;
+             background: url(../img/link_wp_02.png) no-repeat;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
