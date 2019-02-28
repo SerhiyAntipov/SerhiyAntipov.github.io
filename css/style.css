@@ -174,11 +174,6 @@ body{
     vertical-align: middle;
 }
 
-#social li a {
-    width: 25px;
-    height: 25px;
-    }
-
 
 @media screen  and (max-width: 641px){
     #header{
@@ -253,6 +248,11 @@ body{
         background: linear-gradient( 180deg, #7b7f88, #c0c0c7);
         width: 10%;
     }
+    
+    #social li a {
+        width: 25px;
+        height: 25px;
+        }
 
 }
 
