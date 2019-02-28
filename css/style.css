@@ -46,7 +46,6 @@ body{
     background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #2d3842;
-    
 }
 
 
@@ -96,47 +95,9 @@ body{
     background: linear-gradient( 0deg, #808590 0%, #b5bac3 50%, #808590 100%);
 }
 
-#sidebar{
-	background: linear-gradient( 90deg, #111318, #57627d );
-  width: 110px;
-    box-shadow: 2px 0px 2px 0px #000000a8;
-    display: table-cell;
-}
-
-#sidebar img{
-	width: 75px;
-	height: auto;
-}
-
-#sidebar ul{
-	padding: 0 13px;
-	list-style: none;
-}
-
-#sidebar ul:hover{
-    width: 180px;
-}
-
-#sidebar ul:hover li{
-    background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-    box-shadow: inset 0px 0px 2px 2px #000000;
-    width: 166px;
-    transition: 0.2s;
-}
-
-
-#sidebar li{
-    text-decoration: none;
-    margin-top: 13px;
-    padding: 5px 7px;
-    border-radius: 20px;
-    transition: 0.2s;
-    width: 75px;
-}
-
 #main_content{
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 
 #slider_wrapp{
@@ -146,7 +107,6 @@ body{
 
 #portfolio{
 	text-align: center;
-	min-height: 560px; 
 }
 
 #portfolio a{
@@ -167,8 +127,13 @@ body{
     background: linear-gradient( 90deg, #111318 0%, #57627d 50%, #111318 100%);
 }
 
+
+#footer li{
+    display: inline-block;
+}
+
 #footer p{
-    margin-top: 10px;
+    margin:15px 0;
     display: inline-block;
     max-width: 80%;
     vertical-align: -webkit-baseline-middle;
@@ -177,19 +142,31 @@ body{
 #social{
     display: table-cell;
     width: 115px;
-/*	width: 207px;*/
-     background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-    padding: 13px;
+    background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    padding: 10px 0 ;
     box-sizing: border-box;
 }
 
 #social img {
-	width: 40px;
-	height: auto;
+	width: 100%;
+    height: auto;
 }
 
 #social a{
 	display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background: linear-gradient( 0deg, #1e1e20, #808792);
+    border-top: 1px solid #b1b3c0;
+    margin: 3px;
+    box-shadow: 0px 0px 1px 2px #0000007d;
+}
+
+#social a:hover {
+    background: linear-gradient( 0deg, #808792, #1e1e20);
+    border-top: 1px solid #1e1e20;
+    box-shadow: none;
 }
 
 #foot_content{
@@ -197,3 +174,118 @@ body{
     display: table-cell;
     vertical-align: middle;
 }
+
+
+
+
+
+@media screen  and (max-width: 640px){
+    #nav {
+    text-align: center;
+    }
+    
+    #nav ul {
+        margin-left: 0;
+        width: 75%;
+    }
+    
+    #nav li {
+        width: 30%;
+    }
+    
+    #sidebar{
+        display: block;
+        width: 100%;
+    }
+    #sidebar li{
+        display: inline-block;
+        width: 80px;
+        margin: 10px;
+        padding: 0;
+        border-radius: 10px;
+    }
+    
+    #sidebar ul{
+        padding: 0;
+    }
+    
+    #sidebar ul:hover li {
+        display: inline-block;
+        width: 80px;
+        height: 180px;
+        margin: 10px;
+        padding: 0;
+        background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+        box-shadow: inset 0px 0px 2px 2px #000000;
+    }
+    #sidebar ul:hover{
+       width: 100%;
+    }
+    
+    #sidebar li a:hover {
+    width: auto;
+    }
+     
+    #social{
+    width: 100% !important; 
+    display: block;
+    padding: 2px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #2d3842;
+    }
+    
+    #social li {
+        margin: 0px 1%;
+        border-radius: 23px;
+        background: linear-gradient( 180deg, #7b7f88, #c0c0c7);
+        width: 13%;
+    }
+
+}
+@media screen  and (max-width: 560px){
+    #sidebar li {
+    width: 65px;
+}
+    
+
+@media screen  and (max-width: 480px){
+    #sidebar li {
+    width: 65px;
+    margin: 3px;
+    }
+    
+    #nav ul {
+        width: 98%;
+    }
+    
+    #social li {
+       width: 17%;
+    }
+}
+    
+
+@media screen  and (max-width: 360px){
+    #header p {
+        font-size: 44px;
+        padding-top: 15px;
+    }
+    #sidebar li {
+        width: 50px;
+        margin: 0 2px;
+    }
+    #social li {
+       width: 21%;
+    }
+}
+    
+@media screen  and (max-width: 320px){
+    #sidebar li {
+        width: 45px;
+        margin: 0 2px;
+    }
+}
+
+
+
+
+
