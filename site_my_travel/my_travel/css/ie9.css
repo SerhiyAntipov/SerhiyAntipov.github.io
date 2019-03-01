@@ -1,0 +1,17 @@
+
+#accordion{
+	max-width: 640px;
+	margin: 40px auto;
+	height: 225px;
+	overflow: hidden;
+}
+
+#accord li{
+	height: 225px;
+	float: left;
+	
+}
+
+#accord{
+	width: 620px;
+}

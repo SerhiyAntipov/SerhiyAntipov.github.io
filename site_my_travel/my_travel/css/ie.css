@@ -1,0 +1,30 @@
+
+#accordion{
+	max-width: 640px;
+	margin: 40px auto;
+	height: 225px;
+	overflow: hidden;
+	display: block;
+}
+
+#accord li{
+	height: 225px;
+	float: left;
+	
+}
+
+#accord{
+	width: 620px;
+}
+
+#accord li.img_09{
+	width: 310px;
+}
+
+#accord li:hover{ 
+		width: 310px;
+}
+
+#accord li:hover#accord li.img_09{
+		width: 6.2%;
+}
