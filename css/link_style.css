@@ -73,6 +73,7 @@
         transition: all 0.2s ease-in 0s;
         background-size: 100% auto;
         background-position: top center;
+        margin-top: 3px;
     }
     
     #sidebar_ul li:hover{

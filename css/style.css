@@ -42,7 +42,7 @@ body{
     height: 40px;
     background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
     border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #2d3842;
+    border-bottom: 2px solid #2d3842;
 }
 
 
@@ -101,17 +101,19 @@ body{
 	text-align: center;
     box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
-    margin: 0 10px 10px;
+    margin: 7px 20px 20px;
+    padding-top: 20px;
 }
 
 #portfolio a{
 	margin: 2%;
-    padding: 1%;
+    padding: 0.5%;
     display: inline-block;
     width: 45%;
     box-sizing: border-box;
     border-radius: 3px;
-    box-shadow: 0px 1px 4px 1px #000000c4;
+    border: 1px solid #00000030;
+/*    box-shadow: 0px 0px 1px 1px #0000006b;*/
     overflow: hidden;
 }
 
@@ -179,10 +181,6 @@ body{
     #header{
 	    min-height: 100px;
     }
-    
-    #slider_wrapp{
-        display: none;
-    }
         
     #nav {
         text-align: center;
@@ -212,7 +210,7 @@ body{
         
     #sidebar ul:hover li {
         width: 95px;
-        height: 210px;
+        height: 218px;
     }
     
     #sidebar ul{
@@ -229,7 +227,12 @@ body{
         width: auto;
         background-position: top center; 
     }
-     
+    
+    #portfolio {
+    padding-top: 10px;
+    }
+    
+    
     #footer{
         min-height: 150px;
     }
@@ -258,26 +261,29 @@ body{
 
 
 @media screen  and (max-width: 610px){
-      #sidebar li{
+     #slider_wrapp{
+        display: none;
+    }  
+    #sidebar li{
           width: 85px;
         height: 100px;
     }
         
     #sidebar ul:hover li {
          width: 85px;
-        height: 190px;
+        height: 194px;
     }
 }
 
 @media screen  and (max-width: 561px){
-     #sidebar li{
+    #sidebar li{
           width: 75px;
         height: 90px;
     }
         
     #sidebar ul:hover li {
          width: 75px;
-        height: 170px;
+        height: 173px;
     }
     #social li {
        width: 12%;
@@ -321,7 +327,7 @@ body{
         
     #sidebar ul:hover li {
          width: 55px;
-        height: 122px;
+        height: 128px;
     }
         
     #header p {
@@ -331,6 +337,9 @@ body{
    
     #social li {
        width: 17%;
+    }
+    #portfolio {
+    padding-top: 5px;
     }
 }
 
@@ -342,7 +351,7 @@ body{
         
     #sidebar ul:hover li {
         width: 45px;
-        height: 100px;
+        height: 106px;
         border-radius: 5px;
         box-shadow: inset 0px 0px 1px 1px #000000;
     }
