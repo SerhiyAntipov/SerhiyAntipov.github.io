@@ -230,6 +230,7 @@ body{
     
     #portfolio {
     padding-top: 10px;
+    margin: 7px 10px 20px;
     }
     
     
@@ -261,9 +262,8 @@ body{
 
 
 @media screen  and (max-width: 610px){
-     #slider_wrapp{
-        display: none;
-    }  
+    
+    
     #sidebar li{
           width: 85px;
         height: 100px;
@@ -291,7 +291,11 @@ body{
 }
 
 @media screen  and (max-width: 481px){
-     #sidebar li{
+    #portfolio {
+    margin: 7px 5px 20px;
+    }
+    
+    #sidebar li{
           width: 70px;
         height: 85px;
     }
@@ -319,6 +323,16 @@ body{
 
 }
 
+
+@media screen  and (max-width: 410px){
+    #slider_wrapp{
+        display: none;
+    } 
+    
+}
+
+
+
 @media screen  and (max-width: 479px){
     #sidebar li{
           width: 55px;
@@ -344,6 +358,7 @@ body{
 }
 
 @media screen  and (max-width: 359px){
+        
     #sidebar li{
         width: 45px;
         height: 55px;
