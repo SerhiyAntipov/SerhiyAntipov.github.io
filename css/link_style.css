@@ -14,7 +14,7 @@
 
 #sidebar ul:hover li{
     background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-    box-shadow: inset 0px 0px 2px 2px #000000;
+   box-shadow: inset 0px 1px 2px 1px #000000c4;
     width: 177px;
     transition: 0.2s;
 }
@@ -78,7 +78,11 @@
     #sidebar_ul li:hover{
         height: 100px;
     }
-    
+        
+    #sidebar ul:hover li {
+      box-shadow: inset 0px 0px 1px 1px #000000c4;
+    }
+      
     #link_html{
         background: url(../img/link_html_02.png) no-repeat;
     }

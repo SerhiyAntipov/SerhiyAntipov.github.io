@@ -1,7 +1,7 @@
-#slider_wrapp{
+#slider_wrapp {
     text-align: center;
-    box-sizing: border-box;
     margin: 0 auto;
+      
 }
 
 .slider{
@@ -9,16 +9,20 @@
 	width: 90%;
 	position: relative;
 	display: inline-block;
+    margin-top: 2%;
+/*
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    border-radius: 5px;
+*/
 }
 
 .sliderPage{
-	width: 100px;
-	height: 60px;
-	display: inline-block;
-	position: absolute;
-	vertical-align: middle;
-	border-radius: 3px;
-    
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #424242;
+    box-shadow: 0 8px 12px 6px #11131891;
+    transition: all ease 0.5s;
+    border: 1px solid #595d65;
 }
 
 .sliderPage a{
@@ -38,7 +42,7 @@
 [position = '1']{
 	height: 50%;
     width: 25%;
-    left: 17%;
+    left: 18.5%;
     top: 10%;
     z-index: 4;
 }
@@ -46,16 +50,16 @@
 [position = '2']{
 	height: 40%;
     width: 20%;
-    left: 0;
-    top: 15%;
+    left: 2%;
+    top: 17%;
     z-index: 6;
 }
 
 [position = '3']{
 	height: 50%;
     width: 25%;
-    left: 13%;
-    top: 19%;
+    left: 16%;
+    top: 23%;
     z-index: 8;
 }
 
@@ -63,40 +67,32 @@
 	height: 60%;
     width: 30%;
     left: 35%;
-    top: 30%;
+    top: 32%;
     z-index: 10;
 }
 
 [position = '5']{
 	height: 50%;
     width: 25%;
-    right: 13%;
-    top: 19%;
+    right: 16%;
+    top: 23%;
     z-index: 8;
 }
 
 [position = '6']{
 	height: 40%;
     width: 20%;
-    right: 0;
-    top: 15%;
+    right: 2%;
+    top: 17%;
     z-index: 6;
 }
 
 [position = '7']{
 	height: 50%;
     width: 25%;
-    right: 17%;
+    right: 18.5%;
     top: 10%;
     z-index: 2;
-}
-
-.sliderPage{
-	border: 1px solid #808080;
-    box-sizing: border-box;
-	box-shadow: 0 3px 5px 4px;
-	color: #00000080;
-	transition: all ease 0.5s;
 }
 
 #sl00{

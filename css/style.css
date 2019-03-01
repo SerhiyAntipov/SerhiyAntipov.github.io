@@ -9,10 +9,8 @@ body{
 #wrapper{
 	max-width: 960px;
     min-width: 320px;
-    box-sizing: border-box;
-	margin: 0 auto;
+   	margin: 0 auto;
 	overflow: hidden;
-	border: 1px solid #aaaaaa;
 	position: relative;
     color: #e6e6e6;
     font: 16px bold Calibri, sans-serif;
@@ -99,20 +97,22 @@ body{
     vertical-align: top;
 }
 
-#slider_wrapp{
-    margin-top: 20px;
-}
-
-
 #portfolio{
 	text-align: center;
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    border-radius: 5px;
+    margin: 0 10px 10px;
 }
 
 #portfolio a{
 	margin: 2%;
+    padding: 1%;
     display: inline-block;
-	width: 45%;
+    width: 45%;
     box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 1px #000000c4;
+    overflow: hidden;
 }
 
 #portfolio img{
@@ -142,7 +142,7 @@ body{
     display: table-cell;
     width: 115px;
     background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-    padding: 10px 0 ;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -153,12 +153,12 @@ body{
 
 #social a{
 	display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 3px;
     background: linear-gradient( 0deg, #1e1e20, #808792);
     border-top: 1px solid #b1b3c0;
-    margin: 3px;
+    margin: 2px;
     box-shadow: 0px 0px 1px 2px #0000007d;
 }
 
