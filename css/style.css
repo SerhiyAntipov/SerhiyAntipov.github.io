@@ -323,16 +323,6 @@ body{
 
 }
 
-
-@media screen  and (max-width: 410px){
-    #slider_wrapp{
-        display: none;
-    } 
-    
-}
-
-
-
 @media screen  and (max-width: 479px){
     #sidebar li{
           width: 55px;
@@ -357,8 +347,35 @@ body{
     }
 }
 
+
+
+@media screen  and (max-width: 410px){
+    .slider_list_ul {
+        width: 340px;
+    }
+    .slider_list_ul li {
+        width: 60px;
+    }
+    #slider >.active {
+        width: 340px;
+        height: 225px;
+        margin-top: 5px;
+    }
+    
+}
+
+
+
 @media screen  and (max-width: 359px){
-        
+     #slider_wrapp{
+        display: none;
+    }  
+    
+    #slider_wrapp{
+        display: none;
+    }  
+    
+    
     #sidebar li{
         width: 45px;
         height: 55px;
