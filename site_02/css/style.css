@@ -713,7 +713,7 @@ time p{
     
     nav a::before{
         position: absolute;
-        left: 5px;
+        left: 11px;
         top: 9px;
     }
     
@@ -734,13 +734,22 @@ time p{
     
     nav{
         display: none;
+        height: 0;
     }
     
-    #burger:checked + nav{
+    #burger:checked ~ .nav{
         display:block;
+        height: auto;
+        transition: 0.5s all;
     }
-    label_burger[:checked]{
-        background: url(../images/nav_hover.png)
+    
+    #burger:checked ~ #label_burger{
+        background: url(../images/nav_hover.png)no-repeat;
+        background-size: auto;
+        background-position: 5px 5px;
+        transition: 0.5s all;
+        color: rgb(19, 197, 255);
     }
-   
+    
+ 
 }
