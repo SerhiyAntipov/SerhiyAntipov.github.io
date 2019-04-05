@@ -1,0 +1,186 @@
+@import "reset.css";
+@import "slider.css";
+
+@font-face {
+    font-family: Ballpark;
+    src: url(../fonts/BALLW.ttf); 
+}
+
+@font-face {
+    font-family: JustMeAgainDownHere;
+    src: url(../fonts/JustMeAgainDownHere.ttf); 
+}
+
+body{
+    background: url(../images/body_bg.jpg);
+}
+
+#wrapper{
+    max-width: 980px;
+    min-width: 320px;
+    margin: 20px auto;
+}
+
+#notepad_leather{
+    padding: 10px 10px 20px;
+    box-sizing: border-box;
+    background: url(../images/wpapper_bg.jpg);
+    border-radius: 10px;
+    border: 1px solid rgb(98, 45, 20);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.notepad_stitching{
+    min-height: 100px;
+    border-radius: 10px;
+    border: 10px dashed  transparent;
+    border-image: url(../images/border_wrapper.png) 10 round round;
+    
+}
+
+
+header{
+    height: 75px;
+    background: url(../images/header_bg.jpg) no-repeat;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0,1);
+    position: relative;
+}
+
+#logo{
+    background: url(../images/logotype_01.png) no-repeat;
+    height: 55px;
+    width: 200px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+
+#header_left_side{
+    position: relative;
+    float: right;
+    margin-top: 27px;
+}
+
+#logo_twitter{
+    width: 30px;
+    height: 23px;
+    background: url(../images/twitter.png) no-repeat;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+
+#header_search{
+    background-color: rgba(31, 9, 0, 0.6);
+    border-radius: 12px;
+    width: 140px;
+    height: 23px;
+    outline:0;
+    border: none;
+    padding: 0 10px;
+    box-shadow: 0px 1px 0px 0px rgba(127, 79, 58, 1),inset 0px 3px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+#search{
+    background: url(../images/search.png) no-repeat;
+    height: 14px;
+    width: 14px;
+    border: none;
+    outline:0;
+    position: absolute;
+    right: 6px;
+    bottom: 4px;
+}
+
+main{
+   background: repeating-linear-gradient(#fbf7e9 0px, #fbf7e9 20px, rgba(0,0,0,0.1) 22px);
+    background-color: #fbf7e9;
+    border-bottom-left-radius: 200px 20px;
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.3), 0 3px 0px -1px #fbf7e9, 
+        0 4px 1px 0px rgba(0, 0, 0, 0.3), 0 7px 0px -2px #fbf7e9, 
+        0px 8px 3px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+}
+
+
+#torn_paper{
+    height: 19px;
+    background: url(../images/torn_paper.png) no-repeat;
+    background-position: bottom center;
+}
+
+nav{
+    margin: 10px 0 10px 50px;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav li:first-child{
+    margin-left: 0;
+}
+
+nav li a{
+    font-size: 30px;
+    font-family: "Just Me Again Down Here";
+    color: #293f94;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #5a7dff;
+/*    transition: all 0.5s;*/
+}
+
+footer{
+    font-size: 12px;
+    font-family: "Verdana";
+    color: rgb(154, 105, 88);
+    text-align: center;
+}
+
+footer div{
+    background-color: #fbf7e9;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,0.3);
+    position: relative;  
+}
+
+
+
+#papper_01{
+   line-height: 45px;
+}
+
+#papper_02{
+    height: 100px;
+    margin-top: -100px;
+    z-index: -1;
+    transform: rotate(-2deg);
+    margin-left: 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
