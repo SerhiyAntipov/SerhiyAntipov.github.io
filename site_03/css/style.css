@@ -19,6 +19,8 @@ body{
     max-width: 980px;
     min-width: 320px;
     margin: 20px auto;
+    padding: 0px 12px;
+    box-sizing: border-box;
 }
 
 #notepad_leather{
@@ -105,7 +107,7 @@ main{
         0 4px 1px 0px rgba(0, 0, 0, 0.3), 0 7px 0px -2px #fbf7e9, 
         0px 8px 3px 3px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
     
 }
 
@@ -131,7 +133,7 @@ nav li:first-child{
 
 nav li a{
     font-size: 30px;
-    font-family: "Just Me Again Down Here";
+    font-family: "JustMeAgainDownHere";
     color: #293f94;
     text-decoration: none;
 }
@@ -173,10 +175,46 @@ footer div{
 
 
 
+@media screen and (max-width: 600px) {
+    header{
+        padding: 0 10px;    
+    }
+        
+    nav {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    nav li:first-child {
+        margin-left: 12px;
+    }
+    nav li {
+        margin: 0 12px;
+        
+    }
+    
+    #left_arrow,  #right_arrow{
+        background-size: contain;
+        width: 85px;
+    }
+    #right_arrow {
+        right: -51px;
+    }
+    #left_arrow {
+        left: -51px;
+    }
+}
 
 
 
-
+@media screen and (max-width: 480px) {
+    header{
+        text-align: center;  
+    }
+    #header_left_side{
+        display: none;
+    }
+}
 
 
 

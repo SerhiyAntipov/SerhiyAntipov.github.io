@@ -30,7 +30,6 @@
     height: 270px;
     margin: 20px 20px 0;
     background-color: #ffffff;
-    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
     position: relative;
 }
 
@@ -40,6 +39,7 @@
     position: absolute;
     top: 0;
     display: none;
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .arrow{
@@ -82,6 +82,9 @@
 }
 
 /*background img*/
+
+
+
 #img_01{
     background: url(../images/001.jpg) center center/ auto no-repeat;
 }
