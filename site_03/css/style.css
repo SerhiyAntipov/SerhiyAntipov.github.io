@@ -192,17 +192,6 @@ footer div{
         margin: 0 12px;
         
     }
-    
-    #left_arrow,  #right_arrow{
-        background-size: contain;
-        width: 85px;
-    }
-    #right_arrow {
-        right: -51px;
-    }
-    #left_arrow {
-        left: -51px;
-    }
 }
 
 

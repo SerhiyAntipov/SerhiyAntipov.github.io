@@ -11,12 +11,12 @@
    display: none;
 }
 
-.slider_control{
+.slider_active{
     text-align: center;
     padding: 5px 0;
 }
 
-.slider_control label{
+.slider_active label{
     height: 13px;
     width: 13px;
     border-radius: 7px;
@@ -25,6 +25,11 @@
     box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
+
+.slider_active label:nth-child(3) {
+     width: 26px;
+}
+
 
 #slider{
     height: 270px;
@@ -42,33 +47,45 @@
     box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
-.arrow{
+.slider_arrow label{
     width: 105px;
     height: 47px;
     position: absolute;
-    top: 130px;
     cursor: pointer;
     z-index: 5;
+    display: none;
 }
 
-#left_arrow{
-    background: url(../images/arrow_left.png) no-repeat;
+
+/*style slider_arrow left adn right*/
+#radio_01:checked ~ .slider_arrow label:nth-child(5),
+#radio_02:checked ~ .slider_arrow label:nth-child(1),
+#radio_03:checked ~ .slider_arrow label:nth-child(2),
+#radio_04:checked ~ .slider_arrow label:nth-child(3),
+#radio_05:checked ~ .slider_arrow label:nth-child(4){
+    background: url(../images/arrow_left_02.png) no-repeat;
+    top: 130px;
     left: -52px;
+    display: block;
 }
 
-#right_arrow{
-    background: url(../images/arrow_right.png) no-repeat;
+#radio_01:checked ~ .slider_arrow label:nth-child(2),
+#radio_02:checked ~ .slider_arrow label:nth-child(3),
+#radio_03:checked ~ .slider_arrow label:nth-child(4),
+#radio_04:checked ~ .slider_arrow label:nth-child(5),
+#radio_05:checked ~ .slider_arrow label:nth-child(1){
+    background: url(../images/arrow_right_02.png) no-repeat;
+    top: 130px;
     right: -52px;
- }
-
-
+    display: block;
+}
 
 /*change background selected label*/
-#radio_01:checked ~ .slider_control label:nth-child(1),
-#radio_02:checked ~ .slider_control label:nth-child(2),
-#radio_03:checked ~ .slider_control label:nth-child(3),
-#radio_04:checked ~ .slider_control label:nth-child(4),
-#radio_05:checked ~ .slider_control label:nth-child(5){
+#radio_01:checked ~ .slider_active label:nth-child(1),
+#radio_02:checked ~ .slider_active label:nth-child(2),
+#radio_03:checked ~ .slider_active label:nth-child(3),
+#radio_04:checked ~ .slider_active label:nth-child(4),
+#radio_05:checked ~ .slider_active label:nth-child(5){
      background-color: #9a0e0e;
 }
 
@@ -82,9 +99,6 @@
 }
 
 /*background img*/
-
-
-
 #img_01{
     background: url(../images/001.jpg) center center/ auto no-repeat;
 }
@@ -103,4 +117,35 @@
 
 #img_05{
     background: url(../images/005.jpg) center center/ auto no-repeat;
+}
+
+
+@keyframes slidering {
+    0%, 10% {background: url(../images/003.jpg) center center/ auto no-repeat;}
+    20%, 30% {background: url(../images/004.jpg) center center/ auto no-repeat;}
+    40%, 50% {background: url(../images/005.jpg) center center/ auto no-repeat;}
+    60%, 70% {background: url(../images/001.jpg) center center/ auto no-repeat;}
+    80%, 90% {background: url(../images/002.jpg) center center/ auto no-repeat;}
+}
+
+@keyframes animated_progress {
+    0%,10%{background-position-x: -26px;}
+    20%,30%{background-position-x: -21px;}
+    40%,50%{background-position-x: -16px;}
+    60%,70%{background-position-x: -11px;}
+    80%,90%{background-position-x: -6px;}
+    100%{background-position-x: -0px;}
+}
+
+
+#radio_03:checked ~ #slider .slider_img:nth-child(3){
+   animation: slidering 30s infinite ease; 
+}
+
+
+#radio_03:checked ~ .slider_active label:nth-child(3){
+    animation: animated_progress 30s infinite ease;
+    background: url(../images/progress_01.png) no-repeat;
+    background-size: cover;
+    background-color: #9a0e0e;
 }
