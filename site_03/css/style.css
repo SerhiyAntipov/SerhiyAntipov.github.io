@@ -299,11 +299,15 @@ aside {
 .aside_title {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 56px;
+}
+
+.aside_title p{
+     font-size: 56px;
     font-family: "Just Me Again Down Here";
     color: #293f94;
     line-height: 1.2;
 }
+
 .clip {
     width: 57px;
     height: 57px;
