@@ -1,5 +1,5 @@
 #slider_wrapper{
-    background-color: #ffffff;
+    background-color: #eae8dc;
     border: 1px solid transparent;
     margin: 0 20px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
@@ -24,10 +24,6 @@
     display: inline-block;
     box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.6);
     cursor: pointer;
-}
-
-.slider_active label:nth-child(3) {
-     width: 26px;
 }
 
 
@@ -57,7 +53,7 @@
 }
 
 
-/*style slider_arrow left adn right*/
+/*style slider_arrow left adn right --------------------*/
 #radio_01:checked ~ .slider_arrow label:nth-child(5),
 #radio_02:checked ~ .slider_arrow label:nth-child(1),
 #radio_03:checked ~ .slider_arrow label:nth-child(2),
@@ -80,7 +76,7 @@
     display: block;
 }
 
-/*change background selected label*/
+/*change background selected label --------------------*/
 #radio_01:checked ~ .slider_active label:nth-child(1),
 #radio_02:checked ~ .slider_active label:nth-child(2),
 #radio_03:checked ~ .slider_active label:nth-child(3),
@@ -89,7 +85,7 @@
      background-color: #9a0e0e;
 }
 
-/*show img selected*/
+/*show img selected --------------------*/
 #radio_01:checked ~ #slider .slider_img:nth-child(1),
 #radio_02:checked ~ #slider .slider_img:nth-child(2),
 #radio_03:checked ~ #slider .slider_img:nth-child(3),
@@ -98,34 +94,39 @@
     display: block;
 }
 
-/*background img*/
+/*background img --------------------*/
 #img_01{
-    background: url(../images/001.jpg) center center/ auto no-repeat;
+    background: url(../images/slider_001.jpg) center center/ auto no-repeat;
 }
 
 #img_02{
-    background: url(../images/002.jpg) center center/ auto no-repeat;
+    background: url(../images/slider_002.jpg) center center/ auto no-repeat;
 }
 
 #img_03{
-    background: url(../images/003.jpg) center center/ auto no-repeat;
+    background: url(../images/slider_003.jpg) center center/ auto no-repeat;
 }
 
 #img_04{
-    background: url(../images/004.jpg) center center/ auto no-repeat;
+    background: url(../images/slider_004.jpg) center center/ auto no-repeat;
 }
 
 #img_05{
-    background: url(../images/005.jpg) center center/ auto no-repeat;
+    background: url(../images/slider_005.jpg) center center/ auto no-repeat;
 }
 
+/*slider css animation --------------------*/
+
+.slider_active label:nth-child(3) {
+     width: 26px;
+}
 
 @keyframes slidering {
-    0%, 10% {background: url(../images/003.jpg) center center/ auto no-repeat;}
-    20%, 30% {background: url(../images/004.jpg) center center/ auto no-repeat;}
-    40%, 50% {background: url(../images/005.jpg) center center/ auto no-repeat;}
-    60%, 70% {background: url(../images/001.jpg) center center/ auto no-repeat;}
-    80%, 90% {background: url(../images/002.jpg) center center/ auto no-repeat;}
+    0%, 10% {background: url(../images/slider_003.jpg) center center/ auto no-repeat;}
+    20%, 30% {background: url(../images/slider_004.jpg) center center/ auto no-repeat;}
+    40%, 50% {background: url(../images/slider_005.jpg) center center/ auto no-repeat;}
+    60%, 70% {background: url(../images/slider_001.jpg) center center/ auto no-repeat;}
+    80%, 90% {background: url(../images/slider_002.jpg) center center/ auto no-repeat;}
 }
 
 @keyframes animated_progress {
