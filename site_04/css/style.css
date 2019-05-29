@@ -356,8 +356,32 @@ display: inline-block;
 
 .country-up-list, .country-to-list{
     position: absolute;
-    width: 150px;
+    width: 140px;
+    background-color: #add2e5;
+    margin-top: 5px;
+    margin-left: 5px;
 } 
+
+.new-up-list, .new-to-list{
+    border-radius: 5px;
+    border: 2px solid #7ebee0;
+    padding: 3px;
+    margin-bottom: 3px;
+    color: #127ea5;
+    cursor: pointer;
+    background-color: #dceaf1;
+}
+
+.new-up-list:hover, .new-to-list:hover{
+    color: black;
+    box-shadow: 0 0 3px 1px rgba(18,126,165, 0.7);
+   
+}
+
+.new-up-list:last-child,
+new-to-list:last-child{
+    margin-bottom: 0;
+}
 
 
 .button-form-map, .map-search{

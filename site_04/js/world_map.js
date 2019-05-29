@@ -477,7 +477,7 @@ window.onload = function() {
     s['YE'][0] = Array(5961, 5576, 5970, 5563, 5987, 5559, 5993, 5541, 6028, 5526, 6035, 5513, 6018, 5514, 6019, 5497, 6040, 5473, 6040, 5441, 5988, 5412, 5960, 5411, 5956, 5436, 5944, 5440, 5937, 5487, 5961, 5576);
     s['YE'][1] = Array(6195, 5349, 6185, 5373, 6215, 5439, 6200, 5448, 6194, 5473, 6123, 5506, 6100, 5528, 6022, 5554, 6004, 5574, 5965, 5575, 5972, 5559, 5988, 5562, 5993, 5544, 6029, 5526, 6034, 5514, 6019, 5513, 6020, 5496, 6043, 5465, 6106, 5386, 6195, 5349);
 
-    function WorldMap(options) {
+    function WorldMap(divs) {
 
         var xhtmlNS = "http://www.w3.org/1999/xhtml";
         var svgNS = "http://www.w3.org/2000/svg";
@@ -485,37 +485,37 @@ window.onload = function() {
 
         var svg = document.createElementNS(svgNS, "svg:svg");
 
-        if (options['width'] == undefined) options['width'] = 320;
-        if (options['height'] == undefined) options['height'] = 240;
+        if (divs['width'] == undefined) divs['width'] = 320;
+        if (divs['height'] == undefined) divs['height'] = 240;
 
 
         var top = 0;
-        if (options["top"] != undefined) top = (options['height'] * options['top'] / 100);
+        if (divs["top"] != undefined) top = (divs['height'] * divs['top'] / 100);
         var left = 0;
-        if (options["left"] != undefined) left = (options['width'] * options['left'] / 100);
+        if (divs["left"] != undefined) left = (divs['width'] * divs['left'] / 100);
         var right = 0;
-        if (options["right"] != undefined) right = (options['width'] * options['right'] / 100);
+        if (divs["right"] != undefined) right = (divs['width'] * divs['right'] / 100);
         var bottom = 0;
-        if (options["bottom"] != undefined) bottom = (options['height'] * options['bottom'] / 100);
-        var width = options['width'] + left + right;
-        var height = options['height'] + top + bottom;
+        if (divs["bottom"] != undefined) bottom = (divs['height'] * divs['bottom'] / 100);
+        var width = divs['width'] + left + right;
+        var height = divs['height'] + top + bottom;
 
         var kw = width / 9999;
         var kh = height / 9999;
 
-        svg.setAttributeNS(null, 'width', options['width']);
-        svg.setAttributeNS(null, 'height', options['height']);
+        svg.setAttributeNS(null, 'width', divs['width']);
+        svg.setAttributeNS(null, 'height', divs['height']);
 
         for (k in s) {
             var g = document.createElementNS(svgNS, 'g');
             g.setAttributeNS(null, 'id', k);
-            if (options['clickhandler']) g.setAttributeNS(null, 'onclick', options['clickhandler'] + '(\'' + k + '\')');
-            if (options['overhandler']) g.setAttributeNS(null, 'onmouseover', options['overhandler'] + '(\'' + k + '\')');
-            if (options['outhandler']) g.setAttributeNS(null, 'onmouseout', options['outhandler'] + '(\'' + k + '\')');
-            if (options['c'] == undefined) g.className.baseVal = 'worldmap';
+            if (divs['clickhandler']) g.setAttributeNS(null, 'onclick', divs['clickhandler'] + '(\'' + k + '\')');
+            if (divs['overhandler']) g.setAttributeNS(null, 'onmouseover', divs['overhandler'] + '(\'' + k + '\')');
+            if (divs['outhandler']) g.setAttributeNS(null, 'onmouseout', divs['outhandler'] + '(\'' + k + '\')');
+            if (divs['c'] == undefined) g.className.baseVal = 'worldmap';
             else {
-                if (options['c'][k] == undefined) g.className.baseVal = 'worldmap';
-                else g.className.baseVal = 'worldmap_' + options['c'][k];
+                if (divs['c'][k] == undefined) g.className.baseVal = 'worldmap';
+                else g.className.baseVal = 'worldmap_' + divs['c'][k];
             }
 
             for (k1 in s[k]) {
@@ -540,8 +540,8 @@ window.onload = function() {
             svg.appendChild(g);
         }
 
-        if (options['element'] != undefined) {
-            var parent = document.getElementById(options['element']);
+        if (divs['element'] != undefined) {
+            var parent = document.getElementById(divs['element']);
             if (parent) parent.appendChild(svg)
         }
     }
@@ -757,11 +757,11 @@ window.onload = function() {
                     if (arrCountry.countryName[i].slice(0, uvl).toLowerCase() == litleConntryName) {
                         countryUpList.style.display = 'block';
                         var idNum = arrCountry.id[i]
-                        countryUpList.insertAdjacentHTML('beforeend', '<option class="new-up-list" value="' + arrCountry.countryName[i] + '"' + ' idNum="' + idNum + '">' + arrCountry.countryName[i] + '</option>');
+                        countryUpList.insertAdjacentHTML('beforeend', '<div class="new-up-list" value="' + arrCountry.countryName[i] + '"' + ' idNum="' + idNum + '">' + arrCountry.countryName[i] + '</div>');
                     }
                 }
                 newUpList = document.querySelectorAll('.new-up-list');
-                countryUpList.setAttribute('size', newUpList.length + 1);
+                countryUpList.setAttribute('size', newUpList.length);
             }
         });
 
@@ -818,7 +818,7 @@ window.onload = function() {
                     if (arrCountry.countryName[i].slice(0, uvl2).toLowerCase() == litleConntryName) {
                         countryToList.style.display = 'block';
                         var idNum = arrCountry.id[i]
-                        countryToList.insertAdjacentHTML('beforeend', '<option class="new-to-list" value="' + arrCountry.countryName[i] + '"' + ' idNum="' + idNum + '">' + arrCountry.countryName[i] + '</option>');
+                        countryToList.insertAdjacentHTML('beforeend', '<div class="new-to-list" value="' + arrCountry.countryName[i] + '"' + ' idNum="' + idNum + '">' + arrCountry.countryName[i] + '</div>');
                     }
                 }
                 newToList = document.querySelectorAll('.new-to-list');
