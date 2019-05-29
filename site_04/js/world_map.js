@@ -545,16 +545,12 @@ window.onload = function() {
             if (parent) parent.appendChild(svg)
         }
     }
-
-
-    //        var map = new WorldMap({
-    //            element: 'worldmap',
-    //            width: 800,
-    //            height: 600,
-    //    
-    //        });
-
-
+    //            var map = new WorldMap({
+    //                element: 'worldmap',
+    //                width: 800,
+    //                height: 600,
+    //        
+    //            });
 
 
     //    my notes ---------------------
@@ -562,83 +558,74 @@ window.onload = function() {
         "id": ["AE", "AF", "AL", "AM", "AO", "AQ", "AR", "AT", "AU", "AZ", "BA", "BD", "BE", "BF", "BG", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CF", "CG", "CH", "CI", "CL", "CM", "CN", "CO", "CR", "CU", "CY", "CZ", "DE", "DJ", "DK", "DO", "DZ", "EC", "EE", "EG", "EH", "ES", "ET", "FI", "FK", "FR", "GA", "GB", "GE", "GF", "GH", "GL", "GM", "GN", "GP", "GQ", "GR", "GT", "GW", "GY", "HN", "HR", "HT", "HU", "ID", "IL", "IN", "IQ", "IR", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KM", "KP", "KR", "KW", "KZ", "LA", "LB", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MD", "ME", "MG", "MK", "ML", "MM", "MN", "MR", "MU", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PT", "PY", "QA", "RE", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SD", "SE", "SI", "SK", "SL", "SN", "SO", "SR", "ST", "SV", "SY", "SZ", "TD", "TG", "TH", "TJ", "TL", "TM", "TN", "TR", "TT", "TZ", "UA", "UG", "US", "UY", "UZ", "VE", "VN", "VU", "YE", "ZA", "ZM", "ZW"],
         "countryName": ["UAE", "Afghanistan", "Albania", "Armenia", "Angola", "Antarctica", "Argentina", "Austria", "Australia", "Azerbaijan", "Bosnia and Herzegovina", "Bangladesh", "Belgium", "Burkina Faso", "Bulgaria", "Burundi", "Benin", "Brunei", "Bolivia", "Brazil", "Bahamas", "Butane", "Botswana", "Belorussia", "Belize", "Canada", "DR Congo", "CAR", "Republic of the Congo", "Switzerland", "Cote d'Ivoire", "Chile", "Cameroon", "China", "Colombia", "Costa Rica", "Cuba", "Cyprus", "Czech", "Germany", "Djibouti", "Denmark", "Dominican Republic", "Algeria", "Ecuador", "Estonia", "Egypt", "SADR", "Spain", "Ethiopia", "Finland", "Falkland islands", "France", "Gabon", "Great Britain", "Georgia", "Guiana", "Ghana", "Greenland", "Gambia", "Guinea", "Guadeloupe", "Equatorial Guinea", "Greece", "Guatemala", "Guinea bissau", "Guyana", "Honduras", "Croatia", "Haiti", "Hungary", "Indonesia", "Israel", "India", "Iraq", "Iran", "Iceland", "Italy", "Jamaica", "Jordan", "Japan", "Kenya", "Kyrgyzstan", "Cambodia", "Comoros", "North Korea", "Republic of Korea", "Kuwait", "Kazakhstan", "Laos", "Lebanon", "Sri Lanka", "Liberia", "Lesotho", "Lithuania", "Luxembourg", "Latvia", "Libya", "Morocco", "Moldavia", "Montenegro", "Madagascar", "North Macedonia", "Mali", "Myanmar", "Mongolia", "Mauritania", "Mauritius", "Malawi", "Mexico", "Malaysia", "Mozambique", "Namibia", "Niger", "Nigeria", "Nicaragua", "Netherlands", "Norway", "Nepal", "New Zealand", "Oman", "Panama", "Peru", "Papua New Guinea", "Philippines", "Pakistan", "Poland", "Portugal", "Paraguay", "Qatar", "Reunion", "Romania", "Serbia", "Russia", "Rwanda", "Saudi Arabia", "Solomon islands", "Seychelles", "Sudan", "Sweden", "Slovenia", "Slovakia", "Sierra Leone", "Senegal", "Somalia", "Suriname", "Sao Tome and Principe", "Salvador", "Syria", "Esvatini", "Chad", "Togo", "Thailand", "Tajikistan", "East Timor", "Turkmenistan", "Tunisia", "Turkey", "Trinidad and Tobago", "Tanzania", "Ukraine", "Uganda", "USA", "Uruguay", "Uzbekistan", "Venezuela", "Vietnam", "Vanuatu", "Yemen", "South Africa", "Zambia", "Zimbabwe"],
         "link": ["https://en.wikipedia.org/wiki/United_Arab_Emirates", "https://en.wikipedia.org/wiki/Afghanistan", "https://en.wikipedia.org/wiki/Albania", "https://en.wikipedia.org/wiki/Armenia", "https://en.wikipedia.org/wiki/Angola", "https://en.wikipedia.org/wiki/Antarctica", "https://en.wikipedia.org/wiki/Argentina", "https://en.wikipedia.org/wiki/Austria", "https://en.wikipedia.org/wiki/Australia", "https://en.wikipedia.org/wiki/Azerbaijan", "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina", "https://en.wikipedia.org/wiki/Bangladesh", "https://en.wikipedia.org/wiki/Belgium", "https://en.wikipedia.org/wiki/Burkina_Faso", "https://en.wikipedia.org/wiki/Bulgaria", "https://en.wikipedia.org/wiki/Burundi", "https://en.wikipedia.org/wiki/Benin", "https://en.wikipedia.org/wiki/Brunei", "https://en.wikipedia.org/wiki/Bolivia", "https://en.wikipedia.org/wiki/Brazil", "https://en.wikipedia.org/wiki/The_Bahamas", "https://en.wikipedia.org/wiki/Bhutan", "https://en.wikipedia.org/wiki/Botswana", "https://en.wikipedia.org/wiki/Belarus", "https://en.wikipedia.org/wiki/Belize", "https://en.wikipedia.org/wiki/Canada", "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo", "https://en.wikipedia.org/wiki/Central_African_Republic", "https://en.wikipedia.org/wiki/Republic_of_the_Congo", "https://en.wikipedia.org/wiki/Switzerland", "https://en.wikipedia.org/wiki/Ivory_Coast", "https://en.wikipedia.org/wiki/Chile", "https://en.wikipedia.org/wiki/Cameroon", "https://en.wikipedia.org/wiki/China", "https://en.wikipedia.org/wiki/Colombia", "https://en.wikipedia.org/wiki/Costa_Rica", "https://en.wikipedia.org/wiki/Cuba", "https://en.wikipedia.org/wiki/Cyprus", "https://en.wikipedia.org/wiki/Czech_Republic", "https://en.wikipedia.org/wiki/Germany", "https://en.wikipedia.org/wiki/Djibouti", "https://en.wikipedia.org/wiki/Denmark", "https://en.wikipedia.org/wiki/Dominican_Republic", "https://en.wikipedia.org/wiki/Algeria", "https://en.wikipedia.org/wiki/Ecuador", "https://en.wikipedia.org/wiki/Estonia", "https://en.wikipedia.org/wiki/Egypt", "https://en.wikipedia.org/wiki/Western_Sahara", "https://en.wikipedia.org/wiki/Spain", "https://en.wikipedia.org/wiki/Ethiopia", "https://en.wikipedia.org/wiki/Finland", "https://en.wikipedia.org/wiki/Falkland_Islands", "https://en.wikipedia.org/wiki/France", "https://en.wikipedia.org/wiki/Gabon", "https://en.wikipedia.org/wiki/United_Kingdom", "https://en.wikipedia.org/wiki/Georgia_(country)", "https://en.wikipedia.org/wiki/French_Guiana", "https://en.wikipedia.org/wiki/Ghana", "https://en.wikipedia.org/wiki/Greenland", "https://en.wikipedia.org/wiki/The_Gambia", "https://en.wikipedia.org/wiki/Guinea", "https://en.wikipedia.org/wiki/Guadeloupe", "https://en.wikipedia.org/wiki/Equatorial_Guinea", "https://en.wikipedia.org/wiki/Greece", "https://en.wikipedia.org/wiki/Guatemala", "https://en.wikipedia.org/wiki/Guinea-Bissau", "https://en.wikipedia.org/wiki/Guyana", "https://en.wikipedia.org/wiki/Honduras", "https://en.wikipedia.org/wiki/Croatia", "https://en.wikipedia.org/wiki/Haiti", "https://en.wikipedia.org/wiki/Hungary", "https://en.wikipedia.org/wiki/Indonesia", "https://en.wikipedia.org/wiki/Israel", "https://en.wikipedia.org/wiki/India", "https://en.wikipedia.org/wiki/Iraq", "https://en.wikipedia.org/wiki/Iran", "https://en.wikipedia.org/wiki/Iceland", "https://en.wikipedia.org/wiki/Italy", "https://en.wikipedia.org/wiki/Jamaica", "https://en.wikipedia.org/wiki/Jordan", "https://en.wikipedia.org/wiki/Japan", "https://en.wikipedia.org/wiki/Kenya", "https://en.wikipedia.org/wiki/Kyrgyzstan", "https://en.wikipedia.org/wiki/Cambodia", "https://en.wikipedia.org/wiki/Comoros", "https://en.wikipedia.org/wiki/North_Korea", "https://en.wikipedia.org/wiki/South_Korea", "https://en.wikipedia.org/wiki/Kuwait", "https://en.wikipedia.org/wiki/Kazakhstan", "https://en.wikipedia.org/wiki/Laos", "https://en.wikipedia.org/wiki/Lebanon", "https://en.wikipedia.org/wiki/Sri_Lanka", "https://en.wikipedia.org/wiki/Liberia", "https://en.wikipedia.org/wiki/Lesotho", "https://en.wikipedia.org/wiki/Lithuania", "https://en.wikipedia.org/wiki/Luxembourg", "https://en.wikipedia.org/wiki/Latvia", "https://en.wikipedia.org/wiki/Libya", "https://en.wikipedia.org/wiki/Morocco", "https://en.wikipedia.org/wiki/Moldova", "https://en.wikipedia.org/wiki/Montenegro", "https://en.wikipedia.org/wiki/Madagascar", "https://en.wikipedia.org/wiki/North_Macedonia", "https://en.wikipedia.org/wiki/Mali", "https://en.wikipedia.org/wiki/Myanmar", "https://en.wikipedia.org/wiki/Mongolia", "https://en.wikipedia.org/wiki/Mauritania", "https://en.wikipedia.org/wiki/Mauritius", "https://en.wikipedia.org/wiki/Malawi", "https://en.wikipedia.org/wiki/Mexico", "https://en.wikipedia.org/wiki/Malaysia", "https://en.wikipedia.org/wiki/Mozambique", "https://en.wikipedia.org/wiki/Namibia", "https://en.wikipedia.org/wiki/Niger", "https://en.wikipedia.org/wiki/Nigeria", "https://en.wikipedia.org/wiki/Nicaragua", "https://en.wikipedia.org/wiki/Netherlands", "https://en.wikipedia.org/wiki/Norway", "https://en.wikipedia.org/wiki/Nepal", "https://en.wikipedia.org/wiki/New_Zealand", "https://en.wikipedia.org/wiki/Oman", "https://en.wikipedia.org/wiki/Panama", "https://en.wikipedia.org/wiki/Peru", "https://en.wikipedia.org/wiki/Papua_New_Guinea", "https://en.wikipedia.org/wiki/Philippines", "https://en.wikipedia.org/wiki/Pakistan", "https://en.wikipedia.org/wiki/Poland", "https://en.wikipedia.org/wiki/Portugal", "https://en.wikipedia.org/wiki/Paraguay", "https://en.wikipedia.org/wiki/Qatar", "https://en.wikipedia.org/wiki/R%C3%A9union", "https://en.wikipedia.org/wiki/Romania", "https://en.wikipedia.org/wiki/Serbia", "https://en.wikipedia.org/wiki/Russia", "https://en.wikipedia.org/wiki/Rwanda", "https://en.wikipedia.org/wiki/Saudi_Arabia", "https://en.wikipedia.org/wiki/Solomon_Islands", "https://en.wikipedia.org/wiki/Seychelles", "https://en.wikipedia.org/wiki/Sudan", "https://en.wikipedia.org/wiki/Sweden", "https://en.wikipedia.org/wiki/Slovenia", "https://en.wikipedia.org/wiki/Slovakia", "https://en.wikipedia.org/wiki/Sierra_Leone", "https://en.wikipedia.org/wiki/Senegal", "https://en.wikipedia.org/wiki/Somalia", "https://en.wikipedia.org/wiki/Suriname", "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe", "https://en.wikipedia.org/wiki/El_Salvador", "https://en.wikipedia.org/wiki/Syria", "https://en.wikipedia.org/wiki/Eswatini", "https://en.wikipedia.org/wiki/Chad", "https://en.wikipedia.org/wiki/Togo", "https://en.wikipedia.org/wiki/Thailand", "https://en.wikipedia.org/wiki/Tajikistan", "https://en.wikipedia.org/wiki/East_Timor", "https://en.wikipedia.org/wiki/Turkmenistan", "https://en.wikipedia.org/wiki/Tunisia", "https://en.wikipedia.org/wiki/Turkey", "https://en.wikipedia.org/wiki/Trinidad_and_Tobago", "https://en.wikipedia.org/wiki/Tanzania", "https://en.wikipedia.org/wiki/Ukraine", "https://en.wikipedia.org/wiki/Uganda", "https://en.wikipedia.org/wiki/United_States", "https://en.wikipedia.org/wiki/Uruguay", "https://en.wikipedia.org/wiki/Uzbekistan", "https://en.wikipedia.org/wiki/Venezuela", "https://en.wikipedia.org/wiki/Vietnam", "https://en.wikipedia.org/wiki/Vanuatu", "https://en.wikipedia.org/wiki/Yemen", "https://en.wikipedia.org/wiki/South_Africa", "https://en.wikipedia.org/wiki/Zambia", "https://en.wikipedia.org/wiki/Zimbabwe"]
-    }
+    };
 
-    
-  //window resize map resolution-------------------      
-    window.onresize = function(event) {
-        var mapSvg = document.querySelector('svg')
-        mapSvg.remove();
-
-        if (event.target.outerWidth >= 1024) {
-            var map = new WorldMap({
-                element: 'worldmap',
-                width: 1024,
-                height: 768,
-            });
-        } else if (event.target.outerWidth < 1024 && event.target.outerWidth >= 800) {
-            var map = new WorldMap({
-                element: 'worldmap',
-                width: 800,
-                height: 600,
-            });
-        } else if (event.target.outerWidth < 800 && event.target.outerWidth >= 600) {
-            var map = new WorldMap({
-                element: 'worldmap',
-                width: 600,
-                height: 480,
-            });
-        } else if (event.target.outerWidth < 600 && event.target.outerWidth >= 480) {
-            var map = new WorldMap({
-                element: 'worldmap',
-                width: 480,
-                height: 320,
-            });
-        } else {
-            var map = new WorldMap({
-                element: 'worldmap',
-                width: 320,
-                height: 200,
-            });
-        }
+    //window start map resolution-------------------    
+    function startMapSize(w, h) {
+        var map = new WorldMap({
+            element: 'worldmap',
+            width: w,
+            height: h,
+        });
         mapControl();
     };
 
-    
-//window start map resolution-------------------    
-    if (outerWidth >= 1024) {
-        var map = new WorldMap({
-            element: 'worldmap',
-            width: 1024,
-            height: 768,
-        });
-    } else if (outerWidth < 1024 && outerWidth >= 800) {
-        var map = new WorldMap({
-            element: 'worldmap',
-            width: 800,
-            height: 600,
-        });
-    } else if (outerWidth < 800 && outerWidth >= 600) {
-        var map = new WorldMap({
-            element: 'worldmap',
-            width: 600,
-            height: 480,
-        });
-    } else if (outerWidth < 600 && outerWidth >= 480) {
-        var map = new WorldMap({
-            element: 'worldmap',
-            width: 480,
-            height: 320,
-        });
-    } else {
-        var map = new WorldMap({
-            element: 'worldmap',
-            width: 320,
-            height: 200,
-        });
-    }
+    resolution();
 
-    mapControl();
+    function resolution() {
+        if (window.innerWidth >= 1024) {
+            startMapSize(1024, 768);
+        } else if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+            startMapSize(800, 600);
+        } else if (window.innerWidth < 800 && window.innerWidth >= 640) {
+            startMapSize(640, 480);
+        } else if (window.innerWidth < 640 && window.innerWidth >= 480) {
+            startMapSize(480, 320);
+        } else {
+            startMapSize(320, 240);
+        };
+    };
+
+    //window rotate map resolution------------------- 
+    var orientation = window.screen.orientation.angle;
+    window.onresize = function(event) {
+
+        if (orientation != window.orientation) {
+            var mapSvg = document.querySelector('svg')
+            mapSvg.remove();
+
+            orientation = window.orientation;
+
+            resolution();
+        }
+    };
+
+    //    window rezize map resolution-------------------     
+    //     window.onresize = function (event){
+    //        function windowReSizeMapSize(w,h){
+    //        var mapSvg = document.querySelector('svg')
+    //        mapSvg.remove();
+    //        var map = new WorldMap({
+    //            element: 'worldmap',
+    //            width: w,
+    //            height: h,
+    //        });
+    //        mapControl();
+    //     };
+    //         
+    //       if (window.innerWidth >= 1024) {
+    //            windowReSizeMapSize(1024,768);
+    //        } else if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+    //            windowReSizeMapSize(800,600); 
+    //        } else if (window.innerWidth < 800 && window.innerWidth >= 640) {
+    //            windowReSizeMapSize(640,480); 
+    //        } else if (window.innerWidth < 640 && window.innerWidth >= 480) {
+    //           windowReSizeMapSize(480,320); 
+    //        } else {
+    //            windowReSizeMapSize(320,240); 
+    //        };     
+    //         
+    //     };
 
     function mapControl() {
 
@@ -709,7 +696,7 @@ window.onload = function() {
                 readTo.innerHTML = 'read from ' + countryName;
             };
         };
-        
+
         //country info window -----------------
         readUp.addEventListener('click', function() {
             window.open(arrCountry.link[numCountryUp], "new_window", "width=600px,height=300px,top=100px,left=100px");
