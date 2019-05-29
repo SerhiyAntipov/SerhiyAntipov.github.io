@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Tour</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_map.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header-main">
+            <div class="header-logo">
+                <h1>Safari Tour</h1>
+                <p>International Tour packages</p>
+            </div>
+            <nav class="nav-main">
+                <ul>
+                    <li><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Packages</a>
+                    </li>
+                    <li><a href="#">Flights</a>
+                    </li>
+                    <li><a href="#">Trains</a>
+                    </li>
+                    <li><a href="#">Reach us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="booking">
+            <h2 class="visibility-hidden">Online booking</h2>
+            <div class="booking-baner">
+                <h3>Singapore</h3>
+                <h4>Malaysia Singapore<br>Super Saver Summer 2019</h4>
+            </div>
+
+            <form action="#" name="booking-form" method="get" class="booking-form">
+                <h3>Online booking</h3>
+                <label for="booking-form-user">
+                    <span>Name :</span>
+                    <input type="text" id="booking-form-user" placeholder="enter your name" name="user-name" required>
+                </label>
+                <label for="booking-form-mail">
+                    <span>Email :</span>
+                    <input type="email" id="booking-form-mail" placeholder="enter your email" name="user-email" required>
+                </label>
+                <label for="booking-form-package" placeholder="select">
+                    <span>Package :</span>
+                    <select name="package" id="booking-form-package" required>
+                        <option>select package</option>
+                        <option value="African package">African package</option>
+                        <option value="American package">American package</option>
+                        <option value="Asian package">Asian package</option>
+                        <option value="Australian package">Australian package</option>
+                        <option value="European package">European package</option>
+                    </select>
+                </label>
+
+                <label for="booking-form-message">
+                    <span>Message :</span>
+                    <textarea id="booking-form-message" name="text"></textarea>
+                </label>
+                <input type="submit" value="Submit " aria-label="Submit">
+            </form>
+
+        </section>
+        
+        <section class="section-map">
+           <div class="find-tripp">
+                <h2>find your trip</h2>
+           </div>
+           
+            <div id="worldmap" class="world">
+                <form action="#" method="get" name="map-form" class="map-form">
+                   
+                    <div class="mape-up">
+                        <input type="text" class="country-up" placeholder="from" name="country-up" autocomplete="off" required>
+                        <select name="country up list" class="country-up-list" id="country-up-list" size="">
+                        </select>
+                        <div class="read-up">read-up</div>
+                    </div>
+                    <div class="mape-to">
+                        <input type="text" class="country-to" placeholder="to" name="country-to" autocomplete="off" required>
+                        <select name="country to list" class="country-to-list" id="country-to-list" size="">
+                        </select>
+                        <div class="read-to">read-to</div>
+                    </div>
+                    <br>
+                    <div class="select-search">
+                        <div class="select">from (select country on map or enter two letters)</div>
+                        <label class="map-search">
+                          <p>saerch</p>
+                           <input type="submit"  value="search" name="map-search">
+                        </label>
+                        
+                    </div>
+
+                </form>
+
+
+            </div>
+        </section>
+        <footer class="footer-main"></footer>
+        <script src="js/world_map.js"></script>
+        <!--        <script src="js/elections.js"></script>-->
+    </div>
+</body>
+
+</html>
