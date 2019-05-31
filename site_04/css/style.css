@@ -267,6 +267,9 @@
 }
 /*finish section booking*/
 
+
+/*start section map*/
+
 #worldmap {
     display: block;
     margin: 0 auto;
@@ -296,11 +299,7 @@
 .section-map {
     background-color: #add2e5;
 }
-.footer-main {
-    min-height: 300px;
-    background-color: #127ea5;
-    background: linear-gradient(to left, #127ea6, #18a1d2, #127ea6)
-}
+
 .fill-map {
     fill: #127ea5;
 }
@@ -406,6 +405,132 @@ new-to-list:last-child {
 .map-search input {
     display: none;
 }
+
+/*start section footer-------------------*/
+
+.footer-main h5{
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.footer-main{
+    min-height: 100px;
+    background-color: #127ea5;
+    padding: 10px 10px 20px;
+    text-align: center;
+}
+
+.footer-main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-main-content div{
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.footer-main-info{
+    text-align: center;
+}
+
+.footer-main-info p{
+    display: inline-block;
+}
+
+
+.footer-main input, 
+.footer-main textarea{
+    width: 195px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0f6686;
+    padding: 0 10px;
+    box-shadow:  
+    inset 0px 1px 1px 1px #0000008c,
+    0px 1px 1px 0px #56adcd;
+    margin-bottom: 10px;
+}
+
+.footer-contact-form input, .footer-contact-form textarea{
+    display: block;
+}
+
+
+.footer-main textarea{
+    height: 60px;
+}
+
+.footer-main input::placeholder,
+.footer-main textarea::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+
+.footer-main button{
+    background-color: #d6e6ef;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 0 10px;
+    box-shadow: 0px 0px 1px 1px #0a3e51;
+    color: #127ea5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-social li{
+    display: inline-block;
+    vertical-align: top;
+   
+}
+
+.footer-social li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3bb3de;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px;
+    display: inline-block;
+    box-shadow:  
+    inset 0px 1px 1px 1px #0000008c,
+    0px 1px 1px 0px #56adcd;
+    margin: 0 10px;
+     cursor: pointer;
+}
+
+.footer-social li a:hover{
+    background-color: #0f6686;
+}
+
+
+.footer-social li img{
+    display: block;
+    margin: 0 auto;
+
+}
+.footer-main-info{
+    margin-top: 20px;
+}
+
+.footer-main-info p{
+    margin: 0 10px 10px;
+}
+
+.footer-contacts ul{
+    line-height: 1.7;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+/*finish section footer-------------------*/
+
 @media screen and (max-width: 1200px) {
     .header-main {
         width: 85%;
@@ -584,7 +709,7 @@ new-to-list:last-child {
         position: absolute;
         overflow: initial;
         height: auto;
-/*        width: calc(100% - 28px);*/
+        /*        width: calc(100% - 28px);*/
         width: 100%;
         margin-left: -18px;
         top: -200px;
@@ -596,7 +721,7 @@ new-to-list:last-child {
         display: block;
         transition: 0.3s all;
         top: 70px;
-}
+    }
     .main-burger-menue span {
         width: 100%;
         height: 2px;
@@ -652,9 +777,7 @@ new-to-list:last-child {
         box-sizing: border-box;
         box-shadow: 0 0 2px 2px #00000082;
     }
-    .header-main {
-        min-height: 60px;
-    }
+    
     .header-main {
         padding: 0px 10px;
     }
@@ -692,27 +815,20 @@ new-to-list:last-child {
         display: block;
         transform: rotate(2deg);
         position: absolute;
-        top: 30px;
+        top: 35px;
         right: 10px;
     }
-    
-    
     .booking-baner {
         display: none;
     }
     .small-booking-baner {
-    display: block;
-    height: 90px;
-    width: 100%;
-    background: url(../images/aeroplane.png) no-repeat;
-    background-position: center;
+        display: block;
+        height: 90px;
+        width: 100%;
+        background: url(../images/aeroplane.png) no-repeat;
+        background-position: center;
         background-size: contain;
         margin: 10px 0 20px;
     }
 }
 @media screen and (max-width: 320px) {}
-
-
-
-
-
