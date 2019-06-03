@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <div class="wrapper">
-<!--       <div class="pixel"></div>-->
+        <!--       <div class="pixel"></div>-->
         <header class="main-header">
             <div class="main-header-wrapper">
                 <nav class="main-nav">
                     <a class="small-logo hiden" href="#">
-                        <img src="images/small-logo.svg" alt="small logo" name="small logo" width="115" height="25">
+                        <img src="images/small-logo.svg" alt="small logo" width="115" height="25">
                     </a>
                     <ul>
-                        <li><a href="#" class="main-menue" active="active">Information</a>
+                        <li><a href="#" class="main-menue" data-active="active">Information</a>
                         </li>
                         <li><a href="#" class="main-menue">News</a>
                         </li>
@@ -34,16 +33,14 @@
                 </nav>
                 <button class="main-entrance" type="button" name="main-entrance">Entrance</button>
             </div>
-
         </header>
         <img class="big-logo" src="images/big-logo.svg" alt="logo" width="370" height="320">
-
         <form action="#" method="get" class="main-form hiden form-uprise">
             <div class="form-cross"></div>
             <h2>User login</h2>
             <h3>Please enter your username and password</h3>
             <input type="text" name="login" class="form-input" placeholder="enter your login" required>
-            <input type="password" mame="password" class="form-input" placeholder="enter your password" required>
+            <input type="password" name="password" class="form-input" placeholder="enter your password" required>
             <div class="main-form-check">
                 <p>
                     <input type="checkbox" id="form-remember-me" name="remember">
@@ -54,21 +51,118 @@
             </div>
             <button type="submit" name="sign in" class="form-submit">Sign in</button>
         </form>
+        <main class="main-info">
+            <ul class="benefit-list">
+                <li>
+                    <h3>Quickly</h3>
+                    <p>We make your work fast!
+                        <br>Two hours spare unemisably and you are a happy master of the stylish cut-minutes.</p>
+                </li>
+                <li>
+                    <h3>Qualitatively</h3>
+                    <p>Forget how you strigled before.
+                        <br>We will make a film star from you!</p>
+                </li>
+                <li>
+                    <h3>Expensive</h3>
+                    <p>Our masters - professionals of their case and can't cost cheap. to the same, does the price does not give a defined status?</p>
+                </li>
+            </ul>
+            <section class="main-block">
+                <article class="main-news">
+                    <h3>News</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus modi reprehenderit, saepe!</p>
+                        <time datetime="2019-05-18 19:00">18 may 2019</time>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusamus maiores pariatur repudiandae incidunt illo optio amet doloribus animi similique.</p>
+                        <time datetime="2019-05-15 19:00">15 may 2019</time>
+                    </div>
+                    <a href="#" class="btn-01"><span>All news</span></a>
+                </article>
+                <article class="main-photo">
+                    <h3>Photo gallery</h3>
 
-
-
-
-
-
-
-
-
-
+                    <div class="slider">
+                        <a class="slider-photo slider-active" href="#"></a>
+                        <a class="slider-photo" href="#"></a>
+                        <a class="slider-photo" href="#"></a>
+                        <a class="slider-photo" href="#"></a>
+                    </div>
+                    <div class="button-01-block">
+                        <button class="btn-01 back" type="button">back</button>
+                        <button class="btn-01 forward" type="button">forward</button>
+                    </div>
+                </article>
+            </section>
+            <section class="main-block">
+                <article class="main-contact">
+                    <h3>Contact information</h3>
+                    <p>Barbershop "Boroday"
+                        <br>Address: Lviv, sq. Runok, 2
+                    </p>
+                    <p>Phone: +380509172020</p>
+                    <br>
+                    <p>TIME OF WORK:</p>
+                    <p>Mon-Fri: 10:00 to 22:00</p>
+                    <p>Sat Sun: From 10:00 to 19:00</p>
+                    <div class="button-01-block">
+                        <button class="btn-01">get to us</button>
+                        <button class="btn-01">feedback</button>
+                    </div>
+                </article>
+                <article class="sign-up">
+                    <h3>Sign up</h3>
+                    <p>Enter your date and time and we will contact you for confirmation.</p>
+                    <form action="#" method="get" name="sign-up-form" id="sign-up-form">
+                        <div class="date">
+                            <p>Date</p>
+                            <input type="date" name="sign-up-date" value="2019-06-01" min="2019-06-01" max="2019-09-01" required>
+                        </div>
+                        <div class="time">
+                            <p>Time</p>
+                            <input type="time" name="sign-up-time" value="09:00" min="09:00" max="19:00" step="900" required>
+                        </div>
+                        <div class="name">
+                            <p>Name</p>
+                            <input type="text" name="sign-up-name" placeholder="Your name" required>
+                        </div>
+                        <div class="phone">
+                            <p>Phone</p>
+                            <input type="text" name="sign-up-tel" placeholder="+380509172020" required>
+                        </div>
+                        <button type="submit" form="sign-up-form">submit</button>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="main-footer-content">
+                <div class="footer-contact">
+                    <p>Barbershop "Boroday"
+                        <br>Address: Lviv, sq. Runok, 2
+                    </p>
+                    <a href="#">Get to us</a>
+                    <p>Phone: +380509172020</p>
+                </div>
+                <div class="footer-social">
+                   <p>Social</p>
+                    <ul>
+                        <li><a href="#"><img src="images/logo_fb.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/logo_in.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/logo_vk.png" alt=""></a></li>
+                        
+                    </ul>
+                </div>
+                <div class="developed">
+                    <p>Developed</p>
+                    <button class="btn-01">HTML Academy</button>
+                </div>
+            </div>
+        </footer>
     </div>
-
-
-<script src="js/script.js" defer></script>
-
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
