@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <title>Barber Shop</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="initial-scale=0.5, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,10 +15,14 @@
         <header class="main-header">
             <div class="main-header-wrapper">
                 <nav class="main-nav">
-                    <a class="small-logo hiden" href="#">
+                    <div class="small-logo hiden">
                         <img src="images/small-logo.svg" alt="small logo" width="115" height="25">
-                    </a>
-                    <ul>
+                    </div>
+                    <input type="checkbox" id="menue-call">
+                    <label class="main-burger-menue" for="menue-call">
+                        <span></span>
+                    </label>
+                    <ul  class="ul-nav">
                         <li><a href="#" class="main-menue" data-active="active">Information</a>
                         </li>
                         <li><a href="#" class="main-menue">News</a>
@@ -152,17 +155,17 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="images/logo_fb.png" alt="">
+                                <img src="images/facebook.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="images/logo_in.png" alt="">
+                                <img src="images/instagram.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="images/logo_vk.png" alt="">
+                                <img src="images/vk.svg" alt="">
                             </a>
                         </li>
 

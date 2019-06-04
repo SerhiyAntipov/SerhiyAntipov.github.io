@@ -1,5 +1,5 @@
 .wrapper {
-    min-width: 600px;
+    min-width: 320px;
     box-sizing: border-box;
     background-color: #282828;
     background: url(../images/Layer.jpg) no-repeat;
@@ -23,14 +23,16 @@
     opacity: 0.3;
     z-index: 1;
 }
+#menue-call {
+    display: none;
+}
 .hiden {
     display: none;
 }
 .main-header {
     background-color: #000;
 }
-.main-header-wrapper,
-.main-footer-content {
+.main-header-wrapper {
     max-width: 960px;
     box-sizing: border-box;
     padding: 0 10px;
@@ -40,7 +42,7 @@
     align-items: flex-start;
 }
 .small-logo {
-    padding: 25px 20px 20px;
+    padding: 30px 20px 18px;
 }
 .big-logo {
     margin: 30px auto 0;
@@ -87,7 +89,7 @@
 }
 .main-entrance::before {
     content: " ";
-    background: url(../svg/login.svg) no-repeat;
+    background: url(../images/login.svg) no-repeat;
     opacity: 0.3;
     background-position: center left;
     width: 15px;
@@ -389,11 +391,7 @@
     display: flex;
     margin-top: 10px;
 }
-.footer-social li {
-    
-} 
-
-.developed .btn-01 {
+.footer-social li {} .developed .btn-01 {
     margin: 10px 0;
 }
 .footer-social a {
@@ -412,5 +410,212 @@
     text-align: left;
 }
 .footer-contact a {
+    display: inline-block;
     color: white;
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+    margin-bottom: 4px;
 }
+@media screen and (max-width: 900px) {
+    .btn-01 {
+        width: 120px;
+    }
+    .main-form {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-nav li a {
+        padding: 28px 15px;
+    }
+    .benefit-list h3,
+    .main-block h3 {
+        font-size: 24px;
+    }
+    .btn-01 {
+        width: 70px;
+    }
+    .developed .btn-01 {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main-entrance {
+        padding: 28px 15px 28px 30px;
+    }
+    .main-entrance::before {
+        left: 5px;
+    }
+    .main-form {
+        transform: scale(0.8);
+    }
+    .btn-01 {
+        width: 150px;
+    }
+    .main-block {
+        background: white;
+        display: block;
+        padding: 25px 10px 1px;
+    }
+    .main-block article {
+        width: auto;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+    #sign-up-form button {
+        margin: 0;
+    }
+    .footer-social a {
+        margin: 0 5px;
+    }
+    .benefit-list li {
+        width: auto;
+        padding: 0 10px;
+    }
+    .benefit-list p {
+        margin-bottom: 25px;
+    }
+    .benefit-list h3::after {
+        margin: 8px auto;
+    }
+    .main-nav li a {
+        padding: 28px 10px;
+    }
+    .main-menue[data-active="active"]::after {
+        width: calc(100% - 20px);
+    }
+}
+@media screen and (max-width: 480px) {
+    .main-form {
+        transform: scale(0.6);
+    }
+    .main-footer-content {
+        display: block;
+        padding: 20px 10px;
+    }
+    .main-footer-content > div {
+        margin-bottom: 20px;
+    }
+    .main-footer-content > div:last-child {
+        margin-bottom: 0;
+    }
+    .footer-contact {
+        text-align: center;
+    }
+    .footer-social ul {
+        justify-content: center;
+    }
+    .footer-social a {
+        margin: 0 20px;
+    }
+    .footer-social ul {
+        margin-top: 0;
+    }
+    .btn-01 {
+        margin: 0;
+    }
+    .main-block h3 {
+        margin-bottom: 5px;
+    }
+    .main-photo .slider {
+        margin-top: 10px;
+    }
+    .main-news time {
+        margin-bottom: 10px;
+    }
+    .main-contact .button-01-block {
+        margin-top: 10px;
+    }
+    .big-logo {
+        width: 320px;
+    }
+    .btn-01 {
+        width: 125px;
+    }
+    .main-nav {
+        display: block;
+        width: calc(100% - 20px);
+        position: relative;
+    }
+    .ul-nav {
+        position: absolute;
+        width: 100%;
+        top: 95px;
+        z-index: 5;
+        left: -380px;
+        transition: 0.5s all;
+    }
+    .main-nav li {
+        display: block;
+        background-color: black;
+        margin-bottom: 8px;
+    }
+    .main-nav li a {
+        padding: 10px 15px;
+        box-shadow: 0 0 5px 1px #fff;
+    }
+    .small-logo {
+        display: block;
+        margin-left: 50px;
+    }
+    .main-burger-menue {
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        top: 28px;
+        left: 20px;
+    }
+    .main-burger-menue span {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 10px;
+    }
+    .main-burger-menue::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: absolute;
+        top: 3px;
+        transition: 0.5s all;
+    }
+    .main-burger-menue::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        transition: 0.5s all;
+    }
+    #menue-call:checked + .main-burger-menue::before {
+        transform: rotate(45deg);
+        top: 10px;
+        transition: 0.5s all;
+    }
+    #menue-call:checked + .main-burger-menue::after {
+        transform: rotate(-45deg);
+        top: 10px;
+        transition: 0.5s all;
+    }
+    #menue-call:checked + .main-burger-menue span {
+        display: none;
+    }
+    #menue-call:checked ~ .ul-nav {
+        display: block;
+        transition: 0.5s all;
+        left: 0px;
+    }
+    .main-menue[data-active="active"]::after {
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .main-form {
+        transform: scale(0.5);
+    }

@@ -1,5 +1,5 @@
 window.onload = function() {
-
+//Form------------ 
     var entrance = document.querySelector('.main-entrance');
     var mainForm = document.querySelector('.main-form');
 
