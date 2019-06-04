@@ -144,6 +144,26 @@ body{
     vertical-align: -webkit-baseline-middle;
 }
 
+.main-footer #social {
+    width: 100%;
+    display: block;
+    padding: 2px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #2d3842;
+}
+
+.main-footer{
+    min-height: 150px;
+}
+
+.main-footer li {
+    margin: 0px 1%;
+    border-radius: 23px;
+    background: linear-gradient( 180deg, #7b7f88, #c0c0c7);
+    width: 10%;
+}
+
+
 #social{
     display: table-cell;
     width: 115px;
@@ -182,6 +202,9 @@ body{
 
 .about-me, .contact-me{
     padding: 30px;
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    border-radius: 5px;
+    margin: 20px;
 }
 #main_content h2{
     font-size: 36px;
