@@ -1,10 +1,13 @@
-let sidebar_ul = document.querySelector('#sidebar_ul');
-let social = document.getElementById('social');
+function sociaResize() {
+    let sidebar = document.querySelector('#sidebar_ul');
+    let social = document.querySelector('#social');
 
-sidebar_ul.onmousemove = function(event){
-    social.style.width = sidebar.offsetWidth + 'px';
-}
+    sidebar.onmousemove = function(event) {
+        social.style.width = 204 + 'px';
+    }
 
-sidebar_ul.onmouseout = function(event){
-    social.style.width = 115 + 'px';
-}  
+    sidebar.onmouseout = function(event) {
+        social.style.width = 115 + 'px';
+    }
+};
+sociaResize();

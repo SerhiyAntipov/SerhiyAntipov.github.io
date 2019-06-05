@@ -1,149 +1,126 @@
 @import url(reset.css);
 @import url(slider_style.css);
 @import url(link_style.css);
-
-body{
-	height: 100%;
+ body {
+    height: 100%;
 }
-
-#wrapper{
-	max-width: 960px;
+#wrapper {
+    max-width: 960px;
     min-width: 320px;
-   	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
     color: #e6e6e6;
     font: 16px bold Calibri, sans-serif;
     overflow: hidden;
 }
-
-#nav li[data-active="active"]{
-     background: linear-gradient( 0deg, #808792, #1e1e20);
+#nav li[data-active="active"] {
+    background: linear-gradient(0deg, #808792, #1e1e20);
     border-top: 1px solid #1e1e20;
     box-shadow: none;
 }
-
-#header{
-	min-height: 110px;
+#header {
+    min-height: 110px;
     text-align: center;
-    background: linear-gradient( 90deg, #111318 0%, #57627d 50%, #111318 100%);
+    background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
 }
-
-#header p{
+#header p {
     font-size: 60px;
     font-family: "Calibri";
     color: rgb(230, 230, 230);
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
-
-#header span{
+#header span {
     font-size: 16px;
     font-family: "Calibri";
     color: rgb(235, 219, 170);
     text-transform: uppercase;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 }
-
-#nav{
+#nav {
     height: 40px;
-    background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
     border-top: 1px solid #ffffff;
     border-bottom: 2px solid #2d3842;
 }
-
-
-#nav ul{
+#nav ul {
     width: 180px;
     height: 32px;
     border-radius: 23px;
-    background:  linear-gradient( 180deg, #7b7f88, #c0c0c7);
+    background: linear-gradient(180deg, #7b7f88, #c0c0c7);
     display: inline-block;
     margin-top: 3px;
     text-align: center;
     margin-left: 13px;
 }
-
-#nav li{
+#nav li {
     display: inline-block;
     width: 50px;
     height: 25px;
-    background:  linear-gradient( 0deg, #1e1e20, #808792);
+    background: linear-gradient(0deg, #1e1e20, #808792);
     border-radius: 18px;
     border-top: 1px solid #b1b3c0;
     margin: 3px;
     box-shadow: 0px 0px 1px 2px #0000007d;
 }
-
-#nav li:hover{
-   box-shadow: none;
+#nav li:hover {
+    box-shadow: none;
 }
-
-#nav a{
+#nav a {
     display: block;
     color: #fff;
     text-decoration: none;
     font-size: 12px;
-    padding: 4px 0;
+    padding: 5px 0 8px;
     text-shadow: 0px 1px 1px #000;
 }
-
-#nav a:hover{
+#nav a:hover {
     text-shadow: none;
 }
-
-#main{
+#main {
     text-align: center;
-    background: linear-gradient( 0deg, #808590 0%, #b5bac3 50%, #808590 100%);
+    background: linear-gradient(0deg, #808590 0%, #b5bac3 50%, #808590 100%);
 }
-
-#main_content{
+#main_content {
     display: table-cell;
     vertical-align: top;
 }
-
-#portfolio{
-	text-align: center;
+#portfolio {
+    text-align: center;
     box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
     margin: 7px 20px 20px;
     padding-top: 20px;
 }
-
-#portfolio a{
-	margin: 2%;
+#portfolio a {
+    margin: 2%;
     padding: 0.5%;
     display: inline-block;
     width: 45%;
     box-sizing: border-box;
     border-radius: 3px;
     border: 1px solid #00000030;
-/*    box-shadow: 0px 0px 1px 1px #0000006b;*/
+    /*    box-shadow: 0px 0px 1px 1px #0000006b;*/
     overflow: hidden;
 }
-
-#portfolio img{
+#portfolio img {
     width: 100%;
     height: auto;
 }
-
-#footer{
-	text-align: center;
+#footer {
+    text-align: center;
     background-color: #454545;
-    background: linear-gradient( 90deg, #111318 0%, #57627d 50%, #111318 100%);
+    background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
 }
-
-
-#footer li{
+#footer li {
     display: inline-block;
 }
-
-#footer p{
-    margin:15px 0;
+#footer p {
+    margin: 15px 0;
     display: inline-block;
     max-width: 80%;
     vertical-align: -webkit-baseline-middle;
 }
-
 .main-footer #social {
     width: 100%;
     display: block;
@@ -151,97 +128,127 @@ body{
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #2d3842;
 }
-
-.main-footer{
+.main-footer {
     min-height: 150px;
 }
-
 .main-footer li {
     margin: 0px 1%;
     border-radius: 23px;
-    background: linear-gradient( 180deg, #7b7f88, #c0c0c7);
+    background: linear-gradient(180deg, #7b7f88, #c0c0c7);
     width: 10%;
 }
-
-
-#social{
+#social {
     display: table-cell;
     width: 115px;
-    background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
     padding: 10px;
     box-sizing: border-box;
 }
-
 #social img {
-	width: 100%;
+    width: 100%;
     height: auto;
 }
-
-#social a{
-	display: inline-block;
+#social a {
+    display: inline-block;
     width: 35px;
     height: 35px;
     border-radius: 3px;
-    background: linear-gradient( 0deg, #1e1e20, #808792);
+    background: linear-gradient(0deg, #1e1e20, #808792);
     border-top: 1px solid #b1b3c0;
     margin: 2px;
     box-shadow: 0px 0px 1px 2px #0000007d;
 }
-
 #social a:hover {
-    background: linear-gradient( 0deg, #808792, #1e1e20);
+    background: linear-gradient(0deg, #808792, #1e1e20);
     border-top: 1px solid #1e1e20;
     box-shadow: none;
 }
-
-#foot_content{
+#foot_content {
     font: 16px bold Calibri, sans-serif;
     display: table-cell;
     vertical-align: middle;
 }
-
-.about-me, .contact-me{
-    padding: 30px;
+.about-me,
+.contact-me {
     box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
-    margin: 20px;
+    padding: 25px;
+    margin: 25px 15px;
+    /*    background: url(../img/bg_steel.png);*/
 }
-#main_content h2{
+#main_content h2 {
     font-size: 36px;
     color: black;
     padding: 30px 0;
 }
-
-#main_content p{
+#main_content p {
     font-size: 20px;
     color: black;
-   line-height: 1.6;
+    line-height: 1.6;
 }
 
+.skill-logo{
+    width: 177px;
+    height: 100px;
+    flex-shrink: 0;
+}
 
-@media screen  and (max-width: 641px){
-    #header{
-	    min-height: 100px;
+.skill-article{
+    display: flex;
+    align-items: center;
+}
+
+.about-me  p, .contact-me p{
+    text-align: left;
+}
+
+.skill-html .skill-logo{
+    background: url(../img/link_html_01.png) no-repeat;
+}
+
+.skill-css .skill-logo{
+    background: url(../img/link_css_01.png) no-repeat;
+}
+
+.skill-js .skill-logo{
+    background: url(../img/link_js_01.png) no-repeat;
+}
+
+.skill-git .skill-logo{
+    background: url(../img/link_git_01.png) no-repeat;
+}
+
+.skill-photoshop .skill-logo{
+    background: url(../img/link_ps_01.png) no-repeat;
+}
+
+.skill-wp .skill-logo{
+    background: url(../img/link_wp_01.png) no-repeat;
+}
+
+.skill-logo:hover{
+    background-position: center bottom;
+}
+
+@media screen and (max-width: 640px) {
+    #header {
+        min-height: 100px;
     }
-        
     #nav {
         text-align: center;
     }
-    
     #nav ul {
         margin-left: 0;
         width: 75%;
     }
-    
     #nav li {
         width: 30%;
     }
-    
-    #sidebar{
+    #sidebar {
         display: block;
         width: 100%;
     }
-    #sidebar li{
+    #sidebar li {
         display: inline-block;
         width: 95px;
         height: 115px;
@@ -249,154 +256,133 @@ body{
         padding: 0;
         border-radius: 10px;
     }
-        
     #sidebar ul:hover li {
         width: 95px;
         height: 218px;
     }
-    
-    #sidebar ul{
+    #sidebar ul {
         padding: 0;
         margin-bottom: 10px;
     }
-    
-    
-    #sidebar ul:hover{
-       width: 100%;
+    #sidebar ul:hover {
+        width: 100%;
     }
-    
     #sidebar li a:hover {
         width: auto;
-        background-position: top center; 
+        background-position: top center;
     }
-    
     #portfolio {
-    padding-top: 10px;
-    margin: 7px 10px 20px;
+        padding-top: 10px;
+        margin: 7px 10px 20px;
     }
-    
-    
-    #footer{
+    .about-me,
+    .contact-me {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    #footer {
         min-height: 150px;
     }
-    
-    #social{
-        width: 100% !important; 
+    #social {
+        width: 100% !important;
         display: block;
         padding: 2px;
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid #2d3842;
     }
-    
     #social li {
         margin: 0px 1%;
         border-radius: 23px;
-        background: linear-gradient( 180deg, #7b7f88, #c0c0c7);
+        background: linear-gradient(180deg, #7b7f88, #c0c0c7);
         width: 10%;
     }
-    
     #social li a {
         width: 25px;
         height: 25px;
-        }
-
+    }
 }
-
-
-@media screen  and (max-width: 610px){
-    .about-me, .contact-me{
-    padding: 20px;
-}
-    
-    #sidebar li{
-          width: 85px;
+@media screen and (max-width: 610px) {
+    #sidebar li {
+        width: 85px;
         height: 100px;
     }
-        
     #sidebar ul:hover li {
-         width: 85px;
+        width: 85px;
         height: 194px;
     }
+    .skill-article{
+        flex-direction: column-reverse;
+    }
 }
-
-@media screen  and (max-width: 561px){
-    #sidebar li{
-          width: 75px;
+@media screen and (max-width: 560px) {
+    #sidebar li {
+        width: 75px;
         height: 90px;
     }
-        
     #sidebar ul:hover li {
-         width: 75px;
+        width: 75px;
         height: 173px;
     }
     #social li {
-       width: 12%;
+        width: 12%;
     }
 }
-
-@media screen  and (max-width: 481px){
-    .about-me, .contact-me{
-    padding: 10px;
-}
+@media screen and (max-width: 480px) {
     #portfolio {
-    margin: 7px 5px 20px;
+        margin: 7px 5px 20px;
     }
-    
-    #sidebar li{
-          width: 70px;
+    .about-me,
+    .contact-me {
+        padding: 15px;
+        margin: 15px 5px;
+    }
+    #sidebar li {
+        width: 70px;
         height: 85px;
     }
-        
     #sidebar ul:hover li {
-         width: 75px;
+        width: 75px;
         height: 170px;
-    }  
-        
+    }
     #nav ul {
         width: 98%;
     }
-    
     #social li {
-       width: 13%;
+        width: 13%;
     }
-    
     #social li a {
-    width: 25px;
-    height: 25px;
+        width: 25px;
+        height: 25px;
     }
     #social li {
-       width: 15%;
+        width: 15%;
     }
-
 }
-
-@media screen  and (max-width: 479px){
-    #sidebar li{
-          width: 55px;
+@media screen and (max-width: 479px) {
+    #sidebar li {
+        width: 55px;
         height: 65px;
     }
-        
     #sidebar ul:hover li {
-         width: 55px;
+        width: 55px;
         height: 128px;
     }
-        
     #header p {
         font-size: 44px;
         padding-top: 15px;
     }
-   
     #social li {
-       width: 17%;
+        width: 17%;
     }
     #portfolio {
-    padding-top: 5px;
+        padding-top: 5px;
+    }
+    .about-me,
+    .contact-me {
+        padding: 10px;
     }
 }
-
-
-
-@media screen  and (max-width: 410px){
+@media screen and (max-width: 410px) {
     .slider_list_ul {
         width: 340px;
     }
@@ -408,48 +394,32 @@ body{
         height: 225px;
         margin-top: 5px;
     }
-    
 }
-
-
-
-@media screen  and (max-width: 359px){
-     #slider_wrapp{
+@media screen and (max-width: 360px) {
+    #slider_wrapp {
         display: none;
-    }  
-    
-    #slider_wrapp{
+    }
+    #slider_wrapp {
         display: none;
-    }  
-    
-    
-    #sidebar li{
+    }
+    #sidebar li {
         width: 45px;
         height: 55px;
     }
-        
     #sidebar ul:hover li {
         width: 45px;
         height: 106px;
         border-radius: 5px;
         box-shadow: inset 0px 0px 1px 1px #000000;
     }
-    
     #header {
         min-height: 85px;
     }
-    
     #header p {
         font-size: 44px;
         padding-top: 0;
     }
-   
     #social li {
-       width: 20%;
+        width: 20%;
     }
 }
-
-
-
-
-

@@ -1,111 +1,89 @@
-#sidebar{
-    background: linear-gradient( 90deg, #111318, #57627d );
+#sidebar {
+    background: linear-gradient(90deg, #111318, #57627d);
     width: 110px;
     box-shadow: 2px 0px 2px 0px #000000a8;
     display: table-cell;
-    }
-
-#sidebar ul{
-	padding: 0 13px;
-	list-style: none;
+}
+#sidebar ul {
+    padding: 0 13px;
+    list-style: none;
     min-width: 88px;
     margin-bottom: 30px;
 }
-
-#sidebar ul:hover li{
-    background: linear-gradient( 0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-   box-shadow: inset 0px 1px 2px 1px #000000c4;
+#sidebar ul:hover li {
+    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
     width: 177px;
     transition: 0.2s;
 }
-
-#sidebar li{
+#sidebar li {
     text-decoration: none;
     margin-top: 13px;
     border-radius: 20px;
     transition: 0.2s;
     width: 85px;
-    height: 100px;  
-}  
-
-#sidebar li a{
-	text-decoration: none;
+    height: 100px;
+}
+#sidebar li a {
+    text-decoration: none;
     display: block;
     height: 100%;
     width: 100%;
 }
-
-#sidebar li a:hover{
-	width: 177px;
+#sidebar li a:hover {
+    width: 177px;
     background-position: bottom left;
 }
-
-#sidebar_ul li{
-   background-position: top left;
+#sidebar_ul li {
+    background-position: top left;
 }
-
-#link_html{
+#link_html {
     background: url(../img/link_html_01.png) no-repeat;
 }
-
-#link_css{
+#link_css {
     background: url(../img/link_css_01.png) no-repeat;
 }
-
-#link_js{
+#link_js {
     background: url(../img/link_js_01.png) no-repeat;
 }
-
-#link_git{
+#link_git {
     background: url(../img/link_git_01.png) no-repeat;
 }
-
-#link_ps{
+#link_ps {
     background: url(../img/link_ps_01.png) no-repeat;
 }
-
-#link_wp{
+#link_wp {
     background: url(../img/link_wp_01.png) no-repeat;
 }
-
-@media screen  and (max-width: 640px){
-    #sidebar li a{
+@media screen and (max-width: 640px) {
+    #sidebar li a {
         transition: all 0.2s ease-in 0s;
         background-size: 100% auto;
         background-position: top center;
         margin-top: 3px;
     }
-    
-    #sidebar_ul li:hover{
+    #sidebar_ul li:hover {
         height: 100px;
     }
-        
     #sidebar ul:hover li {
-      box-shadow: inset 0px 0px 1px 1px #000000c4;
+        box-shadow: inset 0px 0px 1px 1px #000000c4;
     }
-      
-    #link_html{
+    #link_html {
         background: url(../img/link_html_02.png) no-repeat;
     }
-
-    #link_css{
+    #link_css {
         background: url(../img/link_css_02.png) no-repeat;
     }
-
-    #link_js{
-       background: url(../img/link_js_02.png) no-repeat;
+    #link_js {
+        background: url(../img/link_js_02.png) no-repeat;
     }
-
-    #link_git{
+    #link_git {
         background: url(../img/link_git_02.png) no-repeat;
     }
-
-    
-    #link_ps{
+    #link_ps {
         background: url(../img/link_ps_02.png) no-repeat;
     }
-
-    #link_wp{
-             background: url(../img/link_wp_02.png) no-repeat;
+    #link_wp {
+        background: url(../img/link_wp_02.png) no-repeat;
     }
 }
