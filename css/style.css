@@ -178,22 +178,38 @@
 }
 
 .contact-me a{
-    display: block;
-    width: 100px;
-    height: 30px;
-    border: 1px solid #000;
-    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px;
+    background: linear-gradient(0deg, #1e1e20, #808792);
+    border-top: 1px solid #b1b3c0;
+    box-shadow: 0px 0px 1px 2px #0000007d;
+}
+
+.contact-me ul{
+font-size: 22px;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+.contact-me ul span{
+    font-weight: bold;
+}
+
+.contact-me a img{
+    width: 300px;
+    height: 85px;
 }
 
 #main_content h2 {
     font-size: 36px;
     color: black;
-    padding: 30px 0;
+    padding: 0 0 20px;
 }
 #main_content p {
     font-size: 20px;
     color: black;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 .skill-logo{
@@ -391,6 +407,7 @@
     .contact-me {
         padding: 10px;
     }
+    
 }
 @media screen and (max-width: 410px) {
     .slider_list_ul {
@@ -404,6 +421,10 @@
         height: 225px;
         margin-top: 5px;
     }
+    .contact-me ul{
+font-size: 18px;
+   
+}
 }
 @media screen and (max-width: 360px) {
     #slider_wrapp {
@@ -432,4 +453,8 @@
     #social li {
         width: 20%;
     }
+    .contact-me a img{
+    width: 270px;
+    height: auto;
+}
 }
