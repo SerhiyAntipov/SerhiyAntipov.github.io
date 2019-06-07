@@ -1,6 +1,5 @@
 @import url(reset.css);
 @import url(slider_style.css);
-@import url(link_style.css);
  body {
     height: 100%;
 }
@@ -8,26 +7,24 @@
     max-width: 960px;
     min-width: 320px;
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
-    color: #e6e6e6;
     font: 16px bold Calibri, sans-serif;
-    overflow: hidden;
-    background:  linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
+    background-color: #353c4c;
+    background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
 }
 #nav li[data-active="active"] {
     background: linear-gradient(0deg, #808792, #1e1e20);
     border-top: 1px solid #1e1e20;
     box-shadow: inset 0px 1px 6px 2px #000000c4;
 }
-
 #header {
-    min-height: 110px;
+    min-height: 130px;
     text-align: center;
 }
 #header p {
     font-size: 60px;
     font-family: "Calibri";
+    line-height: 1.6;
     color: rgb(230, 230, 230);
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
@@ -39,11 +36,10 @@
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 }
 #nav {
-    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
     border-top: 1px solid #ffffff;
     border-bottom: 2px solid #2d3842;
-   
 }
 #nav ul {
     min-width: 180px;
@@ -51,7 +47,6 @@
     box-shadow: inset 0px 1px 6px 2px #000000c4;
     display: inline-block;
     margin: 3px 0 3px 13px;
-    text-align: center;
     padding: 2px 4px;
 }
 #nav li {
@@ -73,55 +68,43 @@
     font-size: 18px;
     padding: 6px 20px 7px;
     text-shadow: 0px 0px 2px #000;
-    
 }
 #nav a:hover {
     text-shadow: none;
 }
 #main {
     text-align: center;
+    display: flex;
 }
 .main_content {
-    display: table-cell;
-    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
 }
-
-.wrapp-main-content{
+.wrapp-main-content {
     box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
-/*    padding: 25px;*/
     padding-bottom: 10px;
     margin: 25px 15px 25px 5px;
-    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%); 
+    background-color: #afb2b9;
 }
-   
-.slider-wrapp{
-    display: inline-block;
-    margin: 20px;
-     padding: 0;
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
-    border-radius: 5px;
-    background: url(../img/bg_stell.jpg);
-}
-
-.my-portfolio{
-    text-align: center;
+.my-portfolio {
     box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
     margin: 7px 20px 20px;
     padding: 20px 0;
+    background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
+    /*    display: none;*/
 }
 .my-portfolio a {
-    margin: 2%;
-    padding: 2%;
+    margin: 5px;
+    padding: 5px;
     display: inline-block;
     width: 45%;
     box-sizing: border-box;
     border-radius: 3px;
-overflow: hidden;
-        border-top: 1px solid #1e1e20;
-    box-shadow: inset 0px 1px 2px 1px #000000ab;
+    overflow: hidden;
+    border: 1px solid #5b5b5b;
 }
 .my-portfolio img {
     width: 100%;
@@ -131,12 +114,11 @@ overflow: hidden;
     text-align: center;
 }
 .main-footer li {
-    margin: 0px 1%;
+    margin: 0px 10px;
     border-radius: 5px;
     display: inline-block;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
-
 .main-footer p {
     margin: 15px 0;
     display: inline-block;
@@ -144,17 +126,15 @@ overflow: hidden;
     vertical-align: -webkit-baseline-middle;
 }
 .footer-social {
-    width: 100%;
-    display: block;
-    padding: 2px;
+    padding: 2px 0;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #2d3842;
+    background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
 }
 .main-footer {
     min-height: 150px;
 }
-
 .footer-social img {
     width: 100%;
     height: auto;
@@ -168,17 +148,12 @@ overflow: hidden;
     box-shadow: 0px 1px 2px 1px #0000007d;
     margin: 4px 10px;
 }
-.footer-social a:hover, .contact-me a:hover {   
+.footer-social a:hover,
+.contact-me a:hover {
     background: linear-gradient(0deg, #808792, #1e1e20);
     border-top: 1px solid #1e1e20;
     box-shadow: inset 0px 1px 4px 1px #000000c4;
-
 }
-
-.contact-me a img:hover,.footer-social img:hover,#nav li[data-active="active"] a{
-    opacity: 0.8;
-}
-
 .foot_content {
     font: 16px bold Calibri, sans-serif;
     display: table-cell;
@@ -208,10 +183,13 @@ overflow: hidden;
     box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
     padding: 15px;
+    background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
     color: black;
 }
-.contact-me ul li, .main_content h2, .about-me h3{
+.contact-me ul li,
+.main_content h2,
+.about-me h3 {
     background-color: #000;
     color: transparent;
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
@@ -220,6 +198,7 @@ overflow: hidden;
     background-clip: text;
 }
 .contact-link {
+    background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
     padding: 20px;
     border-radius: 5px;
@@ -237,18 +216,16 @@ overflow: hidden;
     padding: 0 0 20px;
     font-weight: bold;
 }
-
 .main_content h3 {
     font-size: 36px;
     padding: 0 0 20px;
     font-weight: bold;
 }
-
-
 .main_content p {
     font-size: 20px;
     color: black;
     line-height: 1.4;
+    padding-bottom: 10px;
 }
 .skill-logo {
     width: 177px;
@@ -262,6 +239,7 @@ overflow: hidden;
     box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
     padding: 10px;
+    background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
 }
 .about-me p,
@@ -286,12 +264,88 @@ overflow: hidden;
 .skill-wp .skill-logo {
     background: url(../img/link_wp_01.png) no-repeat;
 }
+.skill-logo {
+    filter: grayscale(1);
+}
 .skill-logo:hover {
-    background-position: center bottom;
+    filter: grayscale(0);
+}
+#sidebar ul {
+    padding: 0 13px;
+}
+#sidebar ul:hover li {
+    background-color: #e1e1e1;
+    background: url(../img/bg_stell.jpg);
+    background-position: center;
+    width: 177px;
+    transition: 0.2s;
+    filter: grayscale(0);
+    border: 2px solid #3438429c;
+}
+#sidebar li {
+    margin-top: 13px;
+    border-radius: 20px;
+    transition: 0.2s;
+    width: 85px;
+    height: 100px;
+    filter: grayscale(1);
+}
+#sidebar li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#link_html {
+    background: url(../img/link_html_01.png) no-repeat;
+}
+#link_css {
+    background: url(../img/link_css_01.png) no-repeat;
+}
+#link_js {
+    background: url(../img/link_js_01.png) no-repeat;
+}
+#link_git {
+    background: url(../img/link_git_01.png) no-repeat;
+}
+#link_ps {
+    background: url(../img/link_ps_01.png) no-repeat;
+}
+#link_wp {
+    background: url(../img/link_wp_01.png) no-repeat;
+}
+@media screen and (max-width: 720px) {
+    #slider >.active {
+        height: 240px;
+        width: 360px;
+    }
 }
 @media screen and (max-width: 640px) {
-    #header {
-        min-height: 100px;
+    #sidebar li a {
+        transition: all 0.2s ease-in 0s;
+        background-size: 100% auto;
+        background-position: top center;
+        margin-top: 3px;
+    }
+    #link_html {
+        background: url(../img/link_html_02.png) no-repeat;
+    }
+    #link_css {
+        background: url(../img/link_css_02.png) no-repeat;
+    }
+    #link_js {
+        background: url(../img/link_js_02.png) no-repeat;
+    }
+    #link_git {
+        background: url(../img/link_git_02.png) no-repeat;
+    }
+    #link_ps {
+        background: url(../img/link_ps_02.png) no-repeat;
+    }
+    #link_wp {
+        background: url(../img/link_wp_02.png) no-repeat;
+    }
+    #main {
+        flex-direction: column;
     }
     #nav {
         text-align: center;
@@ -303,181 +357,109 @@ overflow: hidden;
     #nav li {
         width: 30%;
     }
-    #sidebar {
-        display: block;
-        width: 100%;
-    }
-    #sidebar li {
-        display: inline-block;
-        width: 95px;
-        height: 115px;
-        margin: 5px 0;
-        padding: 0;
-        border-radius: 10px;
-    }
-    #sidebar ul:hover li {
-        width: 95px;
-        height: 218px;
-    }
     #sidebar ul {
-        padding: 0;
-        margin-bottom: 10px;
-    }
-    #sidebar ul:hover {
-        width: 100%;
-    }
-    #sidebar li a:hover {
-        width: auto;
-        background-position: top center;
-    }
-    .my-portfolio, .slider-wrapp {
-        padding: 10px;
-        margin: 7px 10px 20px;
-    }
-    .about-me,
-    .contact-me, .wrapp-main-content {
-        padding: 20px;
-        margin: 20px 10px;
-    }
-    .main-footer {
-        min-height: 150px;
-    }
-    .footer-social {
-        width: 100% !important;
-        display: block;
-        padding: 2px;
-        border-top: 1px solid #ffffff;
-        border-bottom: 1px solid #2d3842;
-    }
-    
-    .contact-me a img {
-        width: 220px;
-    }
-}
-@media screen and (max-width: 610px) {
-    #sidebar li {
-        width: 85px;
-        height: 100px;
-    }
-    #sidebar ul:hover li {
-        width: 85px;
-        height: 194px;
-    }
-    .skill-article {
-        flex-direction: column-reverse;
-    }
-    .contact-me a img {
-        width: 210px;
-    }
-}
-@media screen and (max-width: 560px) {
-    #sidebar li {
-        width: 75px;
-        height: 90px;
-    }
-    #sidebar ul:hover li {
-        width: 75px;
-        height: 173px;
-    }
-    .contact-me a img {
-        width: 190px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .my-portfolio, .slider-wrapp{
-        margin: 7px 5px 20px;
-    }
-    .about-me,
-    .contact-me, .wrapp-main-content  {
-        padding: 15px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-around;
     }
     #sidebar li {
         width: 70px;
         height: 85px;
+        margin: 5px 0;
+        border-radius: 10px;
     }
     #sidebar ul:hover li {
-        width: 75px;
-        height: 170px;
+         width: 70px;
+        height: 160px;
+        border: none;
+        box-shadow: inset 0px 1px 2px 1px #000000c4;
     }
-    #nav ul {
-        width: 95%;
-    }
-       .about-me p, .contact-me p {
-    text-align: center;
-}
-        .contact-me a img {
-        width: 160px;
-    }
-    #nav a {
-        padding: 6px 10px 7px;
-    }
-    .footer-social a {
-      width: 25px
-    }
-}
-@media screen and (max-width: 479px) {
+    .my-portfolio,
     .slider-wrapp {
-        display: none;
-    }
-    #sidebar li {
-        width: 55px;
-        height: 65px;
-    }
-    #sidebar ul:hover li {
-        width: 55px;
-        height: 128px;
-    }
-    #header p {
-        font-size: 44px;
-        padding-top: 15px;
-    }
-    
-    .my-portfolio, .slider-wrapp {
-        padding-top: 5px;
+        padding: 10px;
+        margin: 7px 10px 20px;
     }
     .about-me,
-    .contact-me,  .wrapp-main-content{
+    .contact-me,
+    .wrapp-main-content {
         padding: 5px;
+        margin: 20px 10px;
     }
+    .contact-me a img {
+        width: 220px;
+    }
+    .my-portfolio a {
+        margin: 4px;
+        padding: 3px;
+    }
+    .main_content h3 {
+      padding: 0;
+   
 }
-@media screen and (max-width: 410px) {
-    .slider_list_ul {
-        width: 340px;
-    }
-    .slider_list_ul li {
-        width: 60px;
-    }
-    #slider >.active {
-        width: 340px;
-        height: 225px;
-        margin-top: 5px;
-    }
-    .contact-me ul {
-        font-size: 18px;
-    }
 }
-@media screen and (max-width: 360px) {
-    
+@media screen and (max-width: 480px) {
+    .slider-wrapp {
+    display: none;
+    }
+       #nav ul {
+    width: 95%;
+}
     #sidebar li {
-        width: 45px;
-        height: 55px;
-    }
+    width: 55px;
+    height: 65px;
+    
+}
     #sidebar ul:hover li {
-        width: 45px;
-        height: 106px;
-        border-radius: 5px;
-        box-shadow: inset 0px 0px 1px 1px #000000;
+    width: 55px;
+        height: 125px;
+    }
+        .footer-social a {
+    
+    width: 25px;
+}
+    #header p {
+    font-size: 54px;
     }
     #header {
-        min-height: 85px;
+    min-height: 120px;
+   
+}
+    .contact-me ul {
+      font-size: 18px;
     }
-    #header p {
-        font-size: 44px;
-        padding-top: 0;
+    .skill-article{
+        display: flex;
+        flex-direction: column-reverse;
     }
+    .about-me p, .contact-me p {
+     text-align: center; 
+}
     
-    .about-me, .contact-me, .wrapp-main-content {
-    padding: 5px;
-    margin: 10px 5px;
 }
+@media screen and (max-width: 360px) {
+    #nav a {
+      font-size: 16px;
+   
 }
+    #sidebar li {
+    width: 45px;
+    height: 55px;
+    
+}
+    #sidebar ul:hover li {
+     width: 45px;
+        height: 105px;
+    
+}
+ #header p {
+    font-size: 48px;
+    }
+    #header {
+    min-height: 110px;
+   
+}
+    .contact-me ul {
+      font-size: 16px;
+    }
+}
+    
