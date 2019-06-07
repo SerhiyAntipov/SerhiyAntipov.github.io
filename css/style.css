@@ -170,7 +170,7 @@
 .contact-me a {
     display: inline-block;
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px 20px;
     background: linear-gradient(0deg, #1e1e20, #808792);
     border-top: 1px solid #b1b3c0;
     box-shadow: 0px 1px 2px 1px #0000007d;
@@ -208,7 +208,7 @@
     font-weight: bold;
 }
 .contact-me a img {
-    width: 240px;
+    width: 180px;
     height: auto;
 }
 .main_content h2 {
@@ -315,7 +315,7 @@
 }
 @media screen and (max-width: 720px) {
     #slider >.active {
-        height: 240px;
+        height: 260px;
         width: 360px;
     }
 }
@@ -376,8 +376,8 @@
     }
     .my-portfolio,
     .slider-wrapp {
-        padding: 10px;
-        margin: 7px 10px 20px;
+        padding: 0;
+        margin: 7px 5px 20px;
     }
     .about-me,
     .contact-me,
@@ -386,10 +386,10 @@
         margin: 20px 10px;
     }
     .contact-me a img {
-        width: 220px;
+        width: 160px;
     }
     .my-portfolio a {
-        margin: 4px;
+        margin: 5px;
         padding: 3px;
     }
     .main_content h3 {
@@ -434,7 +434,9 @@
     .about-me p, .contact-me p {
      text-align: center; 
 }
-    
+   .contact-me a img {
+    width: 140px;
+} 
 }
 @media screen and (max-width: 360px) {
     #nav a {
@@ -461,5 +463,8 @@
     .contact-me ul {
       font-size: 16px;
     }
+    .contact-me a img {
+    width: 120px;
+}
 }
     
