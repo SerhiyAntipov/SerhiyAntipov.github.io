@@ -46,7 +46,7 @@
     border-radius: 23px;
     box-shadow: inset 0px 1px 6px 2px #000000c4;
     display: inline-block;
-    margin: 3px 0 3px 13px;
+    margin: 5px 0 5px 13px;
     padding: 2px 4px;
 }
 #nav li {
@@ -369,7 +369,7 @@
         border-radius: 10px;
     }
     #sidebar ul:hover li {
-         width: 70px;
+        width: 70px;
         height: 160px;
         border: none;
         box-shadow: inset 0px 1px 2px 1px #000000c4;
@@ -393,78 +393,76 @@
         padding: 3px;
     }
     .main_content h3 {
-      padding: 0;
-   
-}
+        padding: 0;
+    }
 }
 @media screen and (max-width: 480px) {
     .slider-wrapp {
-    display: none;
+        display: none;
     }
-       #nav ul {
-    width: 95%;
-}
+    #nav ul {
+        width: 80%;
+    }
     #sidebar li {
-    width: 55px;
-    height: 65px;
-    
-}
+        width: 55px;
+        height: 65px;
+    }
     #sidebar ul:hover li {
-    width: 55px;
+        width: 55px;
         height: 125px;
     }
-        .footer-social a {
-    
-    width: 25px;
-}
+    .footer-social a {
+        width: 25px;
+    }
     #header p {
-    font-size: 54px;
+        font-size: 54px;
     }
     #header {
-    min-height: 120px;
-   
-}
-    .contact-me ul {
-      font-size: 18px;
+        min-height: 120px;
     }
-    .skill-article{
+    .contact-me ul {
+        font-size: 18px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .skill-article {
         display: flex;
         flex-direction: column-reverse;
     }
-    .about-me p, .contact-me p {
-     text-align: center; 
-}
-   .contact-me a img {
-    width: 140px;
-} 
+    .about-me p,
+    .contact-me p {
+        text-align: center;
+    }
+    .contact-me a img {
+        width: 140px;
+    }
+    
 }
 @media screen and (max-width: 360px) {
     #nav a {
-      font-size: 16px;
-   
-}
+        font-size: 14px;
+    }
     #sidebar li {
-    width: 45px;
-    height: 55px;
-    
-}
+        width: 45px;
+        height: 55px;
+    }
     #sidebar ul:hover li {
-     width: 45px;
+        width: 45px;
         height: 105px;
-    
-}
- #header p {
-    font-size: 48px;
+    }
+    #header p {
+        font-size: 48px;
     }
     #header {
-    min-height: 110px;
-   
-}
+        min-height: 110px;
+    }
     .contact-me ul {
-      font-size: 16px;
+        font-size: 16px;
     }
     .contact-me a img {
-    width: 120px;
+        width: 120px;
+    }
+    #nav ul {
+        width: 90%;
+    }
 }
-}
-    

@@ -2,8 +2,8 @@
     margin: 0 auto;
 }
 #slider {
-    min-width: 100%;
-    display: inline-block;
+   padding: 10px 20px;
+   display: inline-block;
 }
 #slider .startpage {
     display: none;
@@ -59,16 +59,16 @@
     border-radius: 5px;
     background: url(../img/bg_stell.jpg);
 }
-.slider_list_ul {
-    height: 32px;
+.slider-list-ul {
+    height: 33px;
     border-radius: 23px;
     box-shadow: inset 0px 1px 6px 2px #000000c4;
     display: inline-block;
-    margin-top: 3px;
+    margin: 3px 0 10px;
     text-align: center;
         padding: 0 7px;
 }
-.slider_list_ul li {
+.slider-list-ul li {
     width: 60px;
     height: 25px;
     margin: 3px 0;
