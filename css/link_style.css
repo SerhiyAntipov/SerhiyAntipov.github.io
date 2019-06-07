@@ -1,7 +1,5 @@
 #sidebar {
-    background: linear-gradient(90deg, #111318, #57627d);
     width: 110px;
-    box-shadow: 2px 0px 2px 0px #000000a8;
     display: table-cell;
 }
 #sidebar ul {
@@ -11,8 +9,8 @@
     margin-bottom: 30px;
 }
 #sidebar ul:hover li {
-    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-    box-shadow: inset 0px 1px 2px 1px #000000c4;
+    background: url(../img/bg_stell.jpg);
+    box-shadow: inset 0px 1px 2px 2px #000000bd;
     width: 177px;
     transition: 0.2s;
 }
@@ -29,10 +27,12 @@
     display: block;
     height: 100%;
     width: 100%;
+    opacity: 0.8;
 }
 #sidebar li a:hover {
     width: 177px;
     background-position: bottom left;
+    opacity: 1;
 }
 #sidebar_ul li {
     background-position: top left;

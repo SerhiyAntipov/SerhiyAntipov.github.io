@@ -13,16 +13,17 @@
     color: #e6e6e6;
     font: 16px bold Calibri, sans-serif;
     overflow: hidden;
+    background:  linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
 }
 #nav li[data-active="active"] {
     background: linear-gradient(0deg, #808792, #1e1e20);
     border-top: 1px solid #1e1e20;
-    box-shadow: none;
+    box-shadow: inset 0px 1px 6px 2px #000000c4;
 }
+
 #header {
     min-height: 110px;
     text-align: center;
-    background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
 }
 #header p {
     font-size: 60px;
@@ -39,13 +40,15 @@
 }
 #nav {
     background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    background: url(../img/bg_stell.jpg);
     border-top: 1px solid #ffffff;
     border-bottom: 2px solid #2d3842;
+   
 }
 #nav ul {
     min-width: 180px;
     border-radius: 23px;
-    background: linear-gradient(180deg, #7b7f88, #c0c0c7);
+    box-shadow: inset 0px 1px 6px 2px #000000c4;
     display: inline-block;
     margin: 3px 0 3px 13px;
     text-align: center;
@@ -70,103 +73,113 @@
     font-size: 18px;
     padding: 6px 20px 7px;
     text-shadow: 0px 0px 2px #000;
+    
 }
 #nav a:hover {
     text-shadow: none;
 }
 #main {
     text-align: center;
-    background: linear-gradient(0deg, #808590 0%, #b5bac3 50%, #808590 100%);
 }
-#main_content {
+.main_content {
     display: table-cell;
     vertical-align: top;
-/*    background: url(../img/bg_stell2.jpg);*/
 }
-#portfolio {
+
+.wrapp-main-content{
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    border-radius: 5px;
+/*    padding: 25px;*/
+    padding-bottom: 10px;
+    margin: 25px 15px 25px 5px;
+    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%); 
+}
+   
+.slider-wrapp{
+    display: inline-block;
+    margin: 20px;
+     padding: 0;
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    border-radius: 5px;
+    background: url(../img/bg_stell.jpg);
+}
+
+.my-portfolio{
     text-align: center;
     box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
     margin: 7px 20px 20px;
-    padding-top: 20px;
-     background: url(../img/bg_stell.jpg);
+    padding: 20px 0;
+    background: url(../img/bg_stell.jpg);
 }
-
-#portfolio a {
+.my-portfolio a {
     margin: 2%;
-    padding: 0.5%;
+    padding: 2%;
     display: inline-block;
     width: 45%;
     box-sizing: border-box;
     border-radius: 3px;
-    border: 1px solid #00000030;
-      overflow: hidden;
-    background: linear-gradient(0deg, #808590 0%, #b5bac3 50%, #808590 100%);
-    box-shadow: 0px 1px 0px 1px #0000008c;
-/*    background: url(../img/bg_stell.jpg);*/
-   
+overflow: hidden;
+        border-top: 1px solid #1e1e20;
+    box-shadow: inset 0px 1px 2px 1px #000000ab;
 }
-#portfolio img {
+.my-portfolio img {
     width: 100%;
     height: auto;
 }
-#footer {
+.main-footer {
     text-align: center;
-    background-color: #454545;
-    background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
 }
-#footer li {
+.main-footer li {
+    margin: 0px 1%;
+    border-radius: 5px;
     display: inline-block;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
-#footer p {
+
+.main-footer p {
     margin: 15px 0;
     display: inline-block;
     max-width: 80%;
     vertical-align: -webkit-baseline-middle;
 }
-.main-footer #social {
+.footer-social {
     width: 100%;
     display: block;
     padding: 2px;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #2d3842;
+    background: url(../img/bg_stell.jpg);
 }
 .main-footer {
     min-height: 150px;
 }
-.main-footer li {
-    margin: 0px 1%;
-    border-radius: 23px;
-    background: linear-gradient(180deg, #7b7f88, #c0c0c7);
-    width: 10%;
-}
-#social {
-    display: table-cell;
-    width: 115px;
-    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
-    padding: 10px;
-    box-sizing: border-box;
-}
-#social img {
+
+.footer-social img {
     width: 100%;
     height: auto;
 }
-#social a {
+.footer-social a {
     display: inline-block;
     width: 35px;
-    height: 35px;
     border-radius: 3px;
     background: linear-gradient(0deg, #1e1e20, #808792);
     border-top: 1px solid #b1b3c0;
-    margin: 2px;
-    box-shadow: 0px 0px 1px 2px #0000007d;
+    box-shadow: 0px 1px 2px 1px #0000007d;
+    margin: 4px 10px;
 }
-#social a:hover {
+.footer-social a:hover, .contact-me a:hover {   
     background: linear-gradient(0deg, #808792, #1e1e20);
     border-top: 1px solid #1e1e20;
-    box-shadow: none;
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
+
 }
-#foot_content {
+
+.contact-me a img:hover,.footer-social img:hover,#nav li[data-active="active"] a{
+    opacity: 0.8;
+}
+
+.foot_content {
     font: 16px bold Calibri, sans-serif;
     display: table-cell;
     vertical-align: middle;
@@ -177,8 +190,7 @@
     border-radius: 5px;
     padding: 25px;
     margin: 25px 15px;
-/*    background: linear-gradient(0deg, #808590 0%, #b5bac3 50%, #808590 100%);*/
-     background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
+    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);
 }
 .contact-me a {
     display: inline-block;
@@ -186,26 +198,33 @@
     margin: 10px;
     background: linear-gradient(0deg, #1e1e20, #808792);
     border-top: 1px solid #b1b3c0;
-    box-shadow: 0px 0px 1px 2px #0000007d;
+    box-shadow: 0px 1px 2px 1px #0000007d;
 }
 .contact-me ul {
     display: inline-block;
     font-size: 22px;
     line-height: 1.4;
     margin: 20px 0;
-     box-shadow: inset 0px 1px 4px 1px #000000c4;
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
     padding: 15px;
     background: url(../img/bg_stell.jpg);
-        color: black;
+    color: black;
 }
-.contact-link{
+.contact-me ul li, .main_content h2, .about-me h3{
+    background-color: #000;
+    color: transparent;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+.contact-link {
     background: url(../img/bg_stell.jpg);
     padding: 20px;
-     border-radius: 5px;
+    border-radius: 5px;
     box-shadow: inset 0px 1px 4px 1px #000000c4;
 }
-
 .contact-me ul span {
     font-weight: bold;
 }
@@ -213,12 +232,20 @@
     width: 240px;
     height: auto;
 }
-#main_content h2 {
+.main_content h2 {
     font-size: 36px;
-    color: black;
     padding: 0 0 20px;
+    font-weight: bold;
 }
-#main_content p {
+
+.main_content h3 {
+    font-size: 36px;
+    padding: 0 0 20px;
+    font-weight: bold;
+}
+
+
+.main_content p {
     font-size: 20px;
     color: black;
     line-height: 1.4;
@@ -236,7 +263,6 @@
     border-radius: 5px;
     padding: 10px;
     background: url(../img/bg_stell.jpg);
-    
 }
 .about-me p,
 .contact-me p {
@@ -304,35 +330,26 @@
         width: auto;
         background-position: top center;
     }
-    #portfolio {
-        padding-top: 10px;
+    .my-portfolio, .slider-wrapp {
+        padding: 10px;
         margin: 7px 10px 20px;
     }
     .about-me,
-    .contact-me {
+    .contact-me, .wrapp-main-content {
         padding: 20px;
         margin: 20px 10px;
     }
-    #footer {
+    .main-footer {
         min-height: 150px;
     }
-    #social {
+    .footer-social {
         width: 100% !important;
         display: block;
         padding: 2px;
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid #2d3842;
     }
-    #social li {
-        margin: 0px 1%;
-        border-radius: 23px;
-        background: linear-gradient(180deg, #7b7f88, #c0c0c7);
-        width: 10%;
-    }
-    #social li a {
-        width: 25px;
-        height: 25px;
-    }
+    
     .contact-me a img {
         width: 220px;
     }
@@ -362,21 +379,17 @@
         width: 75px;
         height: 173px;
     }
-    #social li {
-        width: 12%;
-    }
     .contact-me a img {
         width: 190px;
     }
 }
 @media screen and (max-width: 480px) {
-    #portfolio {
+    .my-portfolio, .slider-wrapp{
         margin: 7px 5px 20px;
     }
     .about-me,
-    .contact-me {
+    .contact-me, .wrapp-main-content  {
         padding: 15px;
-        margin: 15px 5px;
     }
     #sidebar li {
         width: 70px;
@@ -389,24 +402,23 @@
     #nav ul {
         width: 95%;
     }
-    #social li {
-        width: 13%;
-    }
-    #social li a {
-        width: 25px;
-        height: 25px;
-    }
-    #social li {
-        width: 15%;
-    }
-    .contact-me a img {
+       .about-me p, .contact-me p {
+    text-align: center;
+}
+        .contact-me a img {
         width: 160px;
     }
     #nav a {
         padding: 6px 10px 7px;
     }
+    .footer-social a {
+      width: 25px
+    }
 }
 @media screen and (max-width: 479px) {
+    .slider-wrapp {
+        display: none;
+    }
     #sidebar li {
         width: 55px;
         height: 65px;
@@ -419,15 +431,13 @@
         font-size: 44px;
         padding-top: 15px;
     }
-    #social li {
-        width: 17%;
-    }
-    #portfolio {
+    
+    .my-portfolio, .slider-wrapp {
         padding-top: 5px;
     }
     .about-me,
-    .contact-me {
-        padding: 10px;
+    .contact-me,  .wrapp-main-content{
+        padding: 5px;
     }
 }
 @media screen and (max-width: 410px) {
@@ -447,12 +457,7 @@
     }
 }
 @media screen and (max-width: 360px) {
-    #slider_wrapp {
-        display: none;
-    }
-    #slider_wrapp {
-        display: none;
-    }
+    
     #sidebar li {
         width: 45px;
         height: 55px;
@@ -470,7 +475,9 @@
         font-size: 44px;
         padding-top: 0;
     }
-    #social li {
-        width: 20%;
-    }
+    
+    .about-me, .contact-me, .wrapp-main-content {
+    padding: 5px;
+    margin: 10px 5px;
+}
 }
