@@ -87,7 +87,7 @@ window.onload = function(){
 		};
 	};
 
-	document.querySelector('.slider_list_ul').onclick = function(event){
+	document.querySelector('.slider-list-ul').onclick = function(event){
        	if(event.target.className == 'icon'){
 			startNum = +event.toElement.dataset.num;// + для переводу змінної в число
 			for(var x = 0; x<icon.length; x++){
