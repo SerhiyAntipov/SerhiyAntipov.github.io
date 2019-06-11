@@ -276,6 +276,8 @@
 }
 .skill-logo {
     filter: grayscale(1);
+    height: 60px;
+    width: 140px;
 }
 .skill-article:hover > .skill-info p,
 .skill-article:hover > .skill-info h3 {
@@ -286,21 +288,33 @@
 }
 .skill-html .skill-logo {
     background: url(../img/link_html_01.png) #caccd1 no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .skill-css .skill-logo {
     background: url(../img/link_css_01.png) #caccd1 no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .skill-js .skill-logo {
     background: url(../img/link_js_01.png) #caccd1 no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .skill-git .skill-logo {
     background: url(../img/link_git_01.png) #caccd1 no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .skill-photoshop .skill-logo {
     background: url(../img/link_ps_01.png) #caccd1 no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .skill-wp .skill-logo {
     background: url(../img/link_wp_01.png) #caccd1 no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 #sidebar ul {
     padding: 0 13px;
