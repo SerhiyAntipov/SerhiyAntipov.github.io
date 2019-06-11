@@ -102,23 +102,20 @@
     background-size: cover;
 }
 #stp00 {
-    background: url(../img/0.jpg) no-repeat;
-}
-#stp01 {
-    background: url(../img/1.jpg) no-repeat;
-}
-#stp02 {
-    background: url(../img/2.jpg) no-repeat;
-}
-#stp03 {
-    background: url(../img/3.jpg) no-repeat;
-}
-#stp04 {
     background: url(../img/4.jpg) no-repeat;
 }
-#stp05 {
+#stp01 {
+    background: url(../img/3.jpg) no-repeat;
+}
+#stp02 {
     background: url(../img/5.jpg) no-repeat;
 }
-#stp06 {
-    background: url(../img/6.jpg) no-repeat;
+#stp03 {
+    background: url(../img/0.jpg) no-repeat;
+}
+#stp04 {
+    background: url(../img/2.jpg) no-repeat;
+}
+#stp05 {
+    background: url(../img/1.jpg) no-repeat;
 }
