@@ -223,6 +223,10 @@
     box-shadow: 0px 1px 3px 2px #000000b0;
     margin-top: 10px;
 }
+
+.contact-link:last-child{
+     margin-top: 0px;
+}
 .contact-me ul span {
     font-weight: bold;
 }
@@ -340,19 +344,6 @@
 #link_wp {
     background: url(../img/link_wp_01.png) no-repeat;
 }
-/*
-.contact-me ul li,
-.main-content h2,
-.about-me h3,
-.skill-info p{
-    background-color: #000;
-    color: transparent;
-    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-}
-*/
 
 @media screen and (max-width: 720px) {
     #slider >.active {
@@ -417,7 +408,6 @@
     }
     .my-portfolio,
     .slider-wrapp {
-        padding: 0;
         margin: 7px 5px 20px;
     }
     .about-me,
@@ -482,9 +472,8 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    .about-me p,
-    .contact-me p {
-        /*        text-align: center;*/
+    .skill-info p {
+                text-align: center;
     }
     .contact-me a img {
         width: 140px;
@@ -504,6 +493,12 @@
     .main-content .call-me {
         font-size: 22px;
     }
+    .foot-content p {
+    font-size: 14px;
+    }
+    .my-portfolio{
+    padding: 15px 0;
+}
 }
 @media screen and (max-width: 360px) {
     #nav a {
@@ -547,6 +542,9 @@
     .main-content .call-me {
         font-size: 20px;
     }
+    .my-portfolio{
+    padding: 10px 0;
+}
 }
 @media screen and (max-width: 320px) {
     .main-content p,
@@ -556,5 +554,8 @@
     .main-content .skills,
     .main-content .call-me {
         font-size: 18px;
+    }
+    .foot-content p {
+    font-size: 12px;
     }
 }
