@@ -119,6 +119,9 @@
     overflow: hidden;
     border: 1px solid #5b5b5b;
 }
+.my-portfolio a:hover {
+    background-color: #caccd1;
+}
 .my-portfolio img {
     width: 100%;
     height: auto;
