@@ -514,6 +514,9 @@
     .my-portfolio{
     padding: 15px 0;
 }
+    .skill-logo {
+    height: 50px;
+  }
 }
 @media screen and (max-width: 360px) {
     #nav a {
@@ -560,6 +563,9 @@
     .my-portfolio{
     padding: 10px 0;
 }
+    .skill-logo {
+    height: 45px;
+  }
 }
 @media screen and (max-width: 320px) {
     .main-content p,
