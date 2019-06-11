@@ -1,0 +1,393 @@
+@import url(reset.css);
+
+body {
+	font: 14px/24px Arial;
+	background-color: #fef7ee;
+}
+
+h2 {
+	color: #e6482b;
+	font: bold 34px Arial;
+	text-align: center;
+}
+
+#transport h2{
+	padding-top: 50px; 
+}
+
+#wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	min-width: 640px;
+}
+
+.top-line{
+	background: url(../../img/top_bottom_stroke_20.png) repeat-x;
+	height: 20px;
+	
+}
+
+.bottom-line_page_01{
+	background: url(../../img/top_bottom_stroke_20.png) repeat-x;
+	height: 20px;
+	margin-top: 700px;
+	
+}
+
+.bottom-line{
+	background: url(../../img/top_bottom_stroke_20.png) repeat-x;
+	height: 20px;
+}
+
+
+#content_01{
+	background: url(../../img/bg.jpg) repeat;
+	height: 740px;
+	min-width: 640px;
+	margin: 30px 0;
+	border: 1px solid #c0b096;
+    box-shadow: 2px 3px 15px;
+}
+
+#left_side {
+	float:left;
+	width: 50%;
+	height: 700px;
+	min-width: 320px;
+}
+
+#right_side {
+	float:right;
+	width: 50%;
+	height: 700px;
+	min-width: 320px;
+}
+
+#content_left_side{
+	margin-left: 15%;
+	width: 85%;
+}
+
+
+/*Logo*/
+#logo {
+	margin-top: 40px;
+	height: 94px;
+	max-width: 300px;
+}
+	
+#logo a{
+	background: url(../../img/logo_01.png) no-repeat;
+	background-position: top left;
+	height: 94px;
+	display: block;
+	background-size: 100% auto;
+
+}	
+
+#logo a:hover{
+	background: url(../../img/logo_02.png) no-repeat;
+	background-position: top left;
+	height: 94px;
+	display: block;
+	background-size: 100% auto;
+}
+
+
+/*List*/
+
+
+#select_country{
+	padding: 95px 0 5px;
+}
+
+
+#list{
+	height: 290px;
+}
+
+#list a {
+	background: none;
+	color: #444343;
+	font: bold 24px Arial;
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+	display: block;
+	width: 94%;
+}
+
+#list a:hover{
+	color: #e74d31;
+	border-radius: 4px;
+	border: 1px solid #e6482b;
+	
+}
+
+#bottom_dotted{
+	height: 5px;
+	width: 94%;
+	border-bottom: 3px dotted #585858;
+	margin-bottom: 3px;
+}
+
+#address {
+	background: url(../../img/address_02.png) no-repeat;
+	background-position: bottom left;
+	background-size: 100% 100%;
+	width: 100%;
+	max-width: 300px;
+    height: 530px;
+}
+
+/* основне меню */
+#menu ul li{
+	float: right;
+	list-style: none;
+}
+
+#menu {
+	float: right;
+	margin: 10px 10px 0 0;
+}
+
+#menu_006 a{
+	background: url(../../img/country_col.jpg) no-repeat;
+}
+
+#menu_006 a:hover {
+	background: url(../../img/country_bl.jpg) no-repeat;
+}
+
+#menu_005 a{
+	background: url(../../img/maps_col.jpg) no-repeat;
+}
+
+#menu_005 a:hover {
+	background: url(../../img/maps_bl.jpg) no-repeat;
+}
+
+#menu_004 a{
+	background: url(../../img/transport_col.jpg) no-repeat;
+}
+
+#menu_004 a:hover {
+	background: url(../../img/transport_bl.jpg) no-repeat;
+}
+
+#menu_003 a{
+	background: url(../../img/photo_col.jpg) no-repeat;
+}
+
+#menu_003 a:hover {
+	background: url(../../img/photo_bl.jpg) no-repeat;
+}
+
+#menu_002 a{
+	background: url(../../img/faq_col.jpg) no-repeat;
+}
+
+#menu_002 a:hover {
+	background: url(../../img/faq_bl.jpg) no-repeat;
+}
+
+#menu_001 a{
+	background: url(../../img/contacts_col.jpg) no-repeat;
+}
+
+#menu_001 a:hover {
+	background: url(../../img/contacts_bl.jpg) no-repeat;
+}
+
+.button a {
+	text-decoration: none;
+	height: 30px;
+	width: 98px;
+	font-weight: bold;
+	color: #444343;
+	display: block;
+	text-align: center;
+	padding-top: 100px;
+	font: bold 16px  Arial;
+}
+
+#map{
+	height: 500px;
+    margin: 150px 10px 0;
+	background: url(../../img/map_06.png) no-repeat;
+	background-size: 100% auto;
+	background-position: bottom right;
+	border-right: 4px dotted #686054;
+}
+
+
+/* Розділ 2 */
+#content_02{
+	background: url(../../img/bg.jpg) repeat;
+	min-width: 640px;
+	position: relative;
+	border: 1px solid #c0b096;
+    box-shadow: 2px 3px 15px;
+	margin: 30px 0;
+}
+
+
+#transport {
+	background: url(../../img/top_envelope.png) no-repeat;
+	height: 295px;
+	margin: 0 auto;
+	background-position: top;
+}
+
+#stamp{
+	width: 600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#auto a{
+	background: url(../../img/Stamp_auto_04.png) no-repeat;
+	height: 150px;
+	width: 150px;
+	float: left;
+	margin: 25px;
+}
+
+#auto a:hover{
+	background: url(../../img/Stamp_auto_05.png) no-repeat;
+}
+
+
+#air a{
+	background: url(../../img/Stamp_air_04.png) no-repeat;
+	height: 150px;
+	width: 150px;
+	float: left;
+	margin: 40px 25px;
+}
+
+#air a:hover{
+	background: url(../../img/Stamp_air_05.png) no-repeat;
+}
+
+#train a{
+	background: url(../../img/Stamp_train_04.png) no-repeat;
+	height: 150px;
+	width: 150px;
+	float: left;
+	margin: 25px;
+}
+
+#train a:hover{
+	background: url(../../img/Stamp_train_05.png) no-repeat;
+}
+
+/*accordion*/
+#accordion{
+	max-width: 900px;
+	margin: 40px auto 90px;
+	height: 225px;
+	
+}
+
+#accord{
+	display: flex;
+	justify-content: center;
+	margin: 0 10px;
+	overflow: hidden;
+	border-right: 4px dotted #686054;
+	border-left: 4px dotted #686054;
+	margin-right: 10px;
+}
+
+#accord li{
+	height: 225px;
+	width: 4.3%;
+	cursor: pointer;
+	transition: all 1.5s;
+	border-left: 4px dotted #444343;
+	background: url(../../img/bg.jpg);
+}
+
+#accord li img{
+	width: 307px;
+	border-top: 1px solid #444343;
+	margin: 0 2px;
+	border-bottom: 1px solid #444343;
+}
+
+#accord li:hover{
+	width: 308px;
+	transition: all 1s;
+}
+
+#accord li:nth-child(08){
+	width: 308px;
+}
+
+#accord:hover li:nth-child(08){
+	width: 4.3%;
+}
+
+#accord li:nth-child(08):hover{
+	width: 308px;
+}
+
+
+/* footer */
+
+#footer{
+	min-height: 107px;
+    width: 100%;
+    overflow: hidden;
+ }
+
+#left_footer{
+	background: url(../../img/bottom_envelope_left.png) no-repeat;
+	height: 107px;
+	float: left;
+	overflow: hidden;
+	width: 100px;
+	
+}
+
+#content_footer{
+	background: url(../../img/bottom_envelope_top.png) repeat-x;
+	background-position: top;
+	height: 107px;
+    margin-left: 100px;
+    margin-right: 100px;
+    min-width: 100px;
+}
+
+#right_footer{
+	background: url(../../img/bottom_envelope_right.png) no-repeat;
+	height: 107px;
+	width: 100px;
+	float: right;
+	overflow: hidden;
+	margin-top: -107px;
+}
+
+
+.bottom_menu{
+	padding-top: 63px; 
+	min-width: 400px;
+	
+}
+
+.bottom_menu li {
+	float: right;
+	list-style: none;
+	margin-left: 10px;
+}
+
+.bottom_menu a{
+	text-decoration: none;
+	color: #121037;
+    font: bold 18px Arial;
+}
+
+.bottom_menu a:hover{
+	color: #e6482b;
+}

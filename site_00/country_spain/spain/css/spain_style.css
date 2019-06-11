@@ -1,0 +1,390 @@
+@import url(reset.css);
+
+#body{
+	background-color: #fef7ee;
+}
+
+h1{
+	font: bold 46px Arial;
+	color: #e6482b;
+	text-align: center;
+}
+
+h2{
+	color: #e6482b;
+    font: bold 34px Arial;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+#city h2{
+	color: #e6482b;
+    font: bold 36px Arial;
+    overflow: hidden;
+    padding: 20px 0;
+    border: none;
+    text-align: center;
+}
+
+
+h3 a{
+	color: #e6482b;
+    font: bold 36px/1.4 Arial;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 3px 6px;
+}
+
+h3 a:hover{
+	color: #222222;
+	border-radius: 4px;
+	border: 1px solid #222222;
+}
+
+h4{
+	font: bold 32px Arial;
+	color: #222222;
+	margin-top: -60px;
+    text-align: center;
+}
+
+h5 a{
+	font: 28px/1.4 Arial;
+	color: #222222;
+	text-decoration: none;
+	padding: 3px 6px;
+}
+
+h5 a:hover{
+	color: #e74d31;
+	border-radius: 4px;
+	border: 1px solid #e74d31;
+}
+
+h6{
+	font: 22px Arial;
+	color: #222222;
+	text-indent: 5%;
+	text-align: justify;
+}
+
+
+.personal_impressions p, #basic_text_spain{
+    font: 22px Arial;
+	color: #222222;
+	text-indent: 5%;
+	text-align: justify;
+}
+
+#wrapper{
+	max-width: 1200px;
+	min-width: 640px;
+	margin: 0 auto;
+}
+
+#page_01, #page_02{
+	background: url(../../../img/bg.jpg) repeat;
+	border: 1px solid #c0b096;
+    box-shadow: 2px 3px 15px;
+    margin: 30px 0;
+}
+
+#country{
+	position: relative;
+}
+
+.top_line{
+	background: url(../../../img/top_postcard.png) no-repeat;
+	height: 22px;
+	background-size:  100% 100%;
+}
+
+.logo_country_bl{
+	height: 86px;
+    position: absolute;
+    right: 320px;
+    top: 94px;
+    width: 296px;
+}
+
+#country_spain_bl{
+	background: url(../../../img/spain_bl_01.png);
+}
+
+#right_side_country, #right_side_city_01{
+	float: right;
+	width: 300px;
+	padding: 0 10px;
+}
+
+#title_country{
+	height: 177px;
+	border-bottom: 4px solid #000000;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+#title_country a img{
+	height: 90px;
+    margin-right: 15px;
+    position: relative;
+    top: 23px;
+    width: 90px;
+}
+
+#country_small{
+	height: 86px;
+    position: absolute;
+    right: 320px;
+    top: 95px;
+    width: 296px;
+}
+
+.bottom_line{
+	background: url(../../../img/bottom_postcard.png) no-repeat;
+	height: 22px;
+	background-size:  100% 100%;
+	
+}
+
+#stamp{
+	width: 280px;
+	height: 152px;
+	background: url(../../../img/stamp.png) no-repeat ;
+	background-position: bottom;
+	margin-top: -100px;
+	margin-left: 34px;
+	position: absolute;
+}
+
+#postage a{
+	height: 50px;
+	width: 130px;
+	display: block;
+	text-decoration: none;
+	font: bold 32px Arial;
+    color: #222222;
+	background: url(../../../img/post_spain.jpg) no-repeat;
+	border: dotted 4px #222222;
+	margin-left: 120px;
+    padding: 145px 0 0 35px;
+}
+
+#postage a:hover ~ #stamp{
+	display: none;
+}
+
+#map_europe{
+	height: 370px;
+	width: 296px;
+	background: url(../../../img/map.png) no-repeat;
+	background-position: top right;
+	margin-top: 63px;
+	border-left: 4px dotted #e74d31;
+	border-bottom: 4px dotted #e74d31;
+}
+
+.basic_text{
+	min-height: 463px;
+	margin: 0 5%;
+}
+
+.city {
+	text-align:center;
+	margin: 20px 20px;
+	border: 1px solid #c0b096;
+    box-shadow: 2px 2px 10px;
+}
+
+.groupe_city_link a, .groupe_tourist_map a, .groupe_transport a{
+	text-decoration: none;
+	height: 210px;
+	width: 280px;
+	display: block;
+	border: 4px dotted #222222;
+	padding: 5px;
+}
+
+.city_link, #tourist_map_link, #transport_link {
+    filter: grayscale(1);
+}
+.city_link:hover,
+#tourist_map_link:hover, 
+#transport_link:hover 
+{
+    filter: grayscale(0);
+}
+
+#tourist_map_link{
+	background: url(../../../img/Map_link_col.jpg) no-repeat;
+	background-position: 5px 5px;
+}
+
+#transport_link{
+	background: url(../../../img/pablic_transport_link_col.jpg) no-repeat;
+	background-position: 5px 5px;
+}
+
+.city_link, .map_link, .transport_link{
+	padding-top: 50px;
+	height: 265px;
+	display:inline-block;
+	vertical-align: middle;
+	margin: 0 30px;
+}
+
+.groupe_city_link {
+	margin-top: 20px;
+}
+
+#madrid_link{
+	background: url(../../../img/link_madrid_col.jpg) no-repeat;
+	background-position: 5px 5px;
+}
+
+
+#barcelona_link{
+	background: url(../../../img/link_barcelona_col.jpg) no-repeat;
+	background-position: 5px 5px;
+}
+
+
+
+#valencia_link{
+	background: url(../../../img/link_valencia_col.jpg) no-repeat;
+	background-position: 5px 5px;
+}
+
+
+/** Листок Мадрид **/
+
+.city_name_font{
+	border-bottom: 4px solid #1c1c1c;
+    color: #e6482b;
+    font: bold 40px Arial;
+    margin: 0 10px 0 5%;
+    padding: 30px 0;
+}
+
+.title_section{
+	border-bottom: 4px solid #1c1c1c;
+    color: #e6482b;
+    font: bold 34px Arial;
+    margin:0 3%;
+    padding: 30px 0;
+}
+
+#map_city_01{
+	height: 260px;
+	width: 296px;
+	background: url(../../../img/spain_madrid_map.png) no-repeat;
+	background-position: top right;
+	margin-top: 75px;
+	border-left: 4px dotted #e74d31;
+	border-bottom: 4px dotted #e74d31;
+}
+
+.title_city h1{
+	padding: 0 0 20 8%px;
+}
+
+.title_city {
+	text-align: center;
+}
+
+.title_city a img, .title_section a img, .title_travel_experience a img{
+	height: 60px;
+    width: 60px;
+   	margin: 0 15px -15px 0;
+}
+
+.logo_city_bl {
+	height: 86px;
+    position: relative;
+    right: -4px;
+    top: 32px;
+    width: 296px;
+}
+
+#city_madrid_bl{
+	background: url(../../../img/madrid_bl_01.png);
+}
+
+#title_country a img:hover{
+	opacity: 0.8;
+}
+
+.title_city a img:hover{
+	opacity: 0.8;
+}
+
+.title_section a img:hover{
+	opacity: 0.8;
+}
+
+.title_travel_experience a img:hover{
+	opacity: 0.8;
+}
+
+.travel_experience{
+	margin: 20px 5%;
+
+}
+
+.interval{
+	height: 50px;
+	display: block;
+}
+
+#map_and_transport{
+	text-align: center;
+
+}
+
+.tourist_map, .transport {
+	margin: 50px 20px 0;
+	text-align:center;
+	border: 1px solid #c0b096;
+    box-shadow: 2px 2px 10px;
+    width: 550px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#title_section_travel_experience{
+	text-align: center;
+	border-bottom: 4px solid #000000;
+}
+
+.title_travel_experience{
+	color: #e6482b;
+    font: bold 34px Arial;
+    display: inline-block;
+   	overflow: hidden;
+   	height: 60px;
+   	padding: 20px;
+}
+
+#travel_expirience_logo{
+	width: 582px;
+	height: 135px;
+	background: url(../../../img/Traval_expirience_24.png) no-repeat;
+	display: inline-block;
+	margin-bottom: -2px;
+}
+
+.personal_impressions{
+	padding-top: 50px;
+}
+
+.personal_impressions_img{
+	width: 280px;
+	background: url(../../../img/link_barcelona_col.jpg) 5px 5px no-repeat;
+	height: 210px;
+	float: left;
+	padding: 5px;
+	border: 4px dotted #222222;
+	margin-right: 10px;
+}
+
+

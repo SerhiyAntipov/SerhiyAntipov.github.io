@@ -1,0 +1,154 @@
+@import url(reset.css);
+ #body {
+    background-color: #fef7ee;
+}
+#wrapper {
+    max-width: 1200px;
+    min-width: 640px;
+    margin: 0 auto;
+    background: url(../../img/bg.jpg);
+    border: 1px solid #c0b096;
+    box-shadow: 2px 2px 10px;
+    margin: 30px auto;
+}
+h4 {
+    font: bold 32px Arial;
+    color: #222222;
+    margin-top: -60px;
+    text-align: center;
+}
+.top_line {
+    background: url(../../img/top_postcard.png) no-repeat;
+    height: 22px;
+    display: block;
+    background-size: 100% 100%;
+}
+
+.title_country a {
+    text-decoration: none;
+}
+#title_page {
+    text-align: center;
+    border-bottom: 4px solid #000000;
+    margin: 0 20px;
+}
+.title_country a img {
+    height: 90px;
+    width: 90px;
+    margin: 0 15px -25px 0;
+}
+.title_country a img:hover {
+    opacity: 0.8;
+}
+.title_country {
+    color: #e6482b;
+    display: inline-block;
+    font: bold 46px Arial;
+    height: 90px;
+    padding: 20px;
+    overflow: hidden;
+}
+#all_country_logo {
+    background: url("../../img/country_02.png") no-repeat;
+    display: inline-block;
+    height: 135px;
+    width: 600px;
+    margin-bottom: -3px;
+}
+.groupe_country_link {
+    margin-top: 20px;
+    text-align: center;
+}
+.groupe_country_link a {
+    text-decoration: none;
+    height: 210px;
+    width: 280px;
+    display: block;
+    border: 4px dotted #222222;
+    padding: 5px;
+}
+.country_link {
+    padding-top: 50px;
+    height: 265px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 30px;
+}
+.list_country {
+    margin: 30px 20px 0;
+    border: 1px solid #c0b096;
+    box-shadow: 2px 2px 10px;
+}
+.bottom_line {
+    background: url(../../img/bottom_postcard.png) no-repeat;
+    height: 22px;
+    display: block;
+    background-size: 100% 100%;
+}
+.interval_01 {
+    height: 126px;
+    margin: 0 20px;
+    display: block;
+    background: url(../../img/interval_04.png) no-repeat;
+    background-size: auto 100%;
+}
+#austria_link {
+    background: url(../../img/all_city/wien_link_col.jpg) no-repeat;
+}
+#belgium_link {
+    background: url(../../img/all_city/brussel_link_col.jpg) no-repeat;
+}
+#czech_republic_link {
+    background: url(../../img/all_city/prague_link_col.jpg) no-repeat;
+}
+#france_link {
+    background: url(../../img/all_city/paris_link_col.jpg) no-repeat;
+    
+}
+
+#germany_link {
+    background: url(../../img/all_city/berlin_link_col.jpg) no-repeat;
+}
+
+#greece_link {
+    background: url(../../img/all_city/athens_link_col.jpg)no-repeat;
+}
+#hungary_link {
+    background: url(../../img/all_city/budapest_link_col.jpg) no-repeat;
+}
+#italy_link {
+    background: url(../../img/all_city/rome_link_col.jpg) no-repeat;
+}
+#netherlands_link {
+    background: url(../../img/all_city/amsterdam_link_col.jpg) no-repeat;
+}
+#poland_link {
+    background: url(../../img/all_city/warszawa_link_col.jpg) no-repeat;
+}
+#portugal_link {
+    background: url(../../img/all_city/porto_link_col.jpg) no-repeat;
+}
+#spain_link {
+    background: url(../../img/all_city/madrid_link_col.jpg) no-repeat;
+}
+#sweden_link {
+    background: url(../../img/all_city/stockholm_link_col.jpg) no-repeat;
+}
+#turkey_link {
+    background: url(../../img/all_city/istanbul_link_col.jpg) no-repeat;
+}
+#ukraine_link {
+    background: url(../../img/all_city/kyiv_link_col.jpg) no-repeat;
+}
+
+#wrapper .country_link a{
+   background-size: 97%;
+    background-position: center;
+}
+
+.country_link {
+    filter: grayscale(1);
+}
+.country_link:hover {
+    filter: grayscale(0);
+}
