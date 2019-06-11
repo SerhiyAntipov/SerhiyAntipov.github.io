@@ -13,7 +13,8 @@
     height: 265px;
     width: 400px;
     border-radius: 5px;
-    border: 1px solid #5b5b5b;
+/*    border: 1px solid #5b5b5b;*/
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
 #slider a {
     display: block;
@@ -56,7 +57,7 @@
     display: inline-block;
     margin: 20px 0;
     padding: 20px;
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    box-shadow: 0px 1px 3px 2px #000000b0;
     border-radius: 5px;
     background: url(../img/bg_stell.jpg);
 }

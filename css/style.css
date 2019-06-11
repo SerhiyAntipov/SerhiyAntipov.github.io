@@ -101,7 +101,7 @@
     /*    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);*/
 }
 .my-portfolio {
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    box-shadow: 0px 1px 3px 2px #000000b0;
     border-radius: 5px;
     margin: 7px 20px 20px;
     padding: 20px 0;
@@ -110,18 +110,18 @@
     /*    display: none;*/
 }
 .my-portfolio a {
-    margin: 5px;
-    padding: 5px;
     display: inline-block;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+    padding: 5px;
     width: 45%;
     box-sizing: border-box;
-    border-radius: 3px;
     overflow: hidden;
-    border: 1px solid #5b5b5b;
-}
-.my-portfolio a:hover {
     background-color: #caccd1;
+     cursor: pointer;
 }
+
 .my-portfolio img {
     width: 100%;
     height: auto;
@@ -179,7 +179,8 @@
 /*    box-shadow: 0px 1px 2px 1px #0000007d;*/
 }
 
-.contact-link-wrapper{
+.contact-link-wrapper,
+.skill-logo {
     display: inline-block;
     border-radius: 5px;
     margin: 5px;
@@ -191,12 +192,12 @@
     font-size: 22px;
     line-height: 1.4;
     margin: 20px 0;
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
     border-radius: 5px;
     padding: 15px;
     background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
     color: #2d2d2d;
+    box-shadow: 0px 1px 3px 2px #000000b0;
 }
 .contact-me ul:hover {
     color: black;
@@ -219,7 +220,7 @@
     background: url(../img/bg_stell.jpg);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    box-shadow: 0px 1px 3px 2px #000000b0;
     margin-top: 10px;
 }
 .contact-me ul span {
@@ -262,7 +263,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 35px;
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
+    box-shadow: 0px 1px 3px 2px #000000b0;
     border-radius: 5px;
     padding: 10px;
     background-color: #e1e1e1;
@@ -279,22 +280,22 @@
     filter: grayscale(0);
 }
 .skill-html .skill-logo {
-    background: url(../img/link_html_01.png) no-repeat;
+    background: url(../img/link_html_01.png) #caccd1 no-repeat;
 }
 .skill-css .skill-logo {
-    background: url(../img/link_css_01.png) no-repeat;
+    background: url(../img/link_css_01.png) #caccd1 no-repeat;
 }
 .skill-js .skill-logo {
-    background: url(../img/link_js_01.png) no-repeat;
+    background: url(../img/link_js_01.png) #caccd1 no-repeat;
 }
 .skill-git .skill-logo {
-    background: url(../img/link_git_01.png) no-repeat;
+    background: url(../img/link_git_01.png) #caccd1 no-repeat;
 }
 .skill-photoshop .skill-logo {
-    background: url(../img/link_ps_01.png) no-repeat;
+    background: url(../img/link_ps_01.png) #caccd1 no-repeat;
 }
 .skill-wp .skill-logo {
-    background: url(../img/link_wp_01.png) no-repeat;
+    background: url(../img/link_wp_01.png) #caccd1 no-repeat;
 }
 #sidebar ul {
     padding: 0 13px;
