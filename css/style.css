@@ -135,6 +135,7 @@
     display: inline-block;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
+
 .main-footer p {
     margin: 15px 0;
     display: inline-block;
@@ -171,12 +172,20 @@
 .contact-me a {
     display: inline-block;
     border-radius: 5px;
-    margin: 10px 20px;
+    margin: 5px;
     background-color: #54585f;
     background: linear-gradient(0deg, #1e1e20, #808792);
     border-top: 1px solid #b1b3c0;
-    box-shadow: 0px 1px 2px 1px #0000007d;
+/*    box-shadow: 0px 1px 2px 1px #0000007d;*/
 }
+
+.contact-link-wrapper{
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+}
+
 .contact-me ul {
     display: inline-block;
     font-size: 22px;
