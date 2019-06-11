@@ -140,6 +140,7 @@
     margin: 15px 0;
     display: inline-block;
     padding: 0 5px;
+    text-transform: none;
 }
 .footer-social {
     padding: 2px 0;
