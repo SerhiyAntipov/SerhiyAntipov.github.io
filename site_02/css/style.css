@@ -71,6 +71,7 @@ nav li a {
     font-size: 16px;
     font-family: "Arial";
     color: #fff;
+    line-height: 1.6;
 }
 nav li a:hover {
     color: #13c5ff;
@@ -470,7 +471,6 @@ time p {
     .header_right_side nav li {
         display: block;
         margin: 0;
-        padding: 5px;
     }
     nav li a {
         font-size: 20px;
@@ -484,6 +484,7 @@ time p {
         left: 11px;
         top: 9px;
     }
+    
     #label_burger {
         display: block;
         width: 100%;
@@ -500,7 +501,8 @@ time p {
     }
     nav {
         display: none;
-        height: 0;
+       height: 0px;
+       
     }
     #burger:checked ~ .nav {
         display: block;
