@@ -2,7 +2,7 @@ window.onload = function() {
 
     var sliderArrowLeft = document.querySelector('.left')
     var sliderArrowRight = document.querySelector('.right')
-
+//визначення пристрою(показ приховування кнопок)--------------
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         sliderArrowLeft.style.visibility = 'hidden';
         sliderArrowRight.style.visibility = 'hidden';
@@ -10,7 +10,7 @@ window.onload = function() {
         sliderArrowLeft.style.visibility = 'visible';
         sliderArrowRight.style.visibility = 'visible';
     }
-
+//управління кнопками--------------------
     sliderArrowLeft.addEventListener("click", function(event) {
         arrsliderImg.push(arrsliderImg.shift());
         for (var i = 0; i < arrsliderImg.length; i++) {
@@ -25,20 +25,19 @@ window.onload = function() {
         }
     });
 
-
+//слайдер----------------
     var initialPoint;
     var finalPoint;
     var sliderImg = document.querySelectorAll('.slider-img');
-    var arrsliderImg = Array.from(sliderImg);
+//    перетворення в мавсив з подальшим застосуванням всіх вункцій масиву------
+    var arrsliderImg = Array.from(sliderImg); 
 
     document.querySelector('.slider').addEventListener('touchstart', function(event) {
-        event.preventDefault();
         event.stopPropagation();
         initialPoint = event.changedTouches[0];
     });
 
     document.querySelector('.slider').addEventListener('touchend', function(event) {
-        event.preventDefault();
         event.stopPropagation();
         finalPoint = event.changedTouches[0];
         var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
