@@ -4,11 +4,11 @@ window.onload = function() {
     var sliderArrowRight = document.querySelector('.right')
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        sliderArrowLeft.style.display = 'none';
-        sliderArrowRight.style.display = 'none';
+        sliderArrowLeft.style.visibility = 'hidden';
+        sliderArrowRight.style.visibility = 'hidden';
     } else {
-        sliderArrowLeft.style.display = 'block';
-        sliderArrowRight.style.display = 'block';
+        sliderArrowLeft.style.visibility = 'visible';
+        sliderArrowRight.style.visibility = 'visible';
     }
 
     sliderArrowLeft.addEventListener("click", function(event) {

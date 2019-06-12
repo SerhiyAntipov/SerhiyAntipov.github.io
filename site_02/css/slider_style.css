@@ -3,6 +3,7 @@
      min-height: 450px;
  }
  .arrow {
+     visibility: hidden;
      position: absolute;
      width: 55px;
      height: 40px;
