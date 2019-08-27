@@ -127,4 +127,3 @@ produrtCards.addEventListener('click', function(event) {
     };
 });
 
-(event.composedPath[2].attributes[1].value == productArr[i].idNumber && event.composedPath[2].attributes[1].value == productArr[i].idNumber())

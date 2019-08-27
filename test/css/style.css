@@ -241,11 +241,11 @@
     cursor: pointer;
 }
 .arrow.left {
-    left: 113px;
+    left: 55px;
     background: url(../images/arrow_left.png) no-repeat;
 }
 .arrow.right {
-    right: 95px;
+    right: 32px;
     background: url(../images/arrow_right.png) no-repeat;
 }
 .slider-text {
