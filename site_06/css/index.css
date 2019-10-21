@@ -354,6 +354,10 @@
     padding-top: 50px;
 }
 
+.wrapper-img-selected {
+    padding-top: 160px;
+}
+
 .nav-categories {
     display: -webkit-box;
     display: -ms-flexbox;
