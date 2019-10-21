@@ -1,593 +1,709 @@
-@import url(reset.css);
-@import url(slider_style.css);
  body {
-    height: 100%;
-}
-#wrapper {
-    max-width: 960px;
-    min-width: 320px;
-    margin: 0 auto;
-    position: relative;
-    font: 16px bold Calibri, sans-serif;
-    background-color: #353c4c;
-    background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
-}
-#nav li[data-active="active"] {
-    background-color: #232426;
-    background: linear-gradient(0deg, #808792, #1e1e20);
-    border-top: 1px solid #1e1e20;
-    box-shadow: inset 0px 1px 6px 2px #000000c4;
-}
-#header {
-    min-height: 130px;
-    text-align: center;
-}
-#header p {
-    font-size: 60px;
-    font-family: "Calibri";
-    line-height: 1.6;
-    color: rgb(230, 230, 230);
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#header span,
-.foot-content p {
-    font-size: 16px;
-    font-family: "Calibri";
-    color: rgb(235, 219, 170);
-    text-transform: uppercase;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
-}
-#nav {
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-    border-top: 1px solid #ffffff;
-    border-bottom: 2px solid #2d3842;
-}
-#nav ul {
-    min-width: 180px;
-    border-radius: 23px;
-    box-shadow: inset 0px 1px 6px 2px #000000c4;
-    display: inline-block;
-    margin: 5px 0 5px 13px;
-    padding: 2px 4px;
-}
-#nav li {
-    display: inline-block;
-    min-width: 50px;
-    background-color: #50545b;
-    background: linear-gradient(0deg, #1e1e20, #808792);
-    border-radius: 20px;
-    border-top: 1px solid #b1b3c0;
-    margin: 3px;
-    box-shadow: 0px 0px 1px 2px #0000007d;
-}
-#nav li:hover {
-    box-shadow: none;
-}
-#nav a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 6px 20px 7px;
-    text-shadow: 0px 0px 2px #000;
-}
-#nav a:hover {
-    text-shadow: none;
-}
-#main {
-    text-align: center;
-    display: flex;
-}
-.main-content {
-    width: 100%;
-    box-sizing: border-box;
-}
-.wrapp-main-content {
-    padding-bottom: 10px;
-    margin: 25px 15px 25px 5px;
-}
-.about-me,
-.contact-me {
-    padding: 25px;
-    margin: 25px 15px;
-}
-.about-me,
-.contact-me,
-.wrapp-main-content {
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
-    border-radius: 5px;
-    background-color: #caccd1;
-    /*    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);*/
-}
-.my-portfolio {
-    box-shadow: 0px 1px 3px 2px #000000b0;
-    border-radius: 5px;
-    margin: 7px 20px 20px;
-    padding: 20px 0;
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-    /*    display: none;*/
-}
-.my-portfolio a {
-    display: inline-block;
-    border-radius: 5px;
-    margin: 5px;
-    box-shadow: inset 0px 1px 2px 1px #000000c4;
-    padding: 5px;
-    width: 45%;
-    box-sizing: border-box;
-    overflow: hidden;
-    background-color: #caccd1;
+     height: 100%;
+ }
+
+ #wrapper {
+     max-width: 960px;
+     min-width: 320px;
+     margin: 0 auto;
+     position: relative;
+     font: 16px bold Calibri, sans-serif;
+     background-color: #353c4c;
+     background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
+ }
+
+ #nav li[data-active="active"] {
+     background-color: #232426;
+     background: linear-gradient(0deg, #808792, #1e1e20);
+     border-top: 1px solid #1e1e20;
+     box-shadow: inset 0px 1px 6px 2px #000000c4;
+ }
+
+ #header {
+     min-height: 130px;
+     text-align: center;
+ }
+
+ #header p {
+     font-size: 60px;
+     font-family: "Calibri";
+     line-height: 1.6;
+     color: rgb(230, 230, 230);
+     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+ }
+
+ #header span,
+ .foot-content p {
+     font-size: 16px;
+     font-family: "Calibri";
+     color: rgb(235, 219, 170);
+     text-transform: uppercase;
+     text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+ }
+
+ #nav {
+     background-color: #e1e1e1;
+     background: url(../img/bg_stell.jpg);
+     border-top: 1px solid #ffffff;
+     border-bottom: 2px solid #2d3842;
+ }
+
+ #nav ul {
+     min-width: 180px;
+     border-radius: 23px;
+     box-shadow: inset 0px 1px 6px 2px #000000c4;
+     display: inline-block;
+     margin: 5px 0 5px 13px;
+     padding: 2px 4px;
+ }
+
+ #nav li {
+     display: inline-block;
+     min-width: 50px;
+     background-color: #50545b;
+     background: linear-gradient(0deg, #1e1e20, #808792);
+     border-radius: 20px;
+     border-top: 1px solid #b1b3c0;
+     margin: 3px;
+     box-shadow: 0px 0px 1px 2px #0000007d;
+ }
+
+ #nav li:hover {
+     box-shadow: none;
+ }
+
+ #nav a {
+     display: block;
+     color: #fff;
+     text-decoration: none;
+     font-size: 18px;
+     padding: 6px 20px 7px;
+     text-shadow: 0px 0px 2px #000;
+ }
+
+ #nav a:hover {
+     text-shadow: none;
+ }
+
+ #main {
+     text-align: center;
+     display: flex;
+ }
+
+ .main-content {
+     width: 100%;
+     box-sizing: border-box;
+ }
+
+ .wrapp-main-content {
+     padding-bottom: 10px;
+     margin: 25px 15px 25px 5px;
+ }
+
+ .about-me,
+ .contact-me {
+     padding: 25px;
+     margin: 25px 15px;
+ }
+
+ .about-me,
+ .contact-me,
+ .wrapp-main-content {
+     box-shadow: inset 0px 1px 4px 1px #000000c4;
+     border-radius: 5px;
+     background-color: #caccd1;
+     /*    background: linear-gradient(0deg, #8d929b 0%, #cfd1d6 50%, #8d929b 100%);*/
+ }
+
+ .my-portfolio {
+     box-shadow: 0px 1px 3px 2px #000000b0;
+     border-radius: 5px;
+     margin: 7px 20px 20px;
+     padding: 20px 0;
+     background-color: #e1e1e1;
+     background: url(../img/bg_stell.jpg);
+     /*    display: none;*/
+ }
+
+ .my-portfolio a {
+     display: inline-block;
+     border-radius: 5px;
+     margin: 5px;
+     box-shadow: inset 0px 1px 2px 1px #000000c4;
+     padding: 5px;
+     width: 45%;
+     box-sizing: border-box;
+     overflow: hidden;
+     background-color: #caccd1;
      cursor: pointer;
-}
+ }
 
-.my-portfolio img {
-    width: 100%;
-    height: auto;
-}
-.main-footer {
-    text-align: center;
-}
-.main-footer li {
-    margin: 0px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    box-shadow: inset 0px 1px 2px 1px #000000c4;
-}
+ .my-portfolio img {
+     width: 100%;
+     height: auto;
+ }
 
-.main-footer p {
-    margin: 15px 0;
-    display: inline-block;
-    padding: 0 5px;
-    text-transform: none;
-}
-.footer-social {
-    padding: 2px 0;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #2d3842;
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-}
-.footer-social img {
-    width: 100%;
-    height: auto;
-}
-.footer-social a {
-    display: inline-block;
-    width: 35px;
-    border-radius: 3px;
-    background-color: #50545b;
-    background: linear-gradient(0deg, #1e1e20, #808792);
-    border-top: 1px solid #b1b3c0;
-    box-shadow: 0px 1px 2px 1px #0000007d;
-    margin: 4px 10px;
-}
-.footer-social a:hover,
-.contact-me a:hover {
-    background-color: #44474d;
-    background: linear-gradient(0deg, #808792, #1e1e20);
-    border-top: 1px solid #1e1e20;
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
-}
-.contact-me a {
-    display: inline-block;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: #54585f;
-    background: linear-gradient(0deg, #1e1e20, #808792);
-    border-top: 1px solid #b1b3c0;
-/*    box-shadow: 0px 1px 2px 1px #0000007d;*/
-}
+ .main-footer {
+     text-align: center;
+ }
 
-.contact-link-wrapper,
-.skill-logo {
-    display: inline-block;
-    border-radius: 5px;
-    margin: 5px;
-    box-shadow: inset 0px 1px 2px 1px #000000c4;
-}
+ .main-footer li {
+     margin: 0px 10px;
+     border-radius: 5px;
+     display: inline-block;
+     box-shadow: inset 0px 1px 2px 1px #000000c4;
+ }
 
-.contact-me ul {
-    display: inline-block;
-    font-size: 22px;
-    line-height: 1.4;
-    margin: 20px 0;
-    border-radius: 5px;
-    padding: 15px;
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-    color: #2d2d2d;
-    box-shadow: 0px 1px 3px 2px #000000b0;
-}
-.contact-me ul:hover {
-    color: black;
-}
-.main-content p,
-.studied-courses li {
-    font-size: 24px;
-    line-height: 1.2;
-    text-align: justify;
-    color: #333333;
-}
-.studied-courses li {
-    padding-left: 10px;
-}
-.studied-courses li span {
-    font-weight: bold;
-}
-.contact-link {
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 3px 2px #000000b0;
-    margin-top: 10px;
-}
+ .main-footer p {
+     margin: 15px 0;
+     display: inline-block;
+     padding: 0 5px;
+     text-transform: none;
+ }
 
-.contact-link:last-child{
+ .footer-social {
+     padding: 2px 0;
+     border-top: 1px solid #ffffff;
+     border-bottom: 1px solid #2d3842;
+     background-color: #e1e1e1;
+     background: url(../img/bg_stell.jpg);
+ }
+
+ .footer-social img {
+     width: 100%;
+     height: auto;
+ }
+
+ .footer-social a {
+     display: inline-block;
+     width: 35px;
+     border-radius: 3px;
+     background-color: #50545b;
+     background: linear-gradient(0deg, #1e1e20, #808792);
+     border-top: 1px solid #b1b3c0;
+     box-shadow: 0px 1px 2px 1px #0000007d;
+     margin: 4px 10px;
+ }
+
+ .footer-social a:hover,
+ .contact-me a:hover {
+     background-color: #44474d;
+     background: linear-gradient(0deg, #808792, #1e1e20);
+     border-top: 1px solid #1e1e20;
+     box-shadow: inset 0px 1px 4px 1px #000000c4;
+ }
+
+ .contact-me a {
+     display: inline-block;
+     border-radius: 5px;
+     margin: 5px;
+     background-color: #54585f;
+     background: linear-gradient(0deg, #1e1e20, #808792);
+     border-top: 1px solid #b1b3c0;
+     /*    box-shadow: 0px 1px 2px 1px #0000007d;*/
+ }
+
+ .contact-link-wrapper,
+ .skill-logo {
+     display: inline-block;
+     border-radius: 5px;
+     margin: 5px;
+     box-shadow: inset 0px 1px 2px 1px #000000c4;
+ }
+
+ .contact-me ul {
+     display: inline-block;
+     font-size: 22px;
+     line-height: 1.4;
+     margin: 20px 0;
+     border-radius: 5px;
+     padding: 15px;
+     background-color: #e1e1e1;
+     background: url(../img/bg_stell.jpg);
+     color: #2d2d2d;
+     box-shadow: 0px 1px 3px 2px #000000b0;
+ }
+
+ .contact-me ul:hover {
+     color: black;
+ }
+
+ .main-content p,
+ .studied-courses li {
+     font-size: 24px;
+     line-height: 1.2;
+     text-align: justify;
+     color: #333333;
+ }
+
+ .studied-courses li {
+     padding-left: 10px;
+ }
+
+ .studied-courses li span {
+     font-weight: bold;
+ }
+
+ .contact-link {
+     background-color: #e1e1e1;
+     background: url(../img/bg_stell.jpg);
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0px 1px 3px 2px #000000b0;
+     margin-top: 10px;
+ }
+
+ .contact-link:last-child {
      margin-top: 0px;
-}
-.contact-me ul span {
-    font-weight: bold;
-}
-.contact-me a img {
-    width: 180px;
-    height: auto;
-}
-.main-content h2 {
-    font-size: 36px;
-    padding: 0 0 10px;
-    font-weight: bold;
-    /*    color: #3a3a3a;*/
-    color: #2d2d2d;
-}
-.main-content h3 {
-    font-size: 36px;
-    padding: 0 0 5px;
-    font-weight: bold;
-    color: #2d2d2d;
-}
-.main-content .skills,
-.main-content .call-me {
-    font-size: 26px;
-    padding: 5px 0;
-    font-weight: bold;
-    text-align: center;
-}
-.skill-info {
-    padding-left: 10px;
-    width: 100%;
-}
-.skill-logo {
-    width: 177px;
-    height: 100px;
-    flex-shrink: 0;
-}
-.skill-article {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    box-shadow: 0px 1px 3px 2px #000000b0;
-    border-radius: 5px;
-    padding: 6px ;
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-}
-.skill-logo {
-    filter: grayscale(1);
-    height: 60px;
-    width: 140px;
-}
-.skill-article:hover > .skill-info p,
-.skill-article:hover > .skill-info h3 {
-    color: black;
-}
-.skill-article:hover > .skill-logo {
-    filter: grayscale(0);
-}
-.skill-html .skill-logo {
-    background: url(../img/link_html_01.png) #caccd1 no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.skill-css .skill-logo {
-    background: url(../img/link_css_01.png) #caccd1 no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.skill-js .skill-logo {
-    background: url(../img/link_js_01.png) #caccd1 no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.skill-react .skill-logo {
-    background: url(../img/link_react_01.png) #caccd1 no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.skill-git .skill-logo {
-    background: url(../img/link_git_01.png) #caccd1 no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.skill-photoshop .skill-logo {
-    background: url(../img/link_ps_01.png) #caccd1 no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.skill-wp .skill-logo {
-    background: url(../img/link_wp_01.png) #caccd1 no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-#sidebar ul {
-    padding: 0 13px;
-}
-#sidebar ul:hover li {
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-    background-position: center;
-    width: 177px;
-    transition: 0.2s;
-    filter: grayscale(0);
-    border: 2px solid #3438429c;
-}
-#sidebar li {
-    margin-top: 13px;
-    border-radius: 20px;
-    transition: 0.2s;
-    width: 85px;
-    height: 100px;
-    filter: grayscale(1);
-}
-#sidebar li a {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-#link_html {
-    background: url(../img/link_html_01.png) no-repeat;
-}
-#link_css {
-    background: url(../img/link_css_01.png) no-repeat;
-}
-#link_js {
-    background: url(../img/link_js_01.png) no-repeat;
-}
-#link_git {
-    background: url(../img/link_git_01.png) no-repeat;
-}
-#link_ps {
-    background: url(../img/link_ps_01.png) no-repeat;
-}
-#link_wp {
-    background: url(../img/link_wp_01.png) no-repeat;
-}
-#link_react {
-    background: url(../img/link_react_01.png) no-repeat;
-}
+ }
 
-@media screen and (max-width: 720px) {
-    #slider >.active {
-        height: 260px;
-        width: 360px;
-    }
-}
-@media screen and (max-width: 640px) {
-    #sidebar li a {
-        transition: all 0.2s ease-in 0s;
-        background-size: 100% auto;
-        background-position: top center;
-        margin-top: 3px;
-    }
-    #link_html {
-        background: url(../img/link_html_02.png) no-repeat;
-    }
-    #link_css {
-        background: url(../img/link_css_02.png) no-repeat;
-    }
-    #link_js {
-        background: url(../img/link_js_02.png) no-repeat;
-    }
-    #link_react {
-        background: url(../img/link_react_02.png) no-repeat;
-    }
-    #link_git {
-        background: url(../img/link_git_02.png) no-repeat;
-    }
-    #link_ps {
-        background: url(../img/link_ps_02.png) no-repeat;
-    }
-    #link_wp {
-        background: url(../img/link_wp_02.png) no-repeat;
-    }
-    #main {
-        flex-direction: column;
-    }
-    #nav {
-        text-align: center;
-    }
-    #nav ul {
-        margin-left: 0;
-        width: 75%;
-    }
-    #nav li {
-        width: 30%;
-    }
-    #sidebar ul {
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-around;
-    }
-    #sidebar li {
-        width: 60px;
-        height: 75px;
-        margin: 5px 0;
-        border-radius: 10px;
-    }
-    #sidebar ul:hover li {
-        width: 60px;
-        height: 140px;
-        border: none;
-        box-shadow: inset 0px 1px 2px 1px #000000c4;
-    }
-    .my-portfolio,
-    .slider-wrapp {
-        margin: 7px 5px 20px;
-    }
-    .about-me,
-    .contact-me,
-    .wrapp-main-content {
-        padding: 10px;
-        margin: 20px 10px;
-    }
-    .contact-me a img {
-        width: 160px;
-    }
-    .my-portfolio a {
-        margin: 5px;
-        padding: 3px;
-    }
-    .main-content h3 {
-        padding: 0;
-    }
-    .main-content p,
-    .studied-courses li {
-        font-size: 22px;
-    }
-    .main-content h3,
-    .main-content h2 {
-        font-size: 32px;
-    }
-    .main-content .skills,
-    .main-content .call-me {
-        font-size: 24px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .slider-wrapp {
-        display: none;
-    }
-    #nav ul {
-        width: 80%;
-    }
-    #sidebar li {
-        width: 46px;
-        height: 56px;
-    }
-    #sidebar ul:hover li {
-        width: 46px;
-        height: 110px;
-    }
-    .footer-social a {
-        width: 25px;
-    }
-    #header p {
-        font-size: 54px;
-    }
-    #header {
-        min-height: 120px;
-    }
-    .contact-me ul {
-        font-size: 18px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .skill-article {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .skill-info p {
-                text-align: center;
-    }
-    .contact-me a img {
-        width: 140px;
-    }
-    .skill-info {
-        padding-left: 0px;
-    }
-    .main-content p,
-    .studied-courses li {
-        font-size: 20px;
-    }
-    .main-content h3,
-    .main-content h2 {
-        font-size: 28px;
-    }
-    .main-content .skills,
-    .main-content .call-me {
-        font-size: 22px;
-    }
-    .foot-content p {
-    font-size: 14px;
-    }
-    .my-portfolio{
-    padding: 15px 0;
-}
-    .skill-logo {
-    height: 50px;
-  }
-}
-@media screen and (max-width: 360px) {
-    #nav a {
-        font-size: 14px;
-    }
-    #sidebar li {
-        width: 42px;
-        height: 50px;
-    }
-    #sidebar ul:hover li {
-        width: 42px;
-        height: 98px;
-    }
-    #header p {
-        font-size: 48px;
-    }
-    #header {
-        min-height: 110px;
-    }
-    .contact-me ul {
-        font-size: 16px;
-    }
-    .contact-me a img {
-        width: 120px;
-    }
-    #nav ul {
-        width: 90%;
-    }
-    .main-content p,
-    .studied-courses li {
-        font-size: 18px;
-    }
-    .main-content h3,
-    .main-content h2 {
-        font-size: 24px;
-    }
-    .studied-courses li {
-        padding-left: 0px;
-    }
-    .main-content .skills,
-    .main-content .call-me {
-        font-size: 20px;
-    }
-    .my-portfolio{
-    padding: 10px 0;
-}
-    .skill-logo {
-    height: 45px;
-  }
-}
-@media screen and (max-width: 320px) {
-    .main-content p,
-    .studied-courses li {
-        font-size: 16px;
-    }
-    .main-content .skills,
-    .main-content .call-me {
-        font-size: 18px;
-    }
-    .foot-content p {
-    font-size: 12px;
-    }
-}
+ .contact-me ul span {
+     font-weight: bold;
+ }
+
+ .contact-me a img {
+     width: 180px;
+     height: auto;
+ }
+
+ .main-content h2 {
+     font-size: 36px;
+     padding: 0 0 10px;
+     font-weight: bold;
+     /*    color: #3a3a3a;*/
+     color: #2d2d2d;
+ }
+
+ .main-content h3 {
+     font-size: 36px;
+     padding: 0 0 5px;
+     font-weight: bold;
+     color: #2d2d2d;
+ }
+
+ .main-content .skills,
+ .main-content .call-me {
+     font-size: 26px;
+     padding: 5px 0;
+     font-weight: bold;
+     text-align: center;
+ }
+
+ .skill-info {
+     padding-left: 10px;
+     width: 100%;
+ }
+
+ .skill-logo {
+     width: 177px;
+     height: 100px;
+     flex-shrink: 0;
+ }
+
+ .skill-article {
+     display: flex;
+     align-items: center;
+     margin-bottom: 25px;
+     box-shadow: 0px 1px 3px 2px #000000b0;
+     border-radius: 5px;
+     padding: 6px;
+     background-color: #e1e1e1;
+     background: url(../img/bg_stell.jpg);
+ }
+
+ .skill-logo {
+     filter: grayscale(1);
+     height: 60px;
+     width: 140px;
+ }
+
+ .skill-article:hover>.skill-info p,
+ .skill-article:hover>.skill-info h3 {
+     color: black;
+ }
+
+ .skill-article:hover>.skill-logo {
+     filter: grayscale(0);
+ }
+
+ .skill-html .skill-logo {
+     background: url(../img/link_html_01.png) #caccd1 no-repeat;
+     background-position: center;
+     background-size: contain;
+ }
+
+ .skill-css .skill-logo {
+     background: url(../img/link_css_01.png) #caccd1 no-repeat;
+     background-position: center;
+     background-size: contain;
+ }
+
+ .skill-js .skill-logo {
+     background: url(../img/link_js_01.png) #caccd1 no-repeat;
+     background-position: center;
+     background-size: contain;
+ }
+
+ .skill-react .skill-logo {
+     background: url(../img/link_react_01.png) #caccd1 no-repeat;
+     background-position: center;
+     background-size: contain;
+ }
+
+ .skill-git .skill-logo {
+     background: url(../img/link_git_01.png) #caccd1 no-repeat;
+     background-position: center;
+     background-size: contain;
+ }
+
+ .skill-photoshop .skill-logo {
+     background: url(../img/link_ps_01.png) #caccd1 no-repeat;
+     background-position: center;
+     background-size: contain;
+ }
+
+ .skill-wp .skill-logo {
+     background: url(../img/link_wp_01.png) #caccd1 no-repeat;
+     background-position: center;
+     background-size: contain;
+ }
+
+ #sidebar ul {
+     padding: 0 13px;
+ }
+
+ #sidebar ul:hover li {
+     background-color: #e1e1e1;
+     background: url(../img/bg_stell.jpg);
+     background-position: center;
+     width: 177px;
+     transition: 0.2s;
+     filter: grayscale(0);
+     border: 2px solid #3438429c;
+ }
+
+ #sidebar li {
+     margin-top: 13px;
+     border-radius: 20px;
+     transition: 0.2s;
+     width: 85px;
+     height: 100px;
+     filter: grayscale(1);
+ }
+
+ #sidebar li a {
+     display: block;
+     height: 100%;
+     width: 100%;
+ }
+
+ #link_html {
+     background: url(../img/link_html_01.png) no-repeat;
+ }
+
+ #link_css {
+     background: url(../img/link_css_01.png) no-repeat;
+ }
+
+ #link_js {
+     background: url(../img/link_js_01.png) no-repeat;
+ }
+
+ #link_git {
+     background: url(../img/link_git_01.png) no-repeat;
+ }
+
+ #link_ps {
+     background: url(../img/link_ps_01.png) no-repeat;
+ }
+
+ #link_wp {
+     background: url(../img/link_wp_01.png) no-repeat;
+ }
+
+ #link_react {
+     background: url(../img/link_react_01.png) no-repeat;
+ }
+
+ @media screen and (max-width: 720px) {
+     #slider>.active {
+         height: 260px;
+         width: 360px;
+     }
+ }
+
+ @media screen and (max-width: 640px) {
+     #sidebar li a {
+         transition: all 0.2s ease-in 0s;
+         background-size: 100% auto;
+         background-position: top center;
+         margin-top: 3px;
+     }
+
+     #link_html {
+         background: url(../img/link_html_02.png) no-repeat;
+     }
+
+     #link_css {
+         background: url(../img/link_css_02.png) no-repeat;
+     }
+
+     #link_js {
+         background: url(../img/link_js_02.png) no-repeat;
+     }
+
+     #link_react {
+         background: url(../img/link_react_02.png) no-repeat;
+     }
+
+     #link_git {
+         background: url(../img/link_git_02.png) no-repeat;
+     }
+
+     #link_ps {
+         background: url(../img/link_ps_02.png) no-repeat;
+     }
+
+     #link_wp {
+         background: url(../img/link_wp_02.png) no-repeat;
+     }
+
+     #main {
+         flex-direction: column;
+     }
+
+     #nav {
+         text-align: center;
+     }
+
+     #nav ul {
+         margin-left: 0;
+         width: 75%;
+     }
+
+     #nav li {
+         width: 30%;
+     }
+
+     #sidebar ul {
+         padding: 0 20px;
+         display: flex;
+         justify-content: space-around;
+     }
+
+     #sidebar li {
+         width: 60px;
+         height: 75px;
+         margin: 5px 0;
+         border-radius: 10px;
+     }
+
+     #sidebar ul:hover li {
+         width: 60px;
+         height: 140px;
+         border: none;
+         box-shadow: inset 0px 1px 2px 1px #000000c4;
+     }
+
+     .my-portfolio,
+     .slider-wrapp {
+         margin: 7px 5px 20px;
+     }
+
+     .about-me,
+     .contact-me,
+     .wrapp-main-content {
+         padding: 10px;
+         margin: 20px 10px;
+     }
+
+     .contact-me a img {
+         width: 160px;
+     }
+
+     .my-portfolio a {
+         margin: 5px;
+         padding: 3px;
+     }
+
+     .main-content h3 {
+         padding: 0;
+     }
+
+     .main-content p,
+     .studied-courses li {
+         font-size: 22px;
+     }
+
+     .main-content h3,
+     .main-content h2 {
+         font-size: 32px;
+     }
+
+     .main-content .skills,
+     .main-content .call-me {
+         font-size: 24px;
+     }
+ }
+
+ @media screen and (max-width: 480px) {
+     .slider-wrapp {
+         display: none;
+     }
+
+     #nav ul {
+         width: 80%;
+     }
+
+     #sidebar li {
+         width: 46px;
+         height: 56px;
+     }
+
+     #sidebar ul:hover li {
+         width: 46px;
+         height: 110px;
+     }
+
+     .footer-social a {
+         width: 25px;
+     }
+
+     #header p {
+         font-size: 54px;
+     }
+
+     #header {
+         min-height: 120px;
+     }
+
+     .contact-me ul {
+         font-size: 18px;
+         width: 100%;
+         box-sizing: border-box;
+     }
+
+     .skill-article {
+         display: flex;
+         flex-direction: column-reverse;
+     }
+
+     .skill-info p {
+         text-align: center;
+     }
+
+     .contact-me a img {
+         width: 140px;
+     }
+
+     .skill-info {
+         padding-left: 0px;
+     }
+
+     .main-content p,
+     .studied-courses li {
+         font-size: 20px;
+     }
+
+     .main-content h3,
+     .main-content h2 {
+         font-size: 28px;
+     }
+
+     .main-content .skills,
+     .main-content .call-me {
+         font-size: 22px;
+     }
+
+     .foot-content p {
+         font-size: 14px;
+     }
+
+     .my-portfolio {
+         padding: 15px 0;
+     }
+
+     .skill-logo {
+         height: 50px;
+     }
+ }
+
+ @media screen and (max-width: 360px) {
+     #nav a {
+         font-size: 14px;
+     }
+
+     #sidebar li {
+         width: 42px;
+         height: 50px;
+     }
+
+     #sidebar ul:hover li {
+         width: 42px;
+         height: 98px;
+     }
+
+     #header p {
+         font-size: 48px;
+     }
+
+     #header {
+         min-height: 110px;
+     }
+
+     .contact-me ul {
+         font-size: 16px;
+     }
+
+     .contact-me a img {
+         width: 120px;
+     }
+
+     #nav ul {
+         width: 90%;
+     }
+
+     .main-content p,
+     .studied-courses li {
+         font-size: 18px;
+     }
+
+     .main-content h3,
+     .main-content h2 {
+         font-size: 24px;
+     }
+
+     .studied-courses li {
+         padding-left: 0px;
+     }
+
+     .main-content .skills,
+     .main-content .call-me {
+         font-size: 20px;
+     }
+
+     .my-portfolio {
+         padding: 10px 0;
+     }
+
+     .skill-logo {
+         height: 45px;
+     }
+ }
+
+ @media screen and (max-width: 320px) {
+
+     .main-content p,
+     .studied-courses li {
+         font-size: 16px;
+     }
+
+     .main-content .skills,
+     .main-content .call-me {
+         font-size: 18px;
+     }
+
+     .foot-content p {
+         font-size: 12px;
+     }
+ }
