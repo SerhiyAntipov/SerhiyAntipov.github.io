@@ -184,7 +184,7 @@ body {
     display: inline-block;
     font-size: 26px;
     line-height: 1.4;
-    padding: 15px;
+    padding: 15px 15px 15px 5px;
 }
 
 .contact-me ul span {
