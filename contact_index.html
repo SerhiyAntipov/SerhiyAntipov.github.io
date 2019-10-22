@@ -5,44 +5,48 @@
     <meta charset="UTF-8" lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antipov Serhiy Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <p>Serhiy Antipov</p>
-            <span>junior front-end developer</span>
-        </div>
-        <div id="nav">
+    <div class="wrapper">
+        <header class="header-main">
+            <h1>Serhiy Antipov</h1>
+            <h2>junior front-end developer</h2>
+        </header>
+        <nav class="nav-main">
             <ul>
-                <li><a href="index.html">Galery</a>
-                </li>
-                <li><a href="about_index.html">About</a>
-                </li>
-                <li data-active="active"><a href="#">Contact</a>
-                </li>
+                <li><a href="index.html">Galery</a></li>
+                <li><a href="about_index.html">About</a></li>
+                <li data-active="active"><a href="#">Contacts</a></li>
             </ul>
-        </div>
-        <div id="main">
-            <div class="main-content">
-                <div class="contact-me">
-                    <h2>Contact me</h2>
-                    <p>You can contact me in a way that is convenient for you. Below is my main contacts.</p>
-                    <ul>
-                        <li>Name: <span>Serhiy Antipov</span></li>
-                        <li>Country: <span>Ukraine</span></li>
-                        <li>City: <span>Lviv</span></li>
-                        <li>Tel: <span>+38(050)917 20 25</span></li>
-                        <li>Email: <span>serhiy.antipov@gmail.com</span></li>
-                    </ul>
-                    <p>You can also contact me through other communication channels. For your convenience, there are
-                        links to all possible contacts with me.</p>
-                    <p>Just click the button that you like.</p>
-
-                    <div class="contact-link">
-                        <!--                        <a href="viber://chat?number=%2B380509172025" target="_blank"><img src=".//img/contact_logo_viberPC.png" alt=""></a>-->
+        </nav>
+        <main>
+            <div class="main-content contact-me">
+                <div class="press-in-grey">
+                    <h2 class="steel-base">Contacts</h2>
+                </div>
+                <div class="press-in-grey">
+                    <div class="wrapper-contacts">
+                        <p>You can contact me in a way that is convenient for you. Below is my main contacts.</p>
+                        <ul>
+                            <li>Name: <span>Serhiy Antipov</span></li>
+                            <li>Country: <span>Ukraine</span></li>
+                            <li>City: <span>Lviv</span></li>
+                            <li>Tel: <span>+38(050)917 20 25</span></li>
+                            <li>Email: <span>serhiy.antipov@gmail.com</span></li>
+                        </ul>
+                        <p>You can also contact me through other communication channels. For your convenience, there are
+                            links to all possible contacts with me.</p>
+                        <p>Just click the button that you like.</p>
+                        <h3>Or just call me</h3>
+                    </div>
+                </div>
+                <div class="press-in-grey">
+                    <div class="steel-base">
                         <div class="contact-link-wrapper">
                             <a href="viber://add?number=%2B380509172025" target="_blank"><img
                                     src=".//img/contact_logo_viber.png" alt=""></a>
@@ -55,57 +59,29 @@
                             <a href="tg://resolve?domain=Antipov_Serhiy" target="_blank"><img
                                     src=".//img/contact_logo_telegram.png" alt=""></a>
                         </div>
-                        <!--
-                        <div class="contact-link-wrapper">
-                            <a href="mailto:serhiy.antipov@gmail.com"><img src=".//img/contact_logo_gmail.png" alt=""></a>
-                        </div>
--->
-                        <!--
-                        <div class="contact-link-wrapper">
-                            <a href="https://www.facebook.com/firstasv" target="blank"><img src=".//img/contact_logo_facebook.png" alt=""></a>
-                        </div>
--->
-                    </div>
-                    <p class="call-me">Or just call me</p>
-                    <div class="contact-link">
                         <div class="contact-link-wrapper">
                             <a href="tel:+380509172025"><img src=".//img/contact_logo_call.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main-footer">
+        </main>
+        <footer class="main-footer">
             <div class="footer-social">
                 <ul>
-                    <li>
-                        <a href="https://www.facebook.com/AntipovSerhiy" target="blank">
-                            <img src="img/logo_fb_white.png" alt="fb">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/SerhiyAntipov/SerhiyAntipov.github.io" target="blank">
-                            <img src="img/logo_git_white.png" alt="git">
-                        </a>
-                    </li>
-                    <!--
-                    <li>
-                        <a href="#">
-                            <img src="img/logo_in_white.png" alt="in">
-                        </a>
-                    </li>
--->
-                    <li>
-                        <a href="mailto:serhiy.antipov@gmail.com" target="blank">
-                            <img src="img/logo_mail_white.png" alt="gmail">
-                        </a>
-                    </li>
+                    <li><a href="https://www.facebook.com/AntipovSerhiy" target="blank">
+                            <img src="img/logo_fb_white.png" alt="fb"></a></li>
+                    <li><a href="https://github.com/SerhiyAntipov/SerhiyAntipov.github.io" target="blank">
+                            <img src="img/logo_git_white.png" alt="git"></a></li>
+                    <!-- <li><a href="#"><img src="img/logo_in_white.png" alt="in"></a></li> -->
+                    <li><a href="mailto:serhiy.antipov@gmail.com" target="blank">
+                            <img src="img/logo_mail_white.png" alt="gmail"></a></li>
                 </ul>
             </div>
             <div class="foot-content">
                 <p>Design and development Serhiy Antipov<br>All rights reserved<br>&copy; 2019</p>
             </div>
-        </div>
+        </footer>
     </div>
 
 </body>
