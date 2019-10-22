@@ -182,7 +182,7 @@ body {
 
 .contact-me ul {
     display: inline-block;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.4;
     padding: 15px;
 }
@@ -383,9 +383,7 @@ body {
     }
 
     .contact-me ul {
-        font-size: 18px;
-        width: 100%;
-        box-sizing: border-box;
+        font-size: 20px;
     }
 
     .skill-article {
@@ -426,7 +424,7 @@ body {
     }
 
     .contact-me ul {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .contact-me a img {
