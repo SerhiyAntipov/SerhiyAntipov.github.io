@@ -1,7 +1,3 @@
-body {
-    height: 100%;
-}
-
 .wrapper {
     max-width: 960px;
     min-width: 320px;
@@ -11,6 +7,7 @@ body {
     background-color: #353c4c;
     background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
     color: #2d2d2d;
+    overflow: hidden;
 }
 
 .header-main {
@@ -33,7 +30,7 @@ body {
 }
 
 .nav-main {
-    background-color: #e1e1e1;
+    background-color: #f4f4f4;
     background: url(../img/bg_stell.jpg);
     border-top: 1px solid #ffffff;
     border-bottom: 2px solid #2d3842;
@@ -85,17 +82,15 @@ body {
 
 .main-content {
     margin: 10px;
-    border-radius: 5px;
 }
 
-.contact-me {
-    text-align: center;
-}
-
-.main-content h2 {
+.article-stroke h2 {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
+    border-radius: 25px;
+    padding: 1px 0 4px;
+    box-shadow: 0px 1px 3px 2px #000000b0;
 }
 
 .main-content h3 {
@@ -114,40 +109,48 @@ body {
     margin-bottom: 5px;
 }
 
-.steel-base {
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-    box-shadow: 0px 1px 3px 2px #000000b0;
-}
-
 /* portfolio ---------------------------- */
 
-.portfolio .steel-base {
-    margin-bottom: 25px;
+.contacts,
+.portfolio,
+.about-me {
+    border-radius: 5px;
+    margin: 15px 25px;
+    padding: 10px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+    background-color: #e7e7e7;
 }
 
 .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-radius: 5px;
-    margin: 15px 25px;
-    padding: 30px 15px 5px;
-    box-shadow: inset 0px 1px 2px 1px #000000c4;
-    background-color: #caccd1;
+    padding-top: 35px;
 }
 
+.name-article-line {
+    background-color: #e1e1e1;
+    background: url(../img/bg_stell.jpg);
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #2d3842;
+    margin: 5px 0 15px;
+    padding: 4px;
+}
+
+.article-stroke {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+}
+
+
 .portfolio a {
-    display: inline-block;
     width: 45%;
-    padding: 15px;
-    box-sizing: border-box;
     overflow: hidden;
     cursor: pointer;
-    background: url(../img/bg_stell.jpg);
-    box-shadow: 0px 1px 3px 2px #000000b0;
+    box-shadow: 0px 1px 3px 1px #000000c4;
     border-radius: 5px;
     margin-bottom: 30px;
 }
@@ -156,13 +159,10 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    filter: grayscale(0.8);
-    box-shadow: 0px 1px 2px 1px #0000007d;
-    border-radius: 5px;
 }
 
-.portfolio img:hover {
-    filter: grayscale(0);
+.portfolio a:hover {
+    box-shadow: 0px 0px 2px 0px #000000c4;
 }
 
 .main-footer {
@@ -171,14 +171,26 @@ body {
 
 
 /* contact ---------------------------------------------- */
-
-.press-in-grey {
-    border-radius: 5px;
-    margin: 15px 25px;
-    padding: 10px;
-    box-shadow: inset 0px 1px 2px 1px #000000c4;
-    background-color: #caccd1;
+.contact-me {
+    text-align: center;
 }
+
+.button-block-line {
+    background-color: #e1e1e1;
+    background: url(../img/bg_stell.jpg);
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #2d3842;
+    margin: 10px 0 5px;
+    padding-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-block-line.index {
+    height: 40px;
+}
+
 
 .contact-me ul {
     display: inline-block;
@@ -195,23 +207,31 @@ body {
 .contact-link-wrapper {
     display: inline-block;
     border-radius: 5px;
-    margin: 5px;
+    margin: 0 5px 4px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
 
-.contact-me a {
-    display: inline-block;
+.contact-link-wrapper a {
+    display: block;
     border-radius: 5px;
     margin: 5px;
-    background-color: #54585f;
-    background: linear-gradient(0deg, #1e1e20, #808792);
+    background-color: #50545b69;
     border-top: 1px solid #b1b3c0;
+    height: 35px;
+    width: 110px;
+    box-shadow: 0px 1px 2px 1px #000000c4;
+    /* filter: grayscale(0.8); */
+    padding: 5px;
 }
 
-.contact-me a img {
-    width: 130px;
+.contact-link-wrapper a img,
+.skill-logo img {
+    display: block;
+    width: 100%;
     height: auto;
+    margin: 0 auto;
 }
+
 
 /* skil ------------------------------------------------------- */
 .wrapper-about,
@@ -234,35 +254,11 @@ body {
 
 
 .skill-info {
-    display: inline-block;
     border-radius: 5px;
-    margin: 5px;
+    margin: 0px 5px 4px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
 
-.skill-html {
-    background: url(../img/link_html_01.png) no-repeat;
-}
-
-.skill-css {
-    background: url(../img/link_css_01.png)no-repeat;
-}
-
-.skill-js {
-    background: url(../img/link_js_01.png)no-repeat;
-}
-
-.skill-react {
-    background: url(../img/link_react_01.png) no-repeat;
-}
-
-.skill-git {
-    background: url(../img/link_git_01.png)no-repeat;
-}
-
-.skill-photoshop {
-    background: url(../img/link_ps_01.png)no-repeat;
-}
 
 
 .skill-logo {
@@ -270,21 +266,26 @@ body {
     margin: 5px;
     background-color: #50545b69;
     border-top: 1px solid #b1b3c0;
-    height: 50px;
+    height: 44px;
     width: 115px;
     box-shadow: 0px 1px 2px 1px #000000c4;
     background-position: center;
     background-size: contain;
 }
 
-/* 
-.skill-info:hover>.skill-logo {
-    border-top: 1px solid #1e1e20;
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
-} */
 
-.footer-social a:hover,
-.contact-me a:hover {
+.skill-logo:hover,
+.contact-link-wrapper a:hover {
+    box-shadow: inset 0px 0px 2px 0px #000000c4;
+}
+
+.contact-link-wrapper a:hover img,
+.skill-logo:hover img {
+    width: 95%;
+}
+
+
+.footer-social a:hover {
     background-color: #44474d;
     background: linear-gradient(0deg, #808792, #1e1e20);
     border-top: 1px solid #1e1e20;
@@ -332,8 +333,9 @@ body {
 
 @media screen and (max-width: 640px) {
 
-    .press-in-grey,
-    .portfolio {
+    .contacts,
+    .portfolio,
+    .about-me {
         margin: 15px;
     }
 
@@ -361,8 +363,9 @@ body {
         width: 90%;
     }
 
-    .press-in-grey,
-    .portfolio {
+    .contacts,
+    .portfolio,
+    .about-me {
         margin: 15px 10px;
     }
 
@@ -386,11 +389,6 @@ body {
         font-size: 24px;
     }
 
-    .skill-article {
-        display: flex;
-        flex-direction: column;
-    }
-
     .contact-me a img {
         width: 140px;
     }
@@ -399,15 +397,13 @@ body {
         font-size: 20px;
     }
 
-    .skill-logo {
-        height: 50px;
-    }
 }
 
 @media screen and (max-width: 360px) {
 
-    .press-in-grey,
-    .portfolio {
+    .contacts,
+    .portfolio,
+    .about-me {
         margin: 10px 5px;
     }
 
@@ -456,10 +452,6 @@ body {
 
     .portfolio {
         padding: 10px 0;
-    }
-
-    .skill-logo {
-        height: 45px;
     }
 }
 
