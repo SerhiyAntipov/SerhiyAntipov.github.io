@@ -110,12 +110,11 @@
 }
 
 /* portfolio ---------------------------- */
-
 .contacts,
 .portfolio,
 .about-me {
     border-radius: 5px;
-    margin: 15px 25px;
+    margin: 15px;
     padding: 10px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
     background-color: #e7e7e7;
@@ -145,7 +144,6 @@
     box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
 
-
 .portfolio a {
     width: 45%;
     overflow: hidden;
@@ -169,7 +167,6 @@
     text-align: center;
 }
 
-
 /* contact ---------------------------------------------- */
 .contact-me {
     text-align: center;
@@ -184,13 +181,12 @@
     padding-top: 4px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center
 }
 
 .button-block-line.index {
     height: 40px;
 }
-
 
 .contact-me ul {
     display: inline-block;
@@ -202,7 +198,6 @@
 .contact-me ul span {
     font-weight: bold;
 }
-
 
 .contact-link-wrapper {
     display: inline-block;
@@ -220,7 +215,6 @@
     height: 35px;
     width: 110px;
     box-shadow: 0px 1px 2px 1px #000000c4;
-    /* filter: grayscale(0.8); */
     padding: 5px;
 }
 
@@ -231,7 +225,6 @@
     height: auto;
     margin: 0 auto;
 }
-
 
 /* skil ------------------------------------------------------- */
 .wrapper-about,
@@ -252,14 +245,11 @@
     justify-content: space-around;
 }
 
-
 .skill-info {
     border-radius: 5px;
     margin: 0px 5px 4px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
-
-
 
 .skill-logo {
     border-radius: 5px;
@@ -273,7 +263,6 @@
     background-size: contain;
 }
 
-
 .skill-logo:hover,
 .contact-link-wrapper a:hover {
     box-shadow: inset 0px 0px 2px 0px #000000c4;
@@ -283,7 +272,6 @@
 .skill-logo:hover img {
     width: 95%;
 }
-
 
 .footer-social a:hover {
     background-color: #44474d;
@@ -336,7 +324,16 @@
     .contacts,
     .portfolio,
     .about-me {
-        margin: 15px;
+        margin: 15px 5px;
+        padding-top: 25px;
+    }
+
+    .portfolio a {
+        margin-bottom: 15px;
+    }
+
+    .portfolio a:last-child {
+        margin-bottom: 10;
     }
 
     .nav-main {
@@ -345,6 +342,10 @@
 
     .nav-main ul {
         margin-left: 0;
+        width: 75%;
+    }
+
+    .article-stroke {
         width: 75%;
     }
 
@@ -366,10 +367,14 @@
     .contacts,
     .portfolio,
     .about-me {
-        margin: 15px 10px;
+        margin: 15px 0;
     }
 
     .nav-main ul {
+        width: 90%;
+    }
+
+    .article-stroke {
         width: 90%;
     }
 
@@ -404,7 +409,7 @@
     .contacts,
     .portfolio,
     .about-me {
-        margin: 10px 5px;
+        margin: 10px 0;
     }
 
     .header-main {
