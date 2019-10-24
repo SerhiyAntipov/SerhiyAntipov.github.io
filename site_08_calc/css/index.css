@@ -4,18 +4,28 @@
 
 }
 
+.wrapper {
+    max-width: 980px;
+    height: 100vh;
+    min-height: 480px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    background: url(../img/background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .instruction {
     font-family: SFDigitalReadout-Heavy, sans-serif;
     font-size: 26px;
     text-align: center;
-    color: #26231de6;
+    color: #405e80;
 }
 
 .calc {
     width: 280px;
     height: 470px;
     margin: 0 auto;
-    margin-top: 2%;
     background: url(../img/calc_bg.png) no-repeat;
     background-size: cover;
     background-position: top -2px center;
