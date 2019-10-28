@@ -1,1 +1,122 @@
 @import url(index.css);
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+.wrapper {
+    min-width: 320px;
+}
+
+main {
+    padding: 0;
+    font-size: 22px;
+}
+
+.vacancy-description {
+    padding: 35px 5px 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #bcbcbc;
+    box-shadow: 0px 3px 4px #000000b5;
+}
+
+.vacancy-description p {
+    margin-bottom: 5px;
+}
+
+.cv-content {
+    padding-top: 40px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cv-content article {
+    margin-bottom: 30px;
+}
+
+.cv-content h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.education p,
+.courses p {
+    padding: 5px 0;
+    position: relative;
+    border-left: 2px solid #2d2d2d59;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.education p::before,
+.courses p::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #24262d;
+    border-radius: 8px;
+    border: solid 4px #b9c4ca;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -9px;
+}
+
+main span {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.education span {
+    min-width: 100px;
+    text-align: right;
+}
+
+.professional-skill div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.professional-skill img {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .cv-content {
+        width: 90%;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main p {
+        font-size: 16px;
+    }
+
+    .cv-content h3 {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    main p {
+        font-size: 14px;
+    }
+
+    .cv-content h3 {
+        font-size: 22px;
+    }
+
+}

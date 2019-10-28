@@ -21,6 +21,7 @@
     background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
     padding-bottom: 15px;
     box-shadow: 0px 4px 3px 1px #000000c4;
+    position: relative;
 }
 
 .header-main h1 {
@@ -70,6 +71,10 @@
     text-shadow: 0px 0px 2px #000;
 }
 
+.nav-main li[data-active="active"] a {
+    padding: 9px 20px 8px;
+}
+
 .nav-main li {
     display: inline-block;
     min-width: 50px;
@@ -84,7 +89,6 @@
     box-shadow: 0px 0px 1px 1px #0000007d;
 }
 
-
 .nav-main li[data-active="active"]:hover {
     box-shadow: inset 0px 0px 4px 2px #000000c4;
 }
@@ -93,11 +97,16 @@ main {
     padding: 10px;
 }
 
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 35px;
+}
+
+main .professional-skill span {
+    padding-left: 0;
 }
 
 .portfolio a {
@@ -200,7 +209,7 @@ main {
     .portfolio,
     .about-me {
         margin: 15px 5px;
-        padding-top: 25px;
+        padding-top: 0;
     }
 
     .portfolio a {
@@ -216,6 +225,14 @@ main {
 
     .nav-main ul {
         width: 90%;
+    }
+
+    .nav-main li[data-active="active"] a {
+        padding: 9px 10px 8px;
+    }
+
+    .nav-main a {
+        padding: 8px 10px 9px;
     }
 
     .contacts,
