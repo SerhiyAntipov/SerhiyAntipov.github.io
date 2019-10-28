@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8" lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Serhiy Antipov front-end developer about-me">
-    <title>Serhiy Antipov About Me</title>
+    <meta name="Description" content="Serhiy Antipov About me">
+    <title>Serhiy Antipov About me</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about-me.css">
 </head>
 
 <body>
@@ -20,7 +19,7 @@
             <nav class="nav-main">
                 <ul>
                     <li><a href="index.html">Galery</a></li>
-                    <li data-active="active"><a href="about-me.html">About</a></li>
+                    <li data-active="active"><a href="#">About</a></li>
                     <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
@@ -28,42 +27,66 @@
         <main>
             <div class="about-me">
                 <div class="wrapper-about">
-                    <p>Looking for a job as Junior front-end developer, HTML-Coder.</p>
-                    <p>I will consider any option: full/part-time in-office or remotely.</p>
-                    <p>Ready to perform a test task.</p>
-                    <br>
-                    <p>I studied HTML, CSS and JS for the last two years.</p>
-                    <p class="skills">Completed courses:</p>
-                    <ul class="studied-courses">
-                        <li><span>2018</span> – «Logos» HTML/CSS (basic&#160;course)</li>
-                        <li><span>2018</span> – «HTML Academy» Professional HTML&CSS (level&#160;1)</li>
-                        <li><span>2019</span> – «HTML Academy» Professional JavaScript (level&#160;1)</li>
-                        <li><span>2019</span> – «SoftServe IT Academy» HTML/CSS/JavaScript Fundamentals</li>
-                    </ul>
-                    <br>
-                    <p>English level is enough to read and understand the technical task (А2)</p>
-                    <h3 class="skills">Skills and knowledge, I have acquired:</h3>
-                    <p><span>HTML</span>Writing semantic html markup. Intermediate level </p>
-                    <p><span>CSS</span>Adaptive design and cross-browser layout. Intermediate level </p>
-                    <p><span>JavaScript</span>Working with DOM elements, writing simple scripts, creating sliders,
-                        animations. Pre-Intermediate level </p>
-                    <p><span>Git</span>Basic knowledge. Pre-Intermediate level </p>
-                    <p><span>Photoshop</span>Work with .psd layout of any complexity. Upper-Intermediate level </p>
-                    <p><span>React</span>Began studying. Elementary level </p>
+                    <div class="cv-content">
+                        <article class="education">
+                            <h2>Education</h2>
+                            <p>Ukrainian Academy of Printing (faculty "Graphics")<span> 2011-2012</span></p>
+                            <p>University of Human Development "Ukraine" (faculty "Finace")<span> 2005-2011</span></p>
+                        </article>
+                        <article class="courses">
+                            <h2>Courses</h2>
+                            <p>«SoftServe IT Academy» HTML/CSS/JavaScript Fundamentals<span> 2019</span></p>
+                            <p>«HTML Academy» Professional JavaScript (level&#160;1)<span> 2019</span></p>
+                            <p>«HTML Academy» Professional HTML&CSS (level&#160;1)<span> 2018</span></p>
+                            <p>«Logos» HTML/CSS (basic&#160;course)<span>2018</span></p>
+                        </article>
+                        <article class="professional-skill">
+                            <h2>Professional skill</h2>
+                            <div>
+                                <img src="img/link_html.png" alt="html skill">
+                                <p><span>HTML </span>Writing semantic html markup.<br>Intermediate level</p>
+                            </div>
+                            <div>
+                                <img src="img/link_css.png" alt="css skill">
+                                <p><span>CSS </span>Adaptive design and cross-browser layout.<br>Intermediate level</p>
+                            </div>
+                            <div>
+                                <img src="img/link_js.png" alt="js skill">
+                                <p><span>JavaScript </span>Working with DOM elements, writing simple
+                                    scripts.Pre-Intermediate
+                                    level</p>
+                            </div>
+                            <div>
+                                <img src="img/link_git.png" alt="git skill">
+                                <p><span>Git </span>Basic knowledge.<br>Pre-Intermediate level</p>
+                            </div>
+                            <div>
+                                <img src="img/link_ps.png" alt="ps skill">
+                                <p><span>Photoshop </span>Work with .psd layout of any complexity.<br>Upper-Intermediate
+                                    level
+                                </p>
+                            </div>
+                            <div>
+                                <img src="img/link_react.png" alt="react skill">
+                                <p><span>React </span>Began studying.<br>Elementary level</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </main>
         <footer class="main-footer">
-            <div class="footer-social">
-                <ul>
-                    <li><a href="https://www.facebook.com/AntipovSerhiy" target="blank">
-                            <img src="img/logo_fb_white.png" alt="fb"></a></li>
-                    <li><a href="https://github.com/SerhiyAntipov/SerhiyAntipov.github.io" target="blank">
-                            <img src="img/logo_git_white.png" alt="git"></a></li>
-                    <li><a href="mailto:serhiy.antipov@gmail.com" target="blank">
-                            <img src="img/logo_mail_white.png" alt="gmail"></a></li>
-                </ul>
-            </div>
+            <ul class="footer-social">
+                <li><a href="https://www.facebook.com/AntipovSerhiy" target="_blank" rel="noopener">
+                        <img src="img/logo_fb_white.png" alt="fb"></a>
+                </li>
+                <li><a href="https://github.com/SerhiyAntipov/SerhiyAntipov.github.io" target="_blank" rel="noopener">
+                        <img src="img/logo_git_white.png" alt="git"></a>
+                </li>
+                <li><a href="mailto:serhiy.antipov@gmail.com" target="_blank" rel="noopener">
+                        <img src="img/logo_mail_white.png" alt="gmail"></a>
+                </li>
+            </ul>
             <div class="foot-content">
                 <p>Design and development Serhiy Antipov<br>All rights reserved<br>&copy; 2019</p>
             </div>

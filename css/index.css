@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+.wrapper {
+    max-width: 960px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    color: #2d2d2d;
+    overflow: hidden;
+    background-color: #e7e7e7;
+}
+
+.header-main {
+    min-height: 130px;
+    text-align: center;
+    background-color: #353c4c;
+    background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
+    padding-bottom: 15px;
+    box-shadow: 0px 4px 3px 1px #000000c4;
+}
+
+.header-main h1 {
+    font-size: 60px;
+    line-height: 1.6;
+    color: rgb(230, 230, 230);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.header-main h2,
+.foot-content {
+    color: rgb(235, 219, 170);
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.nav-main {
+    background-color: #9f9f9f;
+    background: url(../img/bg_stell.jpg);
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #2d3842;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.nav-main ul {
+    display: inline-block;
+    min-width: 180px;
+    margin: 5px 0 5px 13px;
+    padding: 4px 8px;
+    border-radius: 23px;
+    box-shadow: inset 0px 1px 6px 2px #000000c4;
+}
+
+.nav-main li[data-active="active"] {
+    background-color: #343c4f;
+    background: linear-gradient(0deg, #57627d, #111318);
+    box-shadow: inset 0px 0px 4px 2px #000000c4;
+}
+
+.nav-main a {
+    display: block;
+    font-size: 18px;
+    padding: 8px 20px 9px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.nav-main li {
+    display: inline-block;
+    min-width: 50px;
+    margin: 3px;
+    border-radius: 20px;
+    background-color: #57627d;
+    background: linear-gradient(0deg, #111318, #6f7d9f);
+    box-shadow: 0px 0px 1px 2px #0000007d;
+}
+
+.nav-main li:hover {
+    box-shadow: 0px 0px 1px 1px #0000007d;
+}
+
+
+.nav-main li[data-active="active"]:hover {
+    box-shadow: inset 0px 0px 4px 2px #000000c4;
+}
+
+main {
+    padding: 10px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 35px;
+}
+
+.portfolio a {
+    display: inline-block;
+    width: 45%;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 7px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.portfolio img {
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 3px 2px #000000b0;
+    border-radius: 7px;
+}
+
+.main-footer {
+    text-align: center;
+    background-color: #353c4c;
+    background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
+    padding-top: 15px;
+    box-shadow: 0px -3px 3px 1px #000000c4;
+}
+
+.footer-social {
+    padding: 2px 0;
+    width: 100%;
+    background-color: #b8b8b8;
+    background: url(../img/bg_stell.jpg);
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #2d3842;
+    min-height: 40px;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin: 0px 10px;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+}
+
+.footer-social a {
+    display: block;
+    border-radius: 3px;
+    background-color: #353c4c;
+    background: linear-gradient(0deg, #111318 0%, #57627d 50%, #111318 100%);
+    border-top: 1px solid #b1b3c0;
+    box-shadow: 0px 1px 2px 1px #0000007d;
+    margin: 4px 10px;
+}
+
+.footer-social a:hover {
+    background-color: #353c4c;
+    background: linear-gradient(0deg, #111318 0%, #464f66 50%, #111318 100%);
+    border-top: 1px solid #1e1e20;
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
+}
+
+.footer-social a img {
+    width: 35px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footer-social a:hover img {
+    width: 33px;
+    padding: 1px;
+}
+
+.main-footer p {
+    margin: 15px 0;
+    display: inline-block;
+    padding: 0 5px;
+    text-transform: none;
+}
+
+@media screen and (max-width: 640px) {
+    .nav-main {
+        text-align: center;
+    }
+
+    .nav-main ul {
+        margin-left: 0;
+        width: 75%;
+    }
+
+    .nav-main li {
+        width: 30%;
+    }
+
+    .contacts,
+    .portfolio,
+    .about-me {
+        margin: 15px 5px;
+        padding-top: 25px;
+    }
+
+    .portfolio a {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header-main h1 {
+        font-size: 54px;
+    }
+
+    .nav-main ul {
+        width: 90%;
+    }
+
+    .contacts,
+    .portfolio,
+    .about-me {
+        margin: 15px 0;
+    }
+
+    .portfolio a {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .nav-main a {
+        font-size: 14px;
+    }
+}
