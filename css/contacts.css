@@ -1,1 +1,146 @@
 @import url(index.css);
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+main {
+    padding: 0;
+    font-size: 22px;
+}
+
+.description {
+    padding: 35px 40px 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #bcbcbc;
+    box-shadow: 0px 3px 4px #000000b5;
+}
+
+.contacts {
+    padding-top: 40px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+main h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+main p {
+    padding: 5px 0;
+}
+
+.contacts li img {
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.contacts ul {
+    margin-bottom: 30px;
+}
+
+.contacts li {
+    position: relative;
+    border-left: 2px solid #2d2d2d59;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.contacts li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #24262d;
+    border-radius: 8px;
+    border: solid 4px #b9c4ca;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -9px;
+}
+
+.contacts li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contacts li a:hover {
+    color: #b44328;
+}
+
+.footer-contacts {
+    margin: 30px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-contacts li {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+}
+
+.footer-contacts li a {
+    display: block;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 1px 2px 1px #0000007d;
+    padding: 2px;
+}
+
+.footer-contacts li a img {
+    display: block;
+    width: 110px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.footer-contacts li a:hover {
+    background-color: #cfcfcf;
+    box-shadow: 0px 0px 3px 0px #000000c7;
+}
+
+
+.footer-contacts li a:hover img {
+    width: 106px;
+    height: 33px;
+    margin: 1px 2px;
+    box-sizing: border-box;
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .contacts {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    main p,
+    main li {
+        font-size: 16px;
+    }
+
+    main h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    main p,
+    main li {
+        font-size: 14px;
+    }
+
+    main h3 {
+        font-size: 22px;
+    }
+}

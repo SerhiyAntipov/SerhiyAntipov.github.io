@@ -5,16 +5,12 @@
     src: url(../fonts/RobotoCondensed-Regular.ttf);
 }
 
-.wrapper {
-    min-width: 320px;
-}
-
 main {
     padding: 0;
     font-size: 22px;
 }
 
-.vacancy-description {
+.description {
     padding: 35px 5px 30px;
     text-align: center;
     font-weight: bold;
@@ -22,7 +18,7 @@ main {
     box-shadow: 0px 3px 4px #000000b5;
 }
 
-.vacancy-description p {
+.description p {
     margin-bottom: 5px;
 }
 
@@ -76,6 +72,10 @@ main span {
 .education span {
     min-width: 100px;
     text-align: right;
+}
+
+.professional-skill {
+    padding-left: 10px;
 }
 
 .professional-skill div {
