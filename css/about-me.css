@@ -30,6 +30,7 @@ main {
 
 .cv-content article {
     margin-bottom: 30px;
+    margin-left: 15px;
 }
 
 .cv-content h3 {
@@ -108,6 +109,9 @@ main span {
         font-size: 24px;
     }
 
+    .education span {
+        min-width: 70px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -117,6 +121,10 @@ main span {
 
     .cv-content h3 {
         font-size: 22px;
+    }
+
+    .education span {
+        min-width: 60px;
     }
 
 }
