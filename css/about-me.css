@@ -26,17 +26,19 @@ main {
     padding-top: 40px;
     width: 70%;
     margin: 0 auto;
+
 }
 
 .cv-content article {
     margin-bottom: 30px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .cv-content h3 {
     font-size: 30px;
     margin-bottom: 10px;
     font-weight: bold;
+    margin-left: -20px;
 }
 
 .education p,
@@ -73,10 +75,6 @@ main span {
 .education span {
     min-width: 100px;
     text-align: right;
-}
-
-.professional-skill {
-    padding-left: 10px;
 }
 
 .professional-skill div {
