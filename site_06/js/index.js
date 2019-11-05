@@ -33,6 +33,8 @@
         xhr.send();
     })();
 
+
+
     function renderBannerCard(bannerData) {
         for (let i = 0; i < bannerData.length; i++) {
             bannerCard += `
