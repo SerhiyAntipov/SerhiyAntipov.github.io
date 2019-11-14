@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Tour</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header-main">
+            <div class="header-logo">
+                <h1>Safari Tour</h1>
+                <p>International Tour packages</p>
+            </div>
+            <input type="checkbox" id="menue-call">
+            <label class="main-burger-menue" for="menue-call">
+                <span></span>
+            </label>
+            <nav class="nav-main">
+                <ul>
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="index.html">Packages</a>
+                    </li>
+                    <li><a href="index.html">Flights</a>
+                    </li>
+                    <li><a href="index.html">Trains</a>
+                    </li>
+                    <li><a href="index.html">Reach us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="booking">
+            <h2 class="visibility-hidden">Online booking</h2>
+            <div class="booking-baner">
+                <h3>Singapore</h3>
+                <h4>Malaysia Singapore<br>Super Saver Summer 2019</h4>
+            </div>
+            <div class="small-booking-baner">
+
+            </div>
+            <form action="#" name="booking-form" method="get" class="booking-form">
+                <h3>Online booking</h3>
+                <label for="booking-form-user">
+                    <span>Name :</span>
+                    <input type="text" id="booking-form-user" placeholder="enter your name" name="user-name" required>
+                </label>
+                <label for="booking-form-mail">
+                    <span>Email :</span>
+                    <input type="email" id="booking-form-mail" placeholder="enter your email" name="user-email" required>
+                </label>
+                <label for="booking-form-package">
+                    <span>Package :</span>
+                    <select name="package" id="booking-form-package" required>
+                        <option value="">select package</option>
+                        <option value="African package">African package</option>
+                        <option value="American package">American package</option>
+                        <option value="Asian package">Asian package</option>
+                        <option value="Australian package">Australian package</option>
+                        <option value="European package">European package</option>
+                    </select>
+                </label>
+
+                <label for="booking-form-message">
+                    <span>Message :</span>
+                    <textarea id="booking-form-message" name="text"></textarea>
+                </label>
+                <input type="submit" value="Submit " aria-label="Submit">
+            </form>
+
+        </section>
+
+        <section class="section-map">
+            <div class="find-tripp">
+                <h2>find your trip</h2>
+            </div>
+
+            <div id="worldmap" class="world">
+                <form action="#" method="get" name="map-form" class="map-form">
+
+                    <div class="mape-up">
+                        <input type="text" class="country-up" placeholder="from" name="country-up" autocomplete="off" required>
+                        <div class="country-up-list" id="country-up-list">
+                        </div>
+                        <div class="read-up">read-up</div>
+                    </div>
+                    <div class="mape-to">
+                        <input type="text" class="country-to" placeholder="to" name="country-to" autocomplete="off" required>
+                        <div class="country-to-list" id="country-to-list">
+                        </div>
+                        <div class="read-to">read-to</div>
+                    </div>
+                    <br>
+                    <div class="select-search">
+                        <div class="select">from (select country on map or enter two letters)</div>
+                        <label class="map-search">saerch
+                            <input type="submit" value="search" name="map-search">
+                        </label>
+
+                    </div>
+
+                </form>
+
+
+            </div>
+        </section>
+        <footer class="footer-main">
+            <div class="footer-main-content">
+                <div class="footer-social">
+                   <h5>News letter</h5>
+                    <form action="#" method="get" name="footer-subscribe-form" id="footer-subscribe-form">
+                        <input type="email" name="email-subscribe" placeholder="enter email address" required>
+                        <button type="submit" name="footer-subscribe" form="footer-subscribe-form" value="Subscribe">Subscribe</button>
+                    </form>
+                
+                    <h5>Social media</h5>
+                    <ul>
+                        <li>
+                            <a class="link-twitter" href="#">
+                                <img src="images/logo_twitter.png" alt="logo_fecebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-facebook" href="#">
+                                <img src="images/logo_fecebook.png" alt="logo_fecebook" >
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-instagram" href="#">
+                                <img src="images/logo_instagram.png" alt="logo_fecebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h5>Contact us</h5>
+                    <ul>
+                        <li>Phone: +97(994)5512832</li>
+                        <li>Phone: +97(994)55418745</li>
+                        <li>email: mail@yourdomain.com</li>
+                        <li>email: Info@yourdomain.com</li>
+                        <li>Fax: 1447854, 5564215, 55428</li>
+                    </ul>
+                </div>
+                <div class="footer-contact-form">
+                    <h5>Contact form</h5>
+                    <form action="#" method="get" name="footer-contact-form" id="footer-contact-form">
+                        <input type="text" placeholder="Name" name="footer-contact-name" required>
+                        <input type="text" placeholder="Email" name="footer-contact-email" required>
+                        <input type="tel" placeholder="Phone" name="footer-contact-phone">
+                        <textarea name="footer-contact-form-text" rows="2"></textarea>
+                        <button type="submit" name="footer-contact-form" form="footer-contact-form" value="Contact">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-main-info">
+                <p>&copy; Copyright 2013 cssauthor.com, All Rights Reserved.</p>
+                <p>Designed and Developed By cssauthor.com</p>
+            </div>
+        </footer>
+        <script src="js/world_map.js"></script>
+    </div>
+</body>
+
+</html>
