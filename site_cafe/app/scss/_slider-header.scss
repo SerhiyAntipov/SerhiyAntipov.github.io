@@ -1,0 +1,94 @@
+.slider-header {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+    img {
+        width: 100vw;
+        height: auto;
+        min-height: 320px;
+        object-fit: cover;
+    }
+
+    &__text-container {
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        padding-right: 15px;
+        text-shadow: 0 0 2px $c-black;
+
+        h2 {
+            @media only screen and (max-width: 1200px) {
+                font-size: 3.4rem;
+            }
+
+            @media only screen and (max-width: 960px) {
+                font-size: 3rem;
+            }
+
+            @media only screen and (max-width: 720px) {
+                font-size: 2.4rem;
+            }
+
+            @media only screen and (max-width: 540px) {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+
+
+    .slick-next {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+
+        &::before {
+            opacity: .2;
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            width: 20px;
+            height: 20px;
+
+            &::before {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .slick-prev {
+        left: 10px;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+
+        &::before {
+            opacity: .2;
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            width: 20px;
+            height: 20px;
+
+            &::before {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .slick-slide:focus {
+        outline: none;
+    }
+
+    .slick-list {
+        min-height: 320px;
+    }
+}

@@ -1,0 +1,164 @@
+@import "vars";
+
+dl,
+ol,
+p,
+ul {
+    margin-bottom: 0.5rem;
+}
+
+html {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Vollkorn;
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 15px;
+    }
+
+    @media only screen and (max-width: 960px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width: 720px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (max-width: 540px) {
+        font-size: 12px;
+    }
+}
+
+.c-mongoose {
+    color: $c-mongoose;
+}
+
+h1 {
+    font-family: Yesteryear;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: Yesteryear;
+    font-size: 3rem;
+    font-weight: 400;
+    color: $c-mongoose;
+}
+
+h3 {
+    font-family: Raleway;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: Raleway;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $c-white;
+}
+
+h5 {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $c-white;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+p {
+    font-family: Raleway;
+    font-size: 1em;
+}
+
+.p-lite {
+    font-family: Vollkorn;
+    font-size: 0.9em;
+}
+
+.big-price {
+    font-family: Raleway;
+    font-size: 2.3rem;
+    color: $c-mongoose;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    background: $c-mongoose;
+    background-color: $c-mongoose;
+    color: $c-dark-blue;
+    border-radius: initial;
+    font-family: Raleway;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    margin: 1rem 0;
+    cursor: pointer;
+
+    &:hover {
+        background: none;
+        background-color: $c-transparent;
+        color: $c-white;
+        border: 1px solid $c-mongoose;
+        box-sizing: border-box;
+    }
+
+    &-transparent {
+        background: none;
+        background-color: $c-transparent;
+        color: $c-white;
+        border: 1px solid $c-mongoose;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: #bf9e7b;
+            color: #141723;
+        }
+    }
+
+    &-slider {
+        background: none;
+        background-color: $c-transparent;
+        color: $c-white;
+        border: 1px solid $c-white;
+        box-sizing: border-box;
+        margin: 1rem 0 2rem;
+        padding: 0.5rem 1.5rem;
+
+        @media only screen and (max-width: 720px) {
+            margin: 0.5rem 0 1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        &:hover {
+            color: $c-mongoose;
+            border: 1px solid $c-mongoose;
+        }
+    }
+
+    &-small {
+        font-family: Raleway;
+        padding: 0.2rem 0.5rem;
+        font-size: 1rem;
+        margin: 0 10px;
+        background-color: $c-transparent;
+        color: $c-white;
+        border: 1px solid $c-mongoose;
+        text-decoration: none;
+        display: inline-block;
+
+        &:hover {
+            background-color: $c-mongoose;
+            color: $c-dark-blue;
+            text-decoration: none;
+        }
+    }
+}

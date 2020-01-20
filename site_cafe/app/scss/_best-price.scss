@@ -1,0 +1,123 @@
+$c-white: #ffffff;
+$c-dark-gray: #4c4d4f;
+$c-gray: #808080;
+$c-friar-gray: #83837b;
+$c-dark-blue: #141723;
+$c-mongoose: #bf9e7b;
+$c-black: #000000;
+$c-transparent: transparent;
+$c-black-opacity: rgba(20, 23, 35, 0.95);
+
+
+.best-price {
+    background-color: $c-dark-gray;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.price-slider {
+    &__slide {
+        padding: 0 10px;
+        box-sizing: border-box;
+        outline: none;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover .btn-small {
+            visibility: visible;
+            animation: btn-scale 1s infinite;
+        }
+    }
+
+    .btn-small {
+        bottom: 35px;
+        margin: 0;
+        position: relative;
+        visibility: hidden;
+        background-color: $c-mongoose;
+        color: $c-dark-blue;
+    }
+
+    &__text-container {
+        background-color: $c-dark-blue;
+        text-align: center;
+        padding: 5px;
+        margin-top: -30px;
+        min-height: 110px;
+
+        @media only screen and (max-width: 720px) {
+            margin-top: -25px;
+            min-height: 103px;
+        }
+
+        @media only screen and (max-width: 540px) {
+            margin-top: -25px;
+            min-height: 90px;
+        }
+
+        h4,
+        p {
+            font-family: Vollkorn;
+            color: $c-mongoose;
+            margin-bottom: 0rem;
+        }
+    }
+
+    .slick-next,
+    .slick-prev {
+        top: 90px;
+    }
+
+    .slick-next {
+        @media only screen and (max-width: 768px) {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 580px) {
+            right: -13px;
+        }
+
+        &::before {
+            color: $c-dark-blue;
+            opacity: 0.5;
+        }
+    }
+
+    .slick-prev {
+        @media only screen and (max-width: 768px) {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 580px) {
+            left: -13px;
+        }
+
+        &::before {
+            color: $c-dark-blue;
+            opacity: 0.5;
+        }
+    }
+
+    .slick-dots {
+        bottom: -35px;
+
+        li button:before {
+            font-size: 10px;
+        }
+    }
+}
+
+@keyframes btn-scale {
+    25% {
+        transform: scale(1.05);
+    }
+
+    75% {
+        transform: scale(0.95);
+    }
+}

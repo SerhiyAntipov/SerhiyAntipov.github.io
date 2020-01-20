@@ -41,6 +41,7 @@ main {
     margin-left: -20px;
 }
 
+.experience p,
 .education p,
 .courses p {
     padding: 5px 0;
@@ -52,7 +53,7 @@ main {
     align-items: center;
 }
 
-
+.experience p::before,
 .education p::before,
 .courses p::before {
     content: "";
