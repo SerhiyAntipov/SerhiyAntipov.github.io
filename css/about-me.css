@@ -68,6 +68,15 @@ main {
     left: -9px;
 }
 
+@media (max-width: 600px) {
+
+    .experience p,
+    .education p,
+    .courses p {
+        align-items: flex-start;
+    }
+}
+
 main span {
     font-weight: bold;
     padding-left: 5px;
