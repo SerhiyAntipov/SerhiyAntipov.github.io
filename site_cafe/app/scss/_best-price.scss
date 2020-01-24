@@ -1,19 +1,13 @@
-$c-white: #ffffff;
-$c-dark-gray: #4c4d4f;
-$c-gray: #808080;
-$c-friar-gray: #83837b;
-$c-dark-blue: #141723;
-$c-mongoose: #bf9e7b;
-$c-black: #000000;
-$c-transparent: transparent;
-$c-black-opacity: rgba(20, 23, 35, 0.95);
-
-
 .best-price {
     background-color: $c-dark-gray;
 
     h2 {
         text-align: center;
+    }
+
+    p {
+        margin-bottom: 25px;
+        color: $c-white;
     }
 }
 
@@ -104,11 +98,23 @@ $c-black-opacity: rgba(20, 23, 35, 0.95);
     }
 
     .slick-dots {
-        bottom: -35px;
+        bottom: -47px;
 
-        li button:before {
+        li button::before {
             font-size: 10px;
+
+
         }
+
+        .slick-active button:before {
+            opacity: 1;
+            color: $c-mongoose;
+        }
+    }
+
+    .slick-dots .slick-list.draggable {
+        min-height: 148px;
+        overflow: hidden;
     }
 }
 
