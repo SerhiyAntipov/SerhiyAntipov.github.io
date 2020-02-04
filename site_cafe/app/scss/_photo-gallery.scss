@@ -1,21 +1,29 @@
+// photo galery -------------------------------------
 .collage {
     h2 {
         text-align: center;
     }
 
+    p {
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        margin: 2rem auto 0;
+    }
+
     .popup-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        a:first-child {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
 
-        a {
-            display: inline-block;
-            width: 16%;
-            padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
 
-            @media only screen and (max-width: 768px) {
-                width: 32%;
-            }
+        @media (max-width: 991px) {
+            grid-gap: 5px;
         }
 
         img {
@@ -23,4 +31,26 @@
             height: auto;
         }
     }
+
+    // .popup-gallery {
+
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-around;
+
+    //     a {
+    //         display: inline-block;
+    //         width: 16%;
+    //         padding: 5px;
+
+    //         @media only screen and (max-width: 768px) {
+    //             width: 32%;
+    //         }
+    //     }
+
+    //     img {
+    //         width: 100%;
+    //         height: auto;
+    //     }
+    // }
 }
