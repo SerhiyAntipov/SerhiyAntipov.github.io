@@ -11,17 +11,18 @@ main {
 }
 
 .description {
-    padding: 35px 40px 30px;
+    padding: 15px 40px 10px;
     text-align: center;
     font-weight: bold;
     background-color: #bcbcbc;
-    box-shadow: 0px 3px 4px #000000b5;
+    box-shadow: 0 2px 2px 0 #000000b5;
 }
 
 .contacts {
     padding-top: 40px;
     width: 70%;
     margin: 0 auto;
+    max-width: 680px;
 }
 
 main h3 {
@@ -81,17 +82,19 @@ main p {
 
 .footer-contacts li {
     display: inline-block;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin: 5px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
+    background-color: #e7e7e7;
 }
 
 .footer-contacts li a {
     display: block;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin: 5px;
     box-shadow: 0px 1px 2px 1px #0000007d;
     padding: 2px;
+   
 }
 
 .footer-contacts li a img {
