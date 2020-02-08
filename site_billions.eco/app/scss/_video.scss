@@ -1,0 +1,112 @@
+.video {
+    padding-top: 0px;
+    padding-bottom: 55px;
+    box-shadow: 0px 1px 4px 0px $c-grey-dark;
+    background: linear-gradient(-178deg, transparent 93%, $c-grey-little 0);
+    position: relative;
+
+    .video-wrapper {
+        background: url(../img/video_bg.png.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        min-height: 705px;
+
+        @media only  screen and  (max-width: 991px) {
+            min-height: 600px;
+        }
+
+        @media only  screen and (max-width: 576px) {
+            min-height: 500px;
+        }
+    }
+
+    .video__info {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 600px;
+        padding-top: 30px;
+        .video__title {
+            font-size: 1.9rem;
+            margin-bottom: 0;
+            span{
+                font-family: Montserrat-SemiBold;
+                color: $c-white;
+            }
+        }
+    
+        .video__time {
+            color: $c-green;
+        }
+    
+        p {
+            color: $c-white;
+        }
+    }
+
+    
+
+    .video__btn {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $c-transparent-20;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 30px;
+
+        &::before {
+            content: "";
+            display: block;
+            background: url(../img/bg-play-circle.png) no-repeat;
+            background-position: center;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            background: url(../img/bg-play.png) no-repeat;
+            background-position: center;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        &:hover {
+            &::before {
+                animation: play-rotate 2s infinite;
+            }
+
+            &::after {
+                animation: play-scale 2s infinite;
+            }
+        }
+    }
+}
+
+@keyframes play-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes play-scale {
+    25% {
+        transform: scale(1.3);
+    }
+
+    25% {
+        transform: scale(0.7);
+    }
+}

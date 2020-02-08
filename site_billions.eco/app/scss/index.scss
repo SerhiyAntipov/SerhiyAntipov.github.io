@@ -1,0 +1,39 @@
+// index css -------------------------------------
+@import "fonts";
+@import "typography";
+@import "main-menu";
+@import "map";
+@import "login";
+@import "slider-latest-news";
+@import "services";
+@import "video";
+@import "contact-us";
+@import "footer";
+@import "popup-youtube";
+
+
+
+.wrapper {
+    min-width: 320px;
+    scroll-behavior: smooth;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 40px 0 50px;
+    // overflow: hidden;
+    text-align: center;
+
+    @media (max-width: 575px) {
+        padding: 20px 0 35px;
+    }
+}
+
+.container{
+    @media (min-width: 1200px){
+        max-width: 1230px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

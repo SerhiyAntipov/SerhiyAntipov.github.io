@@ -1,0 +1,189 @@
+// main-menu -------------------------------------
+.main-header {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    background-color: $c-white;
+    overflow: hidden;
+    
+    box-shadow: 0px 1px 4px 0px $c-grey-dark;
+    z-index: 10;
+}
+
+.navbar__wrapper{
+    .navbar{
+        padding: 0;
+        @media (max-width: 991px){
+        //    overflow: hidden;
+        }
+    }
+    .navbar-nav{
+        @media (min-width: 1200px){
+            padding: 0 18px;
+        }
+    }
+    .navbar-brand img{
+        max-width: 230px;
+        padding: 10px 0;
+        @media (max-width: 991px){
+            padding: 10px 20px;
+        }
+    }
+
+    .nav-item{
+        @media (min-width: 1200px){
+            padding: 0 18px;
+        }
+    }
+    .nav-link{
+        padding: 10px 20px;
+        @media (max-width: 575px){
+            padding: 5px 20px;
+        }
+        &-active{
+            color: $c-green;
+        }
+        .nav-item{
+            padding: 0 20px;
+        }
+    }
+    .nav-login{
+        list-style: none;
+        @media (min-width: 992px){
+            border-left: 1px solid $c-green;
+        }
+        @media (min-width: 1200px){
+            padding: 0 33px;
+        }
+        .nav-item{
+            @media (min-width: 1200px){
+                padding: 0 10px;
+            }
+        }
+        &__link{
+            display: inline-block;
+        }
+    }
+    .nav-social{
+        padding: 25px 5px 25px 10px;
+        @media (max-width: 992px){
+            padding: 10px;
+            margin-top: 5px;
+            &::before{
+                content: "";
+                display: block;
+                width: 1000px;
+                height: 100%;
+                background-color: $c-green;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: -1;
+            }
+        }
+        @media (max-width: 575px){
+            padding: 5px 10px;
+        }
+        margin: 0;
+        list-style: none;
+        position: relative;
+        &__link{
+            display: inline-block;
+            &:last-child a{
+                padding-right: 0;
+            }
+        }
+        img{
+            width: 25px;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 1000px;
+            height: 100%;
+            background-color: $c-green;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .social-link{
+            padding: 4px;
+        }
+    }
+
+    .navbar-toggler{
+        position: relative;
+        min-height: 25px;
+        min-width: 30px;
+        outline: none;
+        .navbar-toggler-icon {
+            width: 30px;
+            height: 2px;
+            background-color: $c-green;
+            position: absolute;
+            top: 11px;
+            left: 0;
+            &::after {
+                content: "";
+                width: 30px;
+                height: 2px;
+                background-color: $c-green;
+                display: block;
+                position: absolute;
+                bottom: -8px;
+                transition: 0.5s all;
+                transform: rotate(0);
+            }
+            &::before {
+                content: "";
+                width: 30px;
+                height: 2px;
+                background-color: $c-green;
+                display: block;
+                position: absolute;
+                top: -8px;
+                transition: 0.5s all;
+                transform: rotate(0);
+            }
+        }
+    }
+
+    .navbar-toggler[aria-expanded="true"] {
+        position: relative;
+        min-height: 25px;
+        min-width: 30px;
+        outline: none;
+        .navbar-toggler-icon {
+            background-color: $c-transparent;
+            top: 11px;
+            left: 0;
+            &::after {
+                content: "";
+                bottom: 0;
+                transition: 0.5s all;
+                transform: rotate(45deg);
+            }
+            &::before {
+                content: "";
+                top: 0;
+                transition: 0.5s all;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+   
+    .navbar-expand-lg .navbar-collapse {
+        @media (min-width: 992px){
+            justify-content: flex-end;
+        }
+    }
+    a{
+        color: $c-grey-dark;
+        &:hover{
+            color: $c-green;
+        }
+    }
+}
+
+  
