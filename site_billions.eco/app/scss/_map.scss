@@ -5,12 +5,14 @@
     position: relative;
     height: 927px;
     max-height: calc(100vh - 200px);
+    min-height: 590px;
     padding: 0;
     overflow: hidden;
 
     @media only screen and (max-width: 991px) {
         height: auto;
         max-height: unset;
+        min-height: unset;
     }
 
     &::after {
@@ -111,10 +113,10 @@
         left: 0;
         background: linear-gradient(-182deg, transparent 53%, $c-white 0);
         @media only screen and (max-width: 991px) {
-            bottom: -30px;
+            bottom: -20px;
         }
         @media only screen and (max-width: 575px) {
-            bottom: -40px;
+           display: none;
         }
     }
 }

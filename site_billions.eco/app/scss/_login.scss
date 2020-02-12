@@ -1,12 +1,19 @@
 .login {
-    margin-top: -153px;
+    margin-top: -235px;
     z-index: 9;
     position: relative;
     padding-bottom: 0;
 
+    @media only screen and (max-width: 1280px) {
+        margin-top: -20px;
+        padding-top: 0;
+        .number{
+            text-align: center;
+        }
+    }
+
     @media only screen and (max-width: 991px) {
         margin-top: 10px;
-        padding-top: 10px;
     }
 
     .login-sub-menu {
@@ -19,6 +26,45 @@
             flex-direction: column;
         }
 
+        &__link-wrapper {
+            position: relative;
+            margin-top: 47px;
+
+            &:hover {
+                &::before {
+                    content: "Зареєструватись";
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translate(-50%, -100%);
+                    background-color: $c-transparent-30;
+                    padding: 10px;
+                    width: 260px;
+                    margin: 0 auto;
+                    font-size: 1rem;
+                    color: $c-grey-dark;
+                    margin-bottom: 12px;
+                    border-radius: 10px;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    border: 8px solid transparent;
+                    border-top: 14px solid $c-transparent-30;
+                    left: 50%;
+                    top: 0;
+                    transform: translate(-50%, 0);
+                }
+            }
+
+            @media only screen and (max-width: 575px) {
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+
         .vegan,
         .vegetarian,
         .support-ecology {
@@ -29,6 +75,9 @@
             align-items: center;
             position: relative;
             margin-top: 10px;
+            cursor: pointer;
+            text-decoration: none;
+
 
             @media only screen and (max-width: 575px) {
                 min-width: 100%;
@@ -151,18 +200,16 @@
     }
 
     .statistics-data {
-        position: absolute;
-        top: -40px;
-        right: 0;
         display: flex;
-        justify-content: space-between;
-        padding: 15px 30px;
+        justify-content: flex-end;
+        padding: 15px 0;
+        margin-bottom: -25px;
 
         @media only screen and (max-width: 1280px) {
             position: relative;
             top: unset;
             right: unset;
-            justify-content: space-between;
+            justify-content: center;
             padding: 15px 0;
         }
 
@@ -170,23 +217,23 @@
             font-size: 3rem;
             letter-spacing: 5px;
             font-family: Montserrat-Bold;
-            text-shadow: 2px -2px 4px #000000b5;
+            text-shadow: 1px -1px 2px #000000b5;
+
             @media only screen and (max-width: 575px) {
                 font-size: 2.6rem;
             }
-    
+
         }
 
         &__registered-user {
             padding-right: 28px;
-            @media only screen and (max-width: 1280px) {
-                padding-right: 0;
-            }
+
             .number {
                 color: $c-green;
                 line-height: 1;
                 margin-bottom: 0;
                 text-align: right;
+
                 @media only screen and (max-width: 575px) {
                     text-align: center;
                 }
@@ -200,6 +247,7 @@
                 margin-bottom: 5px;
                 text-align: right;
                 margin-bottom: 0;
+
                 @media only screen and (max-width: 575px) {
                     text-align: center;
                 }
@@ -213,29 +261,6 @@
 
         span {
             font-weight: bold;
-        }
-    }
-
-    .flag {
-        background-color: $c-transparent-30;
-        padding: 10px;
-        width: 260px;
-        margin: 0 auto;
-        font-size: 1rem;
-        color: $c-grey-dark;
-        position: relative;
-        margin-bottom: 12px;
-        border-radius: 10px;
-
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            border: 8px solid transparent;
-            border-top: 14px solid $c-transparent-30;
-            left: 50%;
-            bottom: -33px;
-            transform: translate(-50%, -50%);
         }
     }
 

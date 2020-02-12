@@ -1,21 +1,24 @@
 //
 //++++++++++++++ SLIDER  LATEST NEWS  ++++++++++++++++++++++++++++++++++++++++++++++
 (function () {
-    (function getAjaxJsonLatestNews() {
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                latestNews = JSON.parse(xhr.response);
-                sliderLatestNews(latestNews);
+    let latestNewsSliders = document.querySelector('.latest-news-slider');
+    if (latestNewsSliders) {
+        (function getAjaxJsonLatestNews() {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    latestNews = JSON.parse(xhr.response);
+                    sliderLatestNews(latestNews);
+                }
             }
-        }
-        xhr.open('GET', 'data/latest-news.json', true);
-        xhr.send();
-    })();
+            xhr.open('GET', 'data/latest-news.json', true);
+            xhr.send();
+        })();
+    }
 })();
 // render slider Latest News
-function sliderLatestNews(latestNews){
-    let latestNewsSliders = document.querySelector('.latest-news-slider')
+function sliderLatestNews(latestNews) {
+    latestNewsSliders = document.querySelector('.latest-news-slider');
     let latestNewsSlide = '';
     latestNews.forEach(function (data, i) {
         latestNewsSlide +=
@@ -46,7 +49,7 @@ function startLatestNewsSlider() {
         dots: true,
         arrows: false,
         responsive: [{
-                breakpoint: 980,
+                breakpoint: 1200,
                 settings: {
                     infinite: true,
                     adaptiveHeight: true,

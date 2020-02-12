@@ -1,8 +1,8 @@
 .video {
     padding-top: 0px;
-    padding-bottom: 55px;
+    padding-bottom: 0;
     box-shadow: 0px 1px 4px 0px $c-grey-dark;
-    background: linear-gradient(-178deg, transparent 93%, $c-grey-little 0);
+    // background: linear-gradient(-178deg, transparent 93%, $c-grey-little 0);
     position: relative;
 
     .video-wrapper {
@@ -58,6 +58,7 @@
         margin: 0 auto;
         position: relative;
         margin-bottom: 30px;
+        cursor: pointer;
 
         &::before {
             content: "";

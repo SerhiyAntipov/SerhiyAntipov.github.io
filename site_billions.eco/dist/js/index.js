@@ -1,3 +1,61 @@
+(function () {
+    let formTitleLogin = document.querySelector('.form-title_login');
+    let formTitleRegistration = document.querySelector('.form-title_registration');
+
+    if (formTitleLogin &&  formTitleRegistration) {
+        if (formTitleLogin.innerText !== null && formTitleLogin.innerText !== undefined) {
+
+            let active = formTitleLogin.innerText;
+            let formLogin = document.querySelector('.form-login');
+            let formRegistered = document.querySelector('.form-registered');
+
+
+            formTitleRegistration.addEventListener('click', function (event) {
+                if (event.target.tagName == 'P' && event.target.innerText != active) {
+                    formTitleRegistration.style.backgroundColor = "#69b433";
+                    formTitleLogin.style.backgroundColor = "#8c8c8c";
+                    active = event.target.innerText;
+                    formRegistered.style.display = "block";
+                    formLogin.style.display = "none";
+                }
+            })
+
+            formTitleLogin.addEventListener('click', function (event) {
+                if (event.target.tagName == 'P' && event.target.innerText != active) {
+                    formTitleRegistration.style.backgroundColor = "#8c8c8c";
+                    formTitleLogin.style.backgroundColor = "#69b433";
+                    active = event.target.innerText;
+                    formLogin.style.display = "block";
+                    formRegistered.style.display = "none";
+                }
+            })
+        }
+    }
+
+
+
+})();
+//
+//++++++++++++++ MAIN MENU HEIGHT++++++++++++++++++++++++++++++++++++++++++++++
+(function(){
+    let navSocial = document.querySelector('.nav-social');
+    window.addEventListener('scroll', function positionPoint() {
+        if (document.documentElement.scrollTop > navSocial.clientHeight) {
+            navSocial.style.padding = '10px 5px 10px 10px';
+        } else {    
+            navSocial.style.padding = '25px 5px 25px 10px';
+        }
+    });
+})();
+
+//
+//++++++++++++++ PAGE PRELOADER ++++++++++++++++++++++++++++++++++++++++++++++
+$(window).on('load', function () {
+    let $preloader = $('.page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.delay(1500).fadeOut('slow');
+    $preloader.delay(1500).fadeOut('slow');
+});
 //
 //++++++++++++++ POPUP MAP WINDOW ++++++++++++++++++++++++++++++++++++++++++++++
 (function () {
@@ -15,24 +73,45 @@
     });
     
 })();
+
+//
+//++++++++++++++ POPUP FORM ++++++++++++++++++++++++++++++++++++++++++++++
+(function () {
+    $(function () {
+        $('.form-registred').magnificPopup({
+            items: {
+                src: '#form-authorization-wrapper',
+                type: 'inline',
+            }
+        });
+        $(document).on('click', '.popup-modal-dismiss', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+    });
+    
+})();
 //
 //++++++++++++++ SLIDER  LATEST NEWS  ++++++++++++++++++++++++++++++++++++++++++++++
 (function () {
-    (function getAjaxJsonLatestNews() {
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                latestNews = JSON.parse(xhr.response);
-                sliderLatestNews(latestNews);
+    let latestNewsSliders = document.querySelector('.latest-news-slider');
+    if (latestNewsSliders) {
+        (function getAjaxJsonLatestNews() {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    latestNews = JSON.parse(xhr.response);
+                    sliderLatestNews(latestNews);
+                }
             }
-        }
-        xhr.open('GET', 'data/latest-news.json', true);
-        xhr.send();
-    })();
+            xhr.open('GET', 'data/latest-news.json', true);
+            xhr.send();
+        })();
+    }
 })();
 // render slider Latest News
-function sliderLatestNews(latestNews){
-    let latestNewsSliders = document.querySelector('.latest-news-slider')
+function sliderLatestNews(latestNews) {
+    latestNewsSliders = document.querySelector('.latest-news-slider');
     let latestNewsSlide = '';
     latestNews.forEach(function (data, i) {
         latestNewsSlide +=
@@ -63,7 +142,7 @@ function startLatestNewsSlider() {
         dots: true,
         arrows: false,
         responsive: [{
-                breakpoint: 980,
+                breakpoint: 1200,
                 settings: {
                     infinite: true,
                     adaptiveHeight: true,

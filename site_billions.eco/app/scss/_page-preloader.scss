@@ -1,0 +1,20 @@
+.page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fbfbfb;
+    z-index: 100500;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page-preloader .spinner {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    background: url('../img/gif/anim.gif') no-repeat center;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -19,46 +19,49 @@
 </head>
 
 <body>
+    <div class="page-preloader"><span class="spinner"></span></div>
     <div class="wrapper" id="wrapper">
         <header class="main-header" id="main-header">
             <div class="container navbar__wrapper">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="#"><img src="img/logo-text.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
+                        data-target="#collapsibleNavbar" aria-label="navbar-toggler">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link nav-link-active" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-active" href="#">About Us</a>
+                                <a class="nav-link" href="about.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contacts.html">Contact</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav nav-login">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Log in</a>
+                                <a class="nav-link form-registred" href="#">Log in</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sign in</a>
+                                <a class="nav-link form-registred" href="#">Sign in</a>
                             </li>
                         </ul>
                         <ul class="nav-social">
-                            <li class="nav-social__link"><a class="social-link" href="#"><img
-                                        src="img/social-icon/iconfinder_instagram_1860506.svg" alt="social icon"></a>
+                            <li class="nav-social__link"><a class="social-link" href="https://www.instagram.com/?hl=uk"
+                                    target="_blank" rel="noopener"><img src="img/social-icon/iconfinder_instagram_1860506.svg"
+                                        alt="social icon"></a>
                             </li>
-                            <li class="nav-social__link"><a class="social-link" href="#"><img
-                                        src="img/social-icon/iconfinder_facebook_1860508.svg" alt="social icon"></a>
+                            <li class="nav-social__link"><a class="social-link" href="https://www.facebook.com/"
+                                    target="_blank" rel="noopener"><img src="img/social-icon/iconfinder_facebook_1860508.svg"
+                                        alt="social icon"></a>
                             </li>
-                            <li class="nav-social__link"><a class="social-link" href="#"><img
+                            <li class="nav-social__link"><a class="social-link" href="#" target="_blank" rel="noopener"><img
                                         src="img/social-icon/iconfinder_rss_feed_1860487.svg" alt="social icon"></a>
                             </li>
                         </ul>
@@ -92,24 +95,29 @@
                     <p class="title">найкращих <span>закладів</span></p>
                 </div>
             </div>
-            <div class="flag">Зареєструватись</div>
             <div class="login-sub-menu">
-                <div class="vegan">
-                    <img src="img/sub-menu/img_01.png" alt="img logo">
-                    <p>Я Веган</p>
+                <div class="login-sub-menu__link-wrapper">
+                    <a href="#" class="vegan form-registred">
+                        <img src="img/sub-menu/img_01.png" alt="img logo">
+                        <p>Я Веган</p>
+                    </a>
                 </div>
-                <div class="vegetarian">
-                    <img src="img/sub-menu/img_02.png" alt="img logo">
-                    <p>Я Вегетаріанець</p>
+                <div class="login-sub-menu__link-wrapper">
+                    <a href="#" class="vegetarian form-registred">
+                        <img src="img/sub-menu/img_02.png" alt="img logo">
+                        <p>Я Вегетаріанець</p>
+                    </a>
                 </div>
-                <div class="support-ecology">
-                    <img src="img/sub-menu/img_03.png" alt="img logo">
-                    <p>Я Підтримую Екологію</p>
+                <div class="login-sub-menu__link-wrapper">
+                    <a href="#" class="support-ecology form-registred">
+                        <img src="img/sub-menu/img_03.png" alt="img logo">
+                        <p>Я Підтримую Екологію</p>
+                    </a>
                 </div>
             </div>
             <div class="link">
-                <a href="#"><span>Вхід</span></a>
-                <a href="#">Реєстрація</a>
+                <a href="#" class="form-registred"><span>Вхід</span></a>
+                <a href="#" class="form-registred">Реєстрація</a>
             </div>
         </section>
         <section class="latest-news">
@@ -149,30 +157,30 @@
             </div>
             <div class="services__service container">
                 <div class="row">
-                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 one-service">
+                    <a href="link-our-philosophy.html" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 one-service">
                         <img src="img/services/services_01.png" alt="services img">
                         <p class="title">Our philosophy</p>
                         <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut</p>
-                    </div>
-                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 one-service">
+                    </a>
+                    <a href="link-about-us.html" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 one-service">
                         <img src="img/services/services_02.png" alt="services img">
                         <p class="title">About Us</p>
                         <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut</p>
-                    </div>
-                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 one-service">
+                    </a>
+                    <a href="link-billion.eco.html" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 one-service">
                         <img src="img/services/services_03.png" alt="services img">
                         <p class="title">Billion.eco</p>
                         <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut</p>
-                    </div>
-                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 one-service">
+                    </a>
+                    <a href="link-mobile-app.html" class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 one-service">
                         <img src="img/services/services_04.png" alt="services img">
                         <p class="title">Mobile App</p>
                         <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -276,7 +284,95 @@
             <iframe src="https://www.youtube.com/embed/0aMyNqJDGS4"
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-
+        <!-- popup form registration  -->
+        <div id="form-authorization-wrapper" class="white-popup-block mfp-hide">
+            <h2 class="container-header">Форма входу</h2>
+            <div class="form-title">
+                <p class="form-title_login">Вхід</p>
+                <span> або </span>
+                <p class="form-title_registration">Реєстрація</p>
+            </div>
+            <form action="index-registered.html" method="GET" name="form-login" id="form-login" class="form-login">
+                <div class="form-row">
+                    <div class="form-group col-md-6 form-login__social">
+                        <label for="form-login-facebook">
+                            <a href="#" class="form-login__social-label label-facebook">
+                                <span class="block-start">
+                                    <img src="img/form/link-facebook.png" alt="logo facebook">
+                                </span>
+                                <span>Facebook</span>
+                            </a>
+                        </label>
+                        <input type="text" class="form-login__social-input" id="form-login-facebook"
+                            name="form-login-facebook">
+                        <label for="form-login-twitter">
+                            <a href="#" class="form-login__social-label label-twitter">
+                                <span class="block-start">
+                                    <img src="img/form/link-twitter.png" alt="logo facebook">
+                                </span>
+                                <span>Twitter</span>
+                            </a>
+                        </label>
+                        <input type="text" class="form-login__social-input" id="form-login-twitter"
+                            name="form-login-twitter">
+                        <label for="form-login-gmail">
+                            <a href="#" class="form-login__social-label label-gmail">
+                                <span class="block-start">
+                                    <img src="img/form/link-gmail.png" alt="logo facebook">
+                                </span>
+                                <span>Gmail</span>
+                            </a>
+                        </label>
+                        <input type="text" class="form-login__social-input" id="form-login-gmail"
+                            name="form-login-gmail">
+                    </div>
+                    <span class="form-login-separator">або</span>
+                    <div class="form-group col-md-6 form-login__login">
+                        <div>
+                            <label for="form-login-name" class="form-login__input-label">Логін</label>
+                            <input type="text" class="form-login__input" id="form-login-name" name="form-login-name">
+                        </div>
+                        <div>
+                            <label for="form-login-password" class="form-login__input-label">Пароль</label>
+                            <input type="password" class="form-login__input" id="form-login-password"
+                                name="form-login-password">
+                        </div>
+                        <button class="btn" type="submit" form="form-login">Вхід</button>
+                    </div>
+                </div>
+            </form>
+            <form action="index-registered.html" method="GET" name="form-registered" id="form-registered"
+                class="form-registered">
+                <div class="form-row">
+                    <div class="form-group col-md-6 form-registered__login">
+                        <div>
+                            <label for="form-registered-name" class="form-registered__input-label">Ваше імя</label>
+                            <input type="text" class="form-registered__input" id="form-registered-name"
+                                name="form-registered-name" required>
+                        </div>
+                        <div>
+                            <label for="form-registered-mail" class="form-registered__input-label">Ваш e-mail</label>
+                            <input type="email" class="form-registered__input" id="form-registered-mail"
+                                name="form-registered-mail" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 form-registered__login">
+                        <div>
+                            <label for="form-registered-login" class="form-registered__input-label">Ваш логін</label>
+                            <input type="text" class="form-registered__input" id="form-registered-login"
+                                name="form-registered-login" required>
+                        </div>
+                        <div>
+                            <label for="form-registered-password" class="form-registered__input-label">Пароль</label>
+                            <input type="password" class="form-registered__input" id="form-registered-password"
+                                name="form-registered-password" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="link-bg"></div>
+                <button class="btn" type="submit" form="form-registered">Реєстрація</button>
+            </form>
+        </div>
     </div>
     <!-- <script src="modules/jquery/js/jquery.min.js"></script> -->
     <!-- <script src="modules/bootstrap/js/bootstrap.min.js"></script> -->
