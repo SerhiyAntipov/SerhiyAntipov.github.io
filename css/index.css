@@ -128,7 +128,7 @@ main .professional-skill span {
     background-color: #e7e7e7;;
 }
 
-.portfolio a:hover img{
+.portfolio a:hover > img{
    animation: skale .5s;
 }
 
@@ -198,6 +198,64 @@ main .professional-skill span {
     padding: 0 5px;
     text-transform: none;
 }
+
+.project-skill{
+    height: 35px;
+    background-color: #353c4cb8;
+    background: #353c4cb8;
+    width: calc(100% - 0px);
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.project-skill img{
+    height: 80%;
+    width: auto;
+    box-shadow: none;
+}
+
+.project-skill img:hover{
+    box-shadow: none;
+}
+
+
+.rect-skill{
+    background: url(../img/skill/link_react.png);
+}
+
+.bootstrap-skill{
+    background: url(../img/skill/link_bootstrap.png);
+}
+
+.css-skill{
+    background: url(../img/skill/link_css.png);
+}
+
+.gulp-skill{
+    background: url(../img/skill/link_gulp.png);
+}
+
+.js-skill{
+    background: url(../img/skill/link_js.png);
+}
+
+
+
+
+.skill{
+height: 95%;
+width: 25px;
+margin-right: 5px;
+background-position: left -9px center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
 
 @media screen and (max-width: 1200px) {
     .portfolio a {
