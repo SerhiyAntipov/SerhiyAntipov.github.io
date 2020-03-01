@@ -193,9 +193,8 @@ main .professional-skill span {
 }
 
 .main-footer p {
-    margin: 15px 0;
     display: inline-block;
-    padding: 0 5px;
+    padding: 30px 10px;
     text-transform: none;
 }
 
@@ -243,14 +242,20 @@ main .professional-skill span {
     background: url(../img/skill/link_js.png);
 }
 
+.sass-skill{
+    background: url(../img/skill/link_sass.png);
+}
+.api-skill{
+    background: url(../img/skill/link_api.png);
+}
 
 
 
 .skill{
 height: 95%;
-width: 25px;
+width: 30px;
 margin-right: 5px;
-background-position: left -9px center;
+background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 }
