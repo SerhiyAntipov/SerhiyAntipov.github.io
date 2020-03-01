@@ -199,16 +199,18 @@ main .professional-skill span {
 }
 
 .project-skill{
-    height: 35px;
+    height: 30px;
     background-color: #353c4cb8;
     background: #353c4cb8;
     width: calc(100% - 0px);
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 5px ;
+    box-sizing: border-box;
 }
 
 .project-skill img{
@@ -222,7 +224,7 @@ main .professional-skill span {
 }
 
 
-.rect-skill{
+.react-skill{
     background: url(../img/skill/link_react.png);
 }
 
@@ -248,15 +250,29 @@ main .professional-skill span {
 .api-skill{
     background: url(../img/skill/link_api.png);
 }
+.local-stor-skill{
+    background: url(../img/skill/link_local-stor.png);
+}
+.ajax-skill{
+    background: url(../img/skill/link_ajax.png);
+}
 
-
+.html-skill{
+    background: url(../img/skill/link_html.png);
+}
+.npm-skill{
+    background: url(../img/skill/link_npm.png);
+}
+.node-skill{
+    background: url(../img/skill/link_node.png);
+}
 
 .skill{
-height: 95%;
-width: 30px;
-margin-right: 5px;
+height: 90%;
+width: 25px;
+/* margin-right: 5px; */
 background-position: center;
-background-size: cover;
+background-size: contain;
 background-repeat: no-repeat;
 }
 
