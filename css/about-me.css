@@ -43,7 +43,7 @@ main {
 
 .experience p,
 .education p,
-.courses p{
+.courses p {
     padding: 5px 0;
     position: relative;
     border-left: 2px solid #2d2d2d59;
@@ -53,14 +53,18 @@ main {
     align-items: center;
 }
 
+.experience span {
+    min-width: 155px;
+    text-transform: uppercase;
+}
 
-.professional-skill img{
+.professional-skill img {
     margin-right: 10px;
 }
 
 .experience p::before,
 .education p::before,
-.courses p::before{
+.courses p::before {
     content: "";
     width: 8px;
     height: 8px;
@@ -74,9 +78,7 @@ main {
 }
 
 
-professional-skill
-
-@media (max-width: 600px) {
+professional-skill @media (max-width: 600px) {
 
     .experience p,
     .education p,
@@ -132,6 +134,9 @@ main span {
     .education span {
         min-width: 70px;
     }
+    .experience span {
+        min-width: 115px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -146,5 +151,7 @@ main span {
     .education span {
         min-width: 60px;
     }
-
+    .experience span {
+        min-width: 95px;
+    }
 }
