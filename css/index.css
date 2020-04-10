@@ -267,6 +267,10 @@ main .professional-skill span {
     background: url(../img/skill/link_node.png);
 }
 
+.redux-skill{
+    background: url(../img/skill/link_redux.png);
+}
+
 .skill{
 height: 90%;
 width: 25px;
