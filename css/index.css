@@ -270,6 +270,15 @@ main .professional-skill span {
 .redux-skill{
     background: url(../img/skill/link_redux.png);
 }
+.canvas-skill{
+    background: url(../img/skill/link_canvas.png);
+}
+.animation-skill{
+    background: url(../img/skill/link_css_animation.png);
+}
+.slick-skill{
+    background: url(../img/skill/link_slick.png);
+}
 
 .skill{
 height: 90%;
