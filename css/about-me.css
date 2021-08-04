@@ -1,5 +1,4 @@
 @import url(index.css);
-
 @font-face {
     font-family: 'Roboto Condensed';
     src: url(../fonts/RobotoCondensed-Regular.ttf);
@@ -16,10 +15,18 @@ main {
     font-weight: bold;
     background-color: #bcbcbc;
     box-shadow: 0 2px 2px 0 #000000b5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
 }
 
-.description p {
-    margin-bottom: 5px;
+.time-country-code {
+    font-weight: bold;
+}
+
+.expiriense-description {
+    font-size: 20px;
 }
 
 .cv-content {
@@ -53,6 +60,23 @@ main {
     align-items: center;
 }
 
+.experience .expiriense-description {
+    padding-top: 0;
+}
+
+
+/* .expiriense-description::before {
+    content: "";
+    width: 8px;
+    height: 2px;
+    background-color: #24262d;
+    border: solid 2px #b9c4ca;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -7px;
+} */
+
 .experience span {
     min-width: 155px;
 }
@@ -61,7 +85,7 @@ main {
     margin-right: 10px;
 }
 
-.experience p::before,
+.experience p:not(.expiriense-description)::before,
 .education p::before,
 .courses p::before {
     content: "";
@@ -76,9 +100,7 @@ main {
     left: -9px;
 }
 
-
 professional-skill @media (max-width: 600px) {
-
     .experience p,
     .education p,
     .courses p {
@@ -117,7 +139,6 @@ main span {
 @media screen and (max-width: 800px) {
     .cv-content {
         width: 90%;
-
     }
 }
 
@@ -125,11 +146,12 @@ main span {
     main p {
         font-size: 16px;
     }
-
+    .expiriense-description {
+        font-size: 14px;
+    }
     .cv-content h3 {
         font-size: 24px;
     }
-
     .education span {
         min-width: 70px;
     }
@@ -142,11 +164,9 @@ main span {
     main p {
         font-size: 14px;
     }
-
     .cv-content h3 {
         font-size: 22px;
     }
-
     .education span {
         min-width: 60px;
     }
