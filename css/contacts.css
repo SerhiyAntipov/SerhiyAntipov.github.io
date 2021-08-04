@@ -73,7 +73,8 @@ main p:not(.description p) {
     color: inherit;
 }
 
-.contacts li a:hover {
+.contacts li a:hover,
+.link a:hover {
     color: #b44328;
 }
 
@@ -116,6 +117,27 @@ main p:not(.description p) {
     height: 33px;
     margin: 1px 2px;
     box-sizing: border-box;
+}
+
+.link span {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    display: inline-block;
+    border-bottom: 2px solid #2d2d2d59;
+}
+
+.link span img {
+    width: 25px;
+    height: auto;
+    margin-right: 3px;
+    vertical-align: bottom;
+}
+
+.link a {
+    display: block;
+    font-family: inherit;
+    color: black;
 }
 
 @media screen and (max-width: 800px) {
