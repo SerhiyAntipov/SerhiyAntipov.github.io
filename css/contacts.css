@@ -51,8 +51,9 @@ main p:not(.description p) {
 .contacts li {
     position: relative;
     border-left: 2px solid #2d2d2d59;
+    padding-top: 3px;
     padding-left: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 
 .contacts li::before {
@@ -78,9 +79,10 @@ main p:not(.description p) {
     color: #b44328;
 }
 
-.links li a {
+
+/* .links li a {
     border-bottom: 2px solid #000000;
-}
+} */
 
 .links li a:hover {
     border-bottom: 2px solid #b44328;
