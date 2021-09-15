@@ -78,6 +78,14 @@ main p:not(.description p) {
     color: #b44328;
 }
 
+.links li a {
+    border-bottom: 2px solid #000000;
+}
+
+.links li a:hover {
+    border-bottom: 2px solid #b44328;
+}
+
 .footer-contacts {
     margin: 30px 0;
     padding: 0 20px;
