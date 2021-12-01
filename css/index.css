@@ -309,6 +309,10 @@ main .professional-skill span {
     background: url(../img/skill/link_slick.png);
 }
 
+.angular-skill {
+    background: url(../img/skill/link_angular.png);
+}
+
 .skill {
     height: 90%;
     width: 25px;
