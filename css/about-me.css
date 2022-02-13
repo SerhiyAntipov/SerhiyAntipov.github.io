@@ -64,6 +64,20 @@ main {
     padding-top: 0;
 }
 
+.dot::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #24262d;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    /* border: solid 4px #b9c4ca; */
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+}
+
 
 /* .expiriense-description::before {
     content: "";

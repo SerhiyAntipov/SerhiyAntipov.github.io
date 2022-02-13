@@ -11,7 +11,8 @@
     color: #2d2d2d;
     overflow: hidden;
     background-color: #e7e7e7;
-    background: url(../img/bg_main.png);
+    background: linear-gradient(90deg, #d0d0d0 0%, #f6f6f6 50%, #d0d0d0 100%);
+    /* background: url(../img/bg_main.png); */
     background-repeat: repeat;
     min-height: 100vh;
     display: flex;
