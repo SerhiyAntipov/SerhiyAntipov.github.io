@@ -328,7 +328,7 @@ main .professional-skill span {
         width: 30%;
     }
     .nav-main {
-        text-align: left;
+        /* text-align: left; */
     }
 }
 
@@ -344,6 +344,7 @@ main .professional-skill span {
     }
     .nav-main ul {
         margin-left: 0;
+        margin-right: 0;
         width: 75%;
     }
     .nav-main li {
