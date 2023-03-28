@@ -124,13 +124,18 @@ main span {
     padding-left: 0;
 }
 
+a .job-title{
+    color: #132860;
+    font-size: 0.9em;
+}
+
 .experience a {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
 }
 
-.experience a:hover span {
+.experience a:hover span:not(.job-title){
     text-decoration: none;
     color: #b44328;
 }
