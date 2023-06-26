@@ -9,6 +9,10 @@ main {
     font-size: 22px;
 }
 
+
+.header_social{
+    
+}
 .description {
     padding: 15px 5px 15px;
     text-align: center;
@@ -47,7 +51,8 @@ main {
     font-weight: bold;
     margin-left: -20px;
 }
-
+.links p,
+.contacts p,
 .experience p,
 .education p,
 .courses p {
@@ -99,6 +104,8 @@ main {
     margin-right: 10px;
 }
 
+.links p::before,
+.contacts p::before,
 .experience p:not(.expiriense-description)::before,
 .education p::before,
 .courses p::before {
@@ -140,6 +147,17 @@ a .job-title{
     color: #b44328;
 }
 
+.links a,
+.contacts a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contacts a:hover,
+.links a:hover {
+    color: #b44328;
+}
+
 .education span {
     min-width: 100px;
     text-align: right;
@@ -170,6 +188,7 @@ a .job-title{
 }
 
 @media(max-width: 600px) {
+    .contacts p,
     .experience p,
     .education p,
     .courses p {
